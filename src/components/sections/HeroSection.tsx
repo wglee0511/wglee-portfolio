@@ -29,7 +29,7 @@ const HeroSection = () => {
         </motion.div>
         
         <h1 className="fluid-h1 font-bold mb-8 text-white">
-          이원교 <br className="md:hidden" /><span className="text-gradient">Lee Won-kyu</span>
+          <span className="text-gradient">이원교</span>
         </h1>
         
         <motion.p 
@@ -38,7 +38,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-400 mb-12 leading-relaxed"
         >
-          웹과 앱의 경계를 허무는 4년 차 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
+          웹과 앱의 경계를 허무는 4년+ 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
           사용자 경험을 중시하며, 효율적인 사내 도구와 컴포넌트 라이브러리 제작에 열정이 있습니다.
         </motion.p>
 

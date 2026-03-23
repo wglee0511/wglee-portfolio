@@ -10,38 +10,43 @@ const ExperienceSection = () => {
       company: "주식회사 루티너리 (Routinery Inc.)",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2024.11 - 현재",
-      description: "글로벌 습관 형성 서비스 루티너리의 프론트엔드 및 네이티브 환경 현대화 주도",
+      description: "200개 국가 500만 명이 사용하는 루틴·습관 플래너 앱의 프론트엔드 및 네이티브 현대화",
       achievements: [
         "Wear OS 앱의 XML 레이아웃을 Jetpack Compose로 100% 마이그레이션",
         "Jetpack Glance 기반의 Android 홈 위젯 4종 재작성 (레거시 코드 1,600라인 제거)",
-        "React Query Selector 패턴 도입으로 Peak Memory 69% 감소 (958MB -> 297MB)",
-        "네이티브와 React Native 간 상태 동기화 파이프라인 설계"
+        "React Query Selector 패턴 도입으로 Peak Memory 69% 감소 (958MB → 297MB)",
+        "체크리스트 위젯의 앱-위젯 상태 동기화 파이프라인 설계 (Zustand → Shared Storage → Firestore 순차 동기화)",
+        "Geofence 기반 위치 알림 모듈 개발 — 앱 종료 상태에서도 동작하는 백그라운드 이벤트 처리 구조",
+        "Launch Time(P50) 540ms → 400ms (-26%) 개선 — Xcode Organizer 실사용자 지표 직접 측정"
       ],
-      tags: ["React Native", "Jetpack Compose", "Zustand", "React Query"]
+      tags: ["React Native", "Jetpack Compose", "TypeScript", "Swift", "Kotlin", "Zustand", "MobX", "React Query"]
     },
     {
       company: "주식회사 메이크델타 (Make Delta Inc.)",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2023.07 - 2024.04",
-      description: "퀀트 투자 플랫폼의 데이터 시각화 및 디자인 시스템 구축",
+      description: "20,000+ 직장인 트레이더가 사용하는 모바일 트레이딩 분석 서비스의 차트 시스템 및 디자인 시스템 구축",
       achievements: [
+        "40종 이상 기술 지표(RSI·MACD·볼린저밴드 등)를 조합하는 커스텀 전략 빌더 및 8개 거래소 멀티 마켓 지원",
         "D3.js와 Canvas API를 활용한 고밀도 실시간 캔들스틱 차트 시스템 개발",
+        "React Native Skia로 주식 캔들 차트 네이티브 렌더링 성능 확보",
         "Vite manualChunks 및 Lazy Loading 최적화로 번들 사이즈 43% 절감",
-        "모바일 디자인 시스템(0 to 1) 구축 및 Storybook 배포 자동화"
+        "모바일 디자인 시스템(0 to 1) 구축 및 Storybook + GitHub Actions 자동 배포 파이프라인 구현"
       ],
-      tags: ["React", "D3.js", "Vite", "Storybook", "Tailwind CSS"]
+      tags: ["React", "React Native", "TypeScript", "D3.js", "Vite", "Storybook", "AWS"]
     },
     {
       company: "주식회사 페이히어 (Payhere Inc.)",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2021.12 - 2023.06",
-      description: "클라우드 기반 포스(POS) 서비스의 고객 접점 앱 및 에코시스템 개발",
+      description: "48,000+ 가맹점이 이용하는 오프라인 매장용 결제 서비스(POS)의 고객 접점 앱 및 에코시스템 개발",
       achievements: [
-        "포스 연동 포인트/스탬프/결제 서명용 고객 대면 앱 개발 및 출시",
-        "실시간 네이버 예약 연동 시스템 클라이언트 기능 설계 및 개발",
-        "Electron 기반 하드웨어(프린터, 카드 리더기) 통합 플러그인 시스템 구축"
+        "포스 연동 포인트/스탬프/결제 서명용 고객 대면 앱 개발 및 iOS·AOS 출시",
+        "실시간 네이버 플레이스 예약 연동 클라이언트 기능 설계 및 개발",
+        "Electron 기반 하드웨어(프린터, 카드 리더기) 통합 플러그인 시스템 구축",
+        "예약업 온라인 스토어 웹 애플리케이션 개발 (예약 캘린더, 매장 지도, 휴대폰 인증)"
       ],
-      tags: ["React", "Electron", "Redux Saga", "Next.js"]
+      tags: ["React", "React Native", "TypeScript", "Electron", "Next.js", "Redux Saga", "AWS"]
     }
   ];
 

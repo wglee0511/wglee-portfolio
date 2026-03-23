@@ -11,10 +11,12 @@ const ProjectsSection = () => {
       category: "Mobile Game (B2C)",
       description: "숫자야구 로직을 기반으로 한 모바일 캐주얼 게임입니다. 전 세계 사용자와 경쟁할 수 있는 랭킹 시스템을 제공합니다.",
       highlights: [
-        "Supabase Auth 기반 익명 로그인 구현",
-        "React Query를 활용한 낙관적 업데이트(Occupancy Update) 적용",
-        "Edge Functions를 통한 보안 로직 처리",
-        "i18n 적용으로 5개 국어 지원"
+        "Supabase Auth 기반 익명 로그인 — 회원가입 없이 앱 실행 즉시 플레이 가능",
+        "8자리 Recovery ID 기반 계정 복구 플로우로 기기 변경·재설치 시에도 연속성 유지",
+        "React Query를 활용한 낙관적 업데이트(Optimistic Update) 적용",
+        "Edge Functions를 통한 서버사이드 코인 차감 검증으로 클라이언트 조작 방지",
+        "720개 후보군 기반 AI 추리 로직으로 평균 4~5회 내 정답 도달",
+        "한국어·영어·일본어·번체중국어·스페인어 5개 언어 및 인앱결제+광고 수익화 구현"
       ],
       tech: ["React Native", "Supabase", "React Query", "PostgreSQL"],
       link: "https://github.com/wglee0511/code-slugger"
@@ -29,20 +31,33 @@ const ProjectsSection = () => {
         "간편한 공유 기능 제공"
       ],
       tech: ["React Native", "Zustand", "Framer Motion"],
-      link: "#"
+      link: null
     },
     {
       title: "UPBIT Auto Trading",
       category: "System Engineering",
-      description: "업비트 API를 활용한 실시간 암호화폐 자동 매매 시스템입니다. 데이터 기반의 매매 전략을 자동화했습니다.",
+      description: "업비트 실계좌와 연동해 24시간 자동으로 동작하는 암호화폐 자동매매 시스템입니다. 시장 판단·리스크 관리·배포 자동화·운영 알림까지 포함한 실운영형 구조에 집중했습니다.",
       highlights: [
-        "EMA, RSI, MACD 등 다중 기술 지표 분석 로직",
-        "실시간 가격 모니터링 및 자동 주문 파이프라인",
-        "손절(Stop Loss) 및 익절 전략 자동화",
-        "Slack 알림 연동"
+        "EMA, RSI, MACD, 볼린저 밴드, Stochastic RSI 다중 지표 조합 전략",
+        "ATR 비율·볼린저 밴드 폭 기반 횡보/추세 구간 판별 추세 필터",
+        "동적 손절가 계산 및 R:R 1:2 기준 익절가 자동 산출",
+        "GitHub Actions + Docker + GCP 자동 배포 및 Slack 이벤트 알림"
       ],
-      tech: ["Python", "Pandas", "Upbit API", "Slack Webhook"],
-      link: "#"
+      tech: ["Python", "Pandas", "Docker", "GCP", "GitHub Actions"],
+      link: null
+    },
+    {
+      title: "슬기로운 백신생활",
+      category: "Team Project",
+      description: "코로나 백신 후기를 공유하는 웹 어플리케이션입니다. 실 사용자 가입 211명, 게시글 157개를 기록한 팀 프로젝트입니다.",
+      highlights: [
+        "백신·격리 후기 게시판, 글쓰기·수정·댓글 기능 Client 개발",
+        "React-Quill 기반 Custom Editor 적용",
+        "무한스크롤, 자동 로그아웃, Alert 시스템 구현",
+        "실 사용자 가입 211명, 게시글 157개 기록"
+      ],
+      tech: ["ReactJS", "Redux", "AWS S3", "CloudFront", "Route53"],
+      link: null
     }
   ];
 
@@ -110,11 +125,13 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <div className="flex items-center gap-6 pt-6 border-t border-white/5">
-                  <a href={project.link} className="flex items-center gap-2 text-sm font-semibold text-white/80 hover:text-white transition-colors group/link w-fit">
-                    <Github size={18} className="group-hover/link:text-accent-blue transition-colors" /> Source Code
-                  </a>
-                </div>
+                {project.link && (
+                  <div className="flex items-center gap-6 pt-6 border-t border-white/5">
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-white/80 hover:text-white transition-colors group/link w-fit">
+                      <Github size={18} className="group-hover/link:text-accent-blue transition-colors" /> Source Code
+                    </a>
+                  </div>
+                )}
               </div>
             </motion.div>
           ))}

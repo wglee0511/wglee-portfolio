@@ -9,7 +9,7 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       icon: <Monitor size={24} />,
-      skills: ["React", "Next.js", "TypeScript", "Redux (Saga)", "Zustand", "React Query", "TailwindCSS", "D3.js"]
+      skills: ["React", "Next.js", "TypeScript", "Redux (Saga)", "Zustand", "MobX", "React Query", "TailwindCSS", "D3.js", "i18next"]
     },
     {
       title: "Native / Desktop",
@@ -19,12 +19,12 @@ const SkillsSection = () => {
     {
       title: "Infra & Tools",
       icon: <Database size={24} />,
-      skills: ["AWS", "Firebase", "Supabase", "GitHub Actions", "Fastlane", "Storybook"]
+      skills: ["AWS", "GCP", "Docker", "Firebase", "Supabase", "GitHub Actions", "Fastlane", "Storybook"]
     },
     {
       title: "Dev Suite",
       icon: <Settings size={24} />,
-      skills: ["Claude Code", "Cursor", "PostgreSQL", "React Native Skia"]
+      skills: ["Claude Code", "Cursor", "PostgreSQL", "React Native Skia", "Python"]
     }
   ];
 
