@@ -51,8 +51,10 @@ const ProjectsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="fluid-h2 font-bold mb-4 text-white">Featured <span className="text-gradient">Projects</span></h2>
-          <p className="text-gray-400 text-lg">아이디어를 현실로 구현한 주요 프로젝트들입니다.</p>
+          <h2 className="fluid-h2 font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+            Featured <span className="text-gradient">Projects</span>
+          </h2>
+          <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>아이디어를 현실로 구현한 주요 프로젝트들입니다.</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -65,38 +67,47 @@ const ProjectsSection = () => {
               transition={{ delay: idx * 0.15, duration: 0.7, ease: "easeOut" }}
               className="glass rounded-[2.5rem] overflow-hidden flex flex-col group hover:border-accent-purple/30 hover:shadow-[0_20px_40px_-15px_rgba(157,80,187,0.15)] transition-all duration-500"
             >
-              <div className="h-48 md:h-56 bg-gradient-to-br from-[#0a0a14] to-[#121226] flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/40 group-hover:bg-transparent transition-colors duration-500 z-10" />
-                
+              <div className="h-48 md:h-56 flex items-center justify-center relative overflow-hidden"
+                style={{ background: 'linear-gradient(135deg, var(--surface), var(--card-bg))' }}
+              >
+                <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500 z-10" style={{ background: 'rgba(0,0,0,0.1)' }} />
+
                 {/* Decorative glowing orb behind icon */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-accent-blue/20 rounded-full blur-[40px] group-hover:bg-accent-magenta/20 group-hover:scale-150 transition-all duration-700" />
-                
+
                 <Code size={48} className="text-accent-blue/40 group-hover:text-accent-magenta/60 transition-colors duration-500 relative z-20 group-hover:scale-110 transform" />
-                
+
                 <div className="absolute top-6 left-6 z-20">
-                  <span className="px-4 py-1.5 bg-black/60 backdrop-blur-md rounded-full text-[10px] font-bold text-white uppercase tracking-widest border border-white/10 shadow-[0_4px_10px_rgba(0,0,0,0.5)]">
+                  <span
+                    className="px-4 py-1.5 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest"
+                    style={{
+                      background: 'rgba(0,0,0,0.5)',
+                      border: '1px solid var(--card-border)',
+                      color: 'var(--text-primary)',
+                    }}
+                  >
                     {project.category}
                   </span>
                 </div>
               </div>
-              
-              <div className="p-8 flex flex-col flex-grow bg-white/[0.01]">
+
+              <div className="p-8 flex flex-col flex-grow" style={{ background: 'var(--surface)' }}>
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-2xl font-bold text-white tracking-tight group-hover:text-accent-blue transition-colors duration-300">
+                  <h3 className="text-2xl font-bold tracking-tight group-hover:text-accent-blue transition-colors duration-300" style={{ color: 'var(--text-primary)' }}>
                     {project.title}
                   </h3>
-                  <span className="flex items-center gap-1.5 text-[11px] text-gray-500 font-medium shrink-0 mt-1">
+                  <span className="flex items-center gap-1.5 text-[11px] font-medium shrink-0 mt-1" style={{ color: 'var(--text-muted)' }}>
                     <Calendar size={12} />
                     {project.period}
                   </span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base mb-8 leading-relaxed">
+                <p className="text-sm md:text-base mb-8 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                   {project.description}
                 </p>
-                
+
                 <ul className="space-y-3 mb-10 flex-grow">
                   {project.highlights.map((h, i) => (
-                    <li key={i} className="text-[13px] text-gray-300/80 flex items-start gap-3 leading-relaxed">
+                    <li key={i} className="text-[13px] flex items-start gap-3 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                        <div className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-accent-purple to-accent-magenta mt-1.5 shrink-0" />
                        {h}
                     </li>
@@ -105,15 +116,26 @@ const ProjectsSection = () => {
 
                 <div className="flex flex-wrap gap-2 mb-10 mt-auto">
                   {project.tech.map(t => (
-                    <span key={t} className="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-white/5 text-gray-300 border border-white/5 group-hover:border-white/10 transition-colors">
+                    <span
+                      key={t}
+                      className="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md transition-colors"
+                      style={{
+                        background: 'var(--surface)',
+                        color: 'var(--text-secondary)',
+                        border: '1px solid var(--surface-border)',
+                      }}
+                    >
                       {t}
                     </span>
                   ))}
                 </div>
 
                 {project.link && (
-                  <div className="flex items-center gap-6 pt-6 border-t border-white/5">
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm font-semibold text-white/80 hover:text-white transition-colors group/link w-fit">
+                  <div className="flex items-center gap-6 pt-6" style={{ borderTop: '1px solid var(--surface-border)' }}>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm font-semibold transition-colors group/link w-fit hover:text-white"
+                      style={{ color: 'var(--text-secondary)' }}
+                    >
                       <Github size={18} className="group-hover/link:text-accent-blue transition-colors" /> Source Code
                     </a>
                   </div>

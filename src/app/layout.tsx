@@ -3,6 +3,8 @@ import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -19,12 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${inter.variable} ${outfit.variable} scroll-smooth`}>
+    <html lang="ko" className={`${inter.variable} ${outfit.variable} scroll-smooth`} suppressHydrationWarning>
       <body className="antialiased selection:bg-accent-blue/30 selection:text-white">
-        <div className="glow-mesh" aria-hidden="true" />
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <div className="glow-mesh" aria-hidden="true" />
+          <Navbar />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </ThemeProvider>
       </body>
     </html>
   );

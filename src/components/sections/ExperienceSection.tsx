@@ -172,8 +172,10 @@ const ExperienceSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 md:mb-24"
         >
-          <h2 className="fluid-h2 font-bold mb-4 text-white">Work <span className="text-gradient">Experience</span></h2>
-          <p className="text-gray-400 text-lg">성장하는 팀에서 핵심적인 가치를 만들어온 여정입니다.</p>
+          <h2 className="fluid-h2 font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+            Work <span className="text-gradient">Experience</span>
+          </h2>
+          <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>성장하는 팀에서 핵심적인 가치를 만들어온 여정입니다.</p>
         </motion.div>
 
         <div className="space-y-16">
@@ -184,41 +186,53 @@ const ExperienceSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: idx * 0.15, duration: 0.7, ease: "easeOut" }}
-              className="relative pl-8 md:pl-12 border-l border-white/5 group"
+              className="relative pl-8 md:pl-12 group"
+              style={{ borderLeft: '1px solid var(--timeline-border)' }}
             >
               {/* Glowing timeline dot */}
-              <div className="absolute left-[-6px] md:left-[-6px] top-1 w-3 h-3 rounded-full bg-accent-purple border-2 border-[#03040b] group-hover:bg-accent-blue group-hover:scale-125 transition-all duration-300 shadow-[0_0_15px_rgba(157,80,187,0.6)] group-hover:shadow-[0_0_20px_rgba(0,225,255,0.8)]" />
+              <div className="absolute left-[-6px] top-1 w-3 h-3 rounded-full bg-accent-purple border-2 group-hover:bg-accent-blue group-hover:scale-125 transition-all duration-300 shadow-[0_0_15px_rgba(157,80,187,0.6)] group-hover:shadow-[0_0_20px_rgba(0,225,255,0.8)]"
+                style={{ borderColor: 'var(--background)' }}
+              />
 
               <div className="mb-4 flex flex-col gap-2 font-medium tracking-wide">
-                <span className="flex items-center gap-1.5 bg-white/5 py-1 px-3 rounded-full border border-white/10 w-fit text-sm text-gray-400">
+                <span
+                  className="flex items-center gap-1.5 py-1 px-3 rounded-full border w-fit text-sm"
+                  style={{
+                    background: 'var(--surface)',
+                    borderColor: 'var(--surface-border)',
+                    color: 'var(--text-secondary)',
+                  }}
+                >
                   <Calendar size={14} className="text-accent-blue" /> {exp.period}
                 </span>
-                <span className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold text-white tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all duration-300">
+                <span className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all duration-300"
+                  style={{ color: 'var(--text-primary)' }}
+                >
                   <Building2 size={22} className="text-accent-purple shrink-0" /> {exp.company}
                 </span>
               </div>
 
-              <h3 className="text-sm font-semibold text-gray-400 mb-4 tracking-wide">
+              <h3 className="text-sm font-semibold mb-4 tracking-wide" style={{ color: 'var(--text-secondary)' }}>
                 {exp.role}
               </h3>
-              <p className="text-gray-400 mb-8 leading-relaxed max-w-2xl">{exp.description}</p>
+              <p className="mb-8 leading-relaxed max-w-2xl" style={{ color: 'var(--text-secondary)' }}>{exp.description}</p>
 
               <div className="space-y-3 mb-8">
                 {exp.tasks.map((task, taskIdx) => {
                   const key = `${exp.company}-${taskIdx}`;
                   const isOpen = openTasks[key] ?? false;
                   return (
-                    <div key={taskIdx} className="glass rounded-2xl overflow-hidden bg-white/[0.01]">
+                    <div key={taskIdx} className="glass rounded-2xl overflow-hidden" style={{ background: 'var(--surface)' }}>
                       <button
                         onClick={() => toggleTask(key)}
                         className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-white/[0.03] transition-colors"
                       >
-                        <span className="text-sm font-semibold text-gray-200">{task.title}</span>
+                        <span className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>{task.title}</span>
                         <motion.div
                           animate={{ rotate: isOpen ? 180 : 0 }}
                           transition={{ duration: 0.2 }}
                         >
-                          <ChevronDown size={16} className="text-gray-500 shrink-0" />
+                          <ChevronDown size={16} style={{ color: 'var(--text-muted)' }} className="shrink-0" />
                         </motion.div>
                       </button>
                       <AnimatePresence initial={false}>
@@ -230,9 +244,9 @@ const ExperienceSection = () => {
                             transition={{ duration: 0.25, ease: "easeInOut" }}
                             className="overflow-hidden"
                           >
-                            <ul className="px-6 pb-5 space-y-3 border-t border-white/5 pt-4">
+                            <ul className="px-6 pb-5 space-y-3 pt-4" style={{ borderTop: '1px solid var(--surface-border)' }}>
                               {task.items.map((item, i) => (
-                                <li key={i} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
+                                <li key={i} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                                   <ChevronRight size={16} className="mt-0.5 text-accent-magenta shrink-0" />
                                   {item}
                                 </li>
@@ -248,7 +262,15 @@ const ExperienceSection = () => {
 
               <div className="flex flex-wrap gap-2.5">
                 {exp.tags.map(tag => (
-                  <span key={tag} className="px-4 py-1.5 rounded-full bg-accent-blue/5 text-[11px] font-bold text-accent-blue border border-accent-blue/20 uppercase tracking-widest hover:bg-accent-blue/10 hover:border-accent-blue/40 transition-colors cursor-default">
+                  <span
+                    key={tag}
+                    className="px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest transition-colors cursor-default"
+                    style={{
+                      background: 'var(--tag-bg)',
+                      color: 'var(--tag-text)',
+                      border: '1px solid var(--tag-border)',
+                    }}
+                  >
                     {tag}
                   </span>
                 ))}

@@ -18,17 +18,17 @@ const ContactSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16"
         >
-          <h2 className="fluid-h1 font-bold mb-6 text-white tracking-tight">
+          <h2 className="fluid-h1 font-bold mb-6 tracking-tight" style={{ color: 'var(--text-primary)' }}>
             Let&apos;s Build <br className="md:hidden"/>
             <span className="text-gradient">Something Great</span>
           </h2>
-          <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-            새로운 도전을 환영합니다. 매력적인 프로덕트를 함께 만들어갈 기회를 찾고 계신다면, 
+          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            새로운 도전을 환영합니다. 매력적인 프로덕트를 함께 만들어갈 기회를 찾고 계신다면,
             언제든 편하게 연락해 주세요.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
@@ -52,6 +52,7 @@ const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 glass rounded-full hover:bg-white/10 transition-all font-medium text-lg"
+            style={{ color: 'var(--text-primary)' }}
           >
             <Github size={24} />
             GitHub
@@ -64,18 +65,20 @@ const ContactSection = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 glass rounded-full hover:bg-white/10 transition-all font-medium text-lg"
+            style={{ color: 'var(--text-primary)' }}
           >
             <ExternalLink size={24} />
             Velog
           </motion.a>
         </motion.div>
-        
+
         <motion.div
            initial={{ opacity: 0 }}
            whileInView={{ opacity: 1 }}
            viewport={{ once: true }}
            transition={{ delay: 0.8, duration: 1 }}
-           className="mt-24 text-gray-500 text-sm font-medium tracking-wide"
+           className="mt-24 text-sm font-medium tracking-wide"
+           style={{ color: 'var(--text-muted)' }}
         >
           <p>Available for new opportunities.</p>
         </motion.div>

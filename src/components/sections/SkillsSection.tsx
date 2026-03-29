@@ -38,8 +38,10 @@ const SkillsSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-20"
         >
-          <h2 className="fluid-h2 font-bold mb-4 text-white">Technical <span className="text-gradient">Stacks</span></h2>
-          <p className="text-gray-400 text-lg">서비스의 특성에 맞는 최적의 기술을 선택하고 활용합니다.</p>
+          <h2 className="fluid-h2 font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
+            Technical <span className="text-gradient">Stacks</span>
+          </h2>
+          <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>서비스의 특성에 맞는 최적의 기술을 선택하고 활용합니다.</p>
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
@@ -55,18 +57,21 @@ const SkillsSection = () => {
             >
               {/* Subtle hover gradient inside card */}
               <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/0 via-transparent to-accent-purple/0 group-hover:from-accent-blue/5 group-hover:to-accent-purple/5 transition-colors duration-500" />
-              
+
               <div className="relative z-10">
-                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-8 group-hover:bg-accent-blue/10 group-hover:shadow-[0_0_20px_rgba(0,225,255,0.2)] transition-all">
-                  <div className="text-gray-400 group-hover:text-accent-blue transition-colors">
+                <div
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-accent-blue/10 group-hover:shadow-[0_0_20px_rgba(0,225,255,0.2)] transition-all"
+                  style={{ background: 'var(--surface)' }}
+                >
+                  <div className="group-hover:text-accent-blue transition-colors" style={{ color: 'var(--text-secondary)' }}>
                     {category.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-6 text-white tracking-tight">{category.title}</h3>
+                <h3 className="text-xl font-bold mb-6 tracking-tight" style={{ color: 'var(--text-primary)' }}>{category.title}</h3>
                 <ul className="space-y-4">
                   {category.skills.map((skill) => (
-                    <li key={skill} className="flex items-center gap-3 text-gray-400 text-sm font-medium group-hover:text-gray-300 transition-colors">
-                      <div className="w-[5px] h-[5px] rounded-full bg-white/20 group-hover:bg-accent-blue/60 transition-colors" />
+                    <li key={skill} className="flex items-center gap-3 text-sm font-medium group-hover:text-gray-300 transition-colors" style={{ color: 'var(--text-secondary)' }}>
+                      <div className="w-[5px] h-[5px] rounded-full group-hover:bg-accent-blue/60 transition-colors" style={{ background: 'var(--surface-border)' }} />
                       {skill}
                     </li>
                   ))}

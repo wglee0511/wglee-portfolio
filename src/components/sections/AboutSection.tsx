@@ -17,14 +17,14 @@ const AboutSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 md:mb-24"
         >
-          <h2 className="fluid-h2 font-bold mb-6 text-white leading-[1.15]">
+          <h2 className="fluid-h2 font-bold mb-6 leading-[1.15]" style={{ color: 'var(--text-primary)' }}>
             사용자의 일상을 바꾸는 <br/>
             <span className="text-gradient">가치 있는 제품</span>을 만듭니다.
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent-blue to-transparent rounded-full" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 text-gray-400 leading-relaxed text-base sm:text-lg">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 leading-relaxed text-base sm:text-lg" style={{ color: 'var(--text-secondary)' }}>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -62,13 +62,17 @@ const AboutSection = () => {
             { value: "3+", label: "Companies" },
             { value: "69%", label: "Perf. Boost" }
           ].map((stat, idx) => (
-            <motion.div 
+            <motion.div
               key={idx}
               whileHover={{ y: -5, scale: 1.05 }}
-              className="text-center p-6 rounded-3xl bg-white/[0.02] border border-white/5 hover:border-accent-blue/30 hover:bg-white/[0.04] transition-all cursor-default"
+              className="text-center p-6 rounded-3xl transition-all cursor-default"
+              style={{
+                background: 'var(--surface)',
+                border: '1px solid var(--surface-border)',
+              }}
             >
-              <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.value}</div>
-              <div className="text-xs sm:text-sm text-gray-500 uppercase tracking-widest font-medium">{stat.label}</div>
+              <div className="text-3xl sm:text-4xl font-bold mb-2" style={{ color: 'var(--text-primary)' }}>{stat.value}</div>
+              <div className="text-xs sm:text-sm uppercase tracking-widest font-medium" style={{ color: 'var(--text-muted)' }}>{stat.label}</div>
             </motion.div>
           ))}
         </motion.div>
