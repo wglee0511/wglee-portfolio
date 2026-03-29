@@ -38,8 +38,8 @@ const HeroSection = () => {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl text-gray-400 mb-12 leading-relaxed"
         >
-          웹과 앱의 경계를 허무는 4년+ 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
-          사용자 경험을 중시하며, 효율적인 사내 도구와 컴포넌트 라이브러리 제작에 열정이 있습니다.
+          웹과 앱을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
+          글로벌 500만 사용자 서비스에서 메모리 사용량을 69% 줄이고 앱 초기 실행 시간을 26% 단축한 경험이 있습니다.
         </motion.p>
 
         <motion.div 

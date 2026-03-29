@@ -2,7 +2,7 @@
 
 ## 프로젝트 개요
 
-이원교(Lee Won-kyu)의 프론트엔드 개발자 포트폴리오 사이트.
+이원교(Lee Won-gyo)의 프론트엔드 개발자 포트폴리오 사이트.
 
 | 항목 | 값 |
 |------|-----|
@@ -206,7 +206,7 @@ whileHover={{ scale: 1.05 }}
 
 | 항목 | 값 |
 |------|-----|
-| 이름 | 이원교 (Lee Won-kyu) |
+| 이름 | 이원교 (Lee Won-gyo) |
 | 이메일 | ranazang@naver.com |
 | GitHub | https://github.com/wglee0511 |
 | 블로그 | https://velog.io/@wglee0511 |
