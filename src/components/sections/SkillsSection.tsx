@@ -9,7 +9,7 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       icon: <Monitor size={24} />,
-      skills: ["React", "Next.js", "TypeScript", "Redux (Saga · Toolkit)", "Zustand", "MobX", "React Query", "TailwindCSS", "D3.js", "i18next"]
+      skills: ["React", "Next.js", "TypeScript", "Redux (Saga · Toolkit)", "Zustand", "MobX", "React Query", "TailwindCSS", "D3.js", "Vite", "i18next"]
     },
     {
       title: "Native / Desktop",

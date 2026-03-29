@@ -77,8 +77,16 @@ const ExperienceSection = () => {
             "사용자 설정에 따라 Geofence 동적 등록/해제 구현으로 장소 연계 루틴 알림 기능 제공",
           ]
         },
+        {
+          title: "CI/CD 자동화 인프라 구축 (Fastlane)",
+          items: [
+            "iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드(심사 제출 분리), package.json 버전 자동 동기화(sync_version lane)",
+            "Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, git rev-list --count 기반 versionCode 자동 계산",
+            "빌드 완료 시 Slack Dev 그룹 자동 알림 연동",
+          ]
+        },
       ],
-      tags: ["React Native", "React", "TypeScript", "Swift", "Kotlin", "Zustand", "MobX", "Firestore", "Fastlane", "Firebase App Distribution", "i18next"]
+      tags: ["React Native", "React", "TypeScript", "Swift", "Kotlin", "Zustand", "MobX", "Firestore", "Fastlane", "Firebase App Distribution", "GitHub Actions", "i18next"]
     },
     {
       company: "주식회사 메이크델타 (Make Delta Inc.)",
