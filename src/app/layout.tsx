@@ -5,6 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
 import ScrollToTop from "@/components/layout/ScrollToTop";
+import StockTicker from "@/components/layout/StockTicker";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
@@ -26,6 +27,9 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="glow-mesh" aria-hidden="true" />
           <Navbar />
+          <div className="sticky top-0 z-40">
+            <StockTicker />
+          </div>
           {children}
           <Footer />
           <ScrollToTop />

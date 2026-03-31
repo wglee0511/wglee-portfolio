@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, Building2, ChevronRight, ChevronDown } from 'lucide-react';
+import { Calendar, Building2, ChevronRight, ChevronDown, TrendingDown, TrendingUp } from 'lucide-react';
 
 interface Task {
   title: string;
@@ -17,6 +17,36 @@ interface Experience {
   tasks: Task[];
   tags: string[];
 }
+
+/* Parse metric strings like "(-69%)" or "(-26%)" and render as badges */
+const renderItemWithBadges = (text: string) => {
+  // Match patterns like (-69%) or (+26%) or (-140ms) etc.
+  const parts = text.split(/(\([-+][^)]+\))/g);
+  if (parts.length === 1) return <>{text}</>;
+  return (
+    <>
+      {parts.map((part, i) => {
+        const isMetric = /^\([-+]/.test(part);
+        if (!isMetric) return <span key={i}>{part}</span>;
+        const isDown = part.startsWith('(-');
+        return (
+          <span
+            key={i}
+            className="inline-flex items-center gap-0.5 font-ticker font-bold mx-1 px-1.5 py-0.5 rounded text-[11px] align-middle"
+            style={{
+              color: isDown ? 'var(--down-color)' : 'var(--up-color)',
+              background: isDown ? 'rgba(33,150,243,0.1)' : 'rgba(0,208,132,0.1)',
+              border: `1px solid ${isDown ? 'rgba(33,150,243,0.2)' : 'rgba(0,208,132,0.2)'}`,
+            }}
+          >
+            {isDown ? <TrendingDown size={9} /> : <TrendingUp size={9} />}
+            {part.slice(1, -1)}
+          </span>
+        );
+      })}
+    </>
+  );
+};
 
 const ExperienceSection = () => {
   const [openTasks, setOpenTasks] = useState<Record<string, boolean>>({});
@@ -107,7 +137,7 @@ const ExperienceSection = () => {
           items: [
             "Canvas API로 캔들스틱 지표 라인을 픽셀 단위 직접 렌더링해 DOM 재계산 없이 고빈도 리드로우 처리",
             "D3의 scaleTime · scaleLinear · zoom · drag를 활용한 줌/패닝, 크로스헤어, 툴팁 구현",
-            "Vite manualChunks로 대형 라이브러리를 개별 청크 분리 + React.lazy + Suspense로 지연 로딩 전환 → 번들 크기 43% 절감",
+            "Vite manualChunks로 대형 라이브러리를 개별 청크 분리 + React.lazy + Suspense로 지연 로딩 전환 → 번들 크기 43% 절감 (-43%)",
           ]
         },
         {
@@ -173,6 +203,7 @@ const ExperienceSection = () => {
   return (
     <section id="experience" className="py-24 px-6 relative">
       <div className="max-w-4xl mx-auto">
+        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -180,6 +211,18 @@ const ExperienceSection = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="mb-16 md:mb-24"
         >
+          {/* HTS label */}
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 mb-4 rounded-md text-[10px] font-ticker font-bold uppercase tracking-widest"
+            style={{
+              background: 'var(--hts-header)',
+              border: '1px solid var(--hts-border)',
+              color: 'var(--text-muted)',
+            }}
+          >
+            <span style={{ color: 'var(--up-color)' }}>■</span>
+            실적 발표 (Earnings History)
+          </div>
           <h2 className="fluid-h2 font-bold mb-4" style={{ color: 'var(--text-primary)' }}>
             Work <span className="text-gradient">Experience</span>
           </h2>
@@ -197,30 +240,36 @@ const ExperienceSection = () => {
               className="relative pl-8 md:pl-12 group"
               style={{ borderLeft: '1px solid var(--timeline-border)' }}
             >
-              {/* Glowing timeline dot */}
-              <div className="absolute left-[-6px] top-1 w-3 h-3 rounded-full bg-accent-purple border-2 group-hover:bg-accent-blue group-hover:scale-125 transition-all duration-300 shadow-[0_0_15px_rgba(157,80,187,0.6)] group-hover:shadow-[0_0_20px_rgba(0,225,255,0.8)]"
-                style={{ borderColor: 'var(--background)' }}
+              {/* Timeline dot */}
+              <div
+                className="absolute left-[-6px] top-1 w-3 h-3 rounded-full border-2 group-hover:scale-125 transition-all duration-300"
+                style={{
+                  background: 'var(--up-color)',
+                  borderColor: 'var(--background)',
+                  boxShadow: '0 0 15px rgba(0,208,132,0.5)',
+                }}
               />
 
               <div className="mb-4 flex flex-col gap-2 font-medium tracking-wide">
                 <span
-                  className="flex items-center gap-1.5 py-1 px-3 rounded-full border w-fit text-sm"
+                  className="flex items-center gap-1.5 py-1 px-3 rounded-full border w-fit text-xs font-ticker"
                   style={{
                     background: 'var(--surface)',
                     borderColor: 'var(--surface-border)',
-                    color: 'var(--text-secondary)',
+                    color: 'var(--text-muted)',
                   }}
                 >
-                  <Calendar size={14} className="text-accent-blue" /> {exp.period}
+                  <Calendar size={12} style={{ color: 'var(--up-color)' }} /> {exp.period}
                 </span>
-                <span className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold tracking-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-400 transition-all duration-300"
+                <span
+                  className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold tracking-tight"
                   style={{ color: 'var(--text-primary)' }}
                 >
-                  <Building2 size={22} className="text-accent-purple shrink-0" /> {exp.company}
+                  <Building2 size={22} style={{ color: 'var(--up-color)' }} className="shrink-0" /> {exp.company}
                 </span>
               </div>
 
-              <h3 className="text-sm font-semibold mb-4 tracking-wide" style={{ color: 'var(--text-secondary)' }}>
+              <h3 className="text-sm font-semibold mb-4 tracking-wide font-ticker" style={{ color: 'var(--text-muted)' }}>
                 {exp.role}
               </h3>
               <p className="mb-8 leading-relaxed max-w-2xl" style={{ color: 'var(--text-secondary)' }}>{exp.description}</p>
@@ -230,16 +279,20 @@ const ExperienceSection = () => {
                   const key = `${exp.company}-${taskIdx}`;
                   const isOpen = openTasks[key] ?? false;
                   return (
-                    <div key={taskIdx} className="glass rounded-2xl overflow-hidden" style={{ background: 'var(--surface)' }}>
+                    <div
+                      key={taskIdx}
+                      className="rounded-xl overflow-hidden"
+                      style={{
+                        background: 'var(--card-bg)',
+                        border: '1px solid var(--hts-border)',
+                      }}
+                    >
                       <button
                         onClick={() => toggleTask(key)}
-                        className="w-full flex items-center justify-between px-6 py-4 text-left hover:bg-white/[0.03] transition-colors"
+                        className="w-full flex items-center justify-between px-6 py-4 text-left transition-colors hover:bg-white/[0.02]"
                       >
                         <span className="text-sm font-semibold" style={{ color: 'var(--text-primary)' }}>{task.title}</span>
-                        <motion.div
-                          animate={{ rotate: isOpen ? 180 : 0 }}
-                          transition={{ duration: 0.2 }}
-                        >
+                        <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
                           <ChevronDown size={16} style={{ color: 'var(--text-muted)' }} className="shrink-0" />
                         </motion.div>
                       </button>
@@ -255,8 +308,8 @@ const ExperienceSection = () => {
                             <ul className="px-6 pb-5 space-y-3 pt-4" style={{ borderTop: '1px solid var(--surface-border)' }}>
                               {task.items.map((item, i) => (
                                 <li key={i} className="flex items-start gap-3 text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-                                  <ChevronRight size={16} className="mt-0.5 text-accent-magenta shrink-0" />
-                                  {item}
+                                  <ChevronRight size={16} className="mt-0.5 shrink-0" style={{ color: 'var(--up-color)' }} />
+                                  <span>{renderItemWithBadges(item)}</span>
                                 </li>
                               ))}
                             </ul>
@@ -272,7 +325,7 @@ const ExperienceSection = () => {
                 {exp.tags.map(tag => (
                   <span
                     key={tag}
-                    className="px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest transition-colors cursor-default"
+                    className="px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-widest transition-colors cursor-default font-ticker"
                     style={{
                       background: 'var(--tag-bg)',
                       color: 'var(--tag-text)',

@@ -2,89 +2,188 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Github, ExternalLink } from 'lucide-react';
+import { Mail, Github, ExternalLink, TrendingUp, CheckCircle } from 'lucide-react';
+
+const orderRows = [
+  { label: "종목명", value: "WG.LEE (이원교)", mono: false },
+  { label: "종목코드", value: "WGLEE", mono: true },
+  { label: "현재가", value: "₩ 9,870", mono: true },
+  { label: "등락률", value: "+7.28% ▲", up: true, mono: true },
+  { label: "주문 유형", value: "시장가 매수 (Full-time Hire)", mono: false },
+  { label: "거래 가능 시간", value: "즉시 가능", mono: false },
+];
 
 const ContactSection = () => {
   return (
     <section id="contact" className="py-32 px-6 relative overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-accent-blue/5 rounded-full blur-[150px] pointer-events-none" />
+      {/* Background glow */}
+      <div
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[700px] max-h-[700px] rounded-full blur-[160px] pointer-events-none"
+        style={{ background: 'rgba(0,208,132,0.04)' }}
+      />
+      <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full blur-[100px]" style={{ background: 'rgba(33,150,243,0.04)' }} />
 
-      <div className="max-w-4xl mx-auto text-center relative z-10">
+      <div className="max-w-2xl mx-auto relative z-10">
+        {/* Section heading */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="mb-16"
+          className="mb-10 text-center"
         >
-          <h2 className="fluid-h1 font-bold mb-6 tracking-tight" style={{ color: 'var(--text-primary)' }}>
+          {/* HTS label */}
+          <div
+            className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 rounded-md text-[10px] font-ticker font-bold uppercase tracking-widest"
+            style={{
+              background: 'var(--hts-header)',
+              border: '1px solid var(--hts-border)',
+              color: 'var(--text-muted)',
+            }}
+          >
+            <span style={{ color: 'var(--up-color)' }}>■</span>
+            매수 주문 창 (Order Form)
+          </div>
+          <h2 className="fluid-h1 font-bold mb-4 tracking-tight" style={{ color: 'var(--text-primary)' }}>
             Let&apos;s Build <br className="md:hidden"/>
             <span className="text-gradient">Something Great</span>
           </h2>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
-            새로운 도전을 환영합니다. 매력적인 프로덕트를 함께 만들어갈 기회를 찾고 계신다면,
-            언제든 편하게 연락해 주세요.
+          <p className="text-base md:text-lg max-w-xl mx-auto leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+            새로운 도전을 환영합니다. 매력적인 프로덕트를 함께 만들어갈 기회를 찾고 계신다면, 언제든 편하게 연락해 주세요.
           </p>
         </motion.div>
 
+        {/* HTS Order Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ delay: 0.3, duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-6"
+          transition={{ delay: 0.2, duration: 0.7 }}
+          className="rounded-2xl overflow-hidden mb-8"
+          style={{
+            background: 'var(--card-bg)',
+            border: '1px solid var(--hts-border)',
+          }}
         >
-          <motion.a
-            whileHover={{ scale: 1.05, boxShadow: '0 10px 40px -10px rgba(255,51,153,0.3)' }}
-            whileTap={{ scale: 0.95 }}
-            href="mailto:ranazang@naver.com"
-            className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 bg-gradient-to-r from-accent-purple to-accent-magenta text-white rounded-full font-bold text-lg hover:brightness-110 transition-all shadow-lg"
+          {/* Order book header */}
+          <div
+            className="flex items-center justify-between px-5 py-3 border-b"
+            style={{
+              background: 'var(--hts-header)',
+              borderColor: 'var(--hts-border)',
+            }}
           >
-            <Mail size={24} />
-            Send Email
-          </motion.a>
+            <div className="flex items-center gap-2 font-ticker">
+              <span className="text-sm font-bold" style={{ color: 'var(--up-color)' }}>WGLEE</span>
+              <span className="text-xs" style={{ color: 'var(--text-muted)' }}>· 이원교 프론트엔드 개발자</span>
+            </div>
+            <span className="flex items-center gap-1 font-ticker text-xs font-bold" style={{ color: 'var(--up-color)' }}>
+              <TrendingUp size={12} />
+              매수 가능
+            </span>
+          </div>
 
-          <motion.a
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://github.com/wglee0511"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 glass rounded-full hover:bg-white/10 transition-all font-medium text-lg"
-            style={{ color: 'var(--text-primary)' }}
-          >
-            <Github size={24} />
-            GitHub
-          </motion.a>
+          {/* Order detail table */}
+          <div className="divide-y" style={{ borderColor: 'var(--surface-border)' }}>
+            {orderRows.map((row, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-between px-5 py-3"
+              >
+                <span className="text-xs font-ticker" style={{ color: 'var(--text-muted)' }}>
+                  {row.label}
+                </span>
+                <span
+                  className={`text-sm font-semibold ${row.mono ? 'font-ticker' : ''}`}
+                  style={{
+                    color: 'up' in row && row.up
+                      ? 'var(--up-color)'
+                      : 'var(--text-primary)',
+                  }}
+                >
+                  {row.value}
+                </span>
+              </div>
+            ))}
+          </div>
 
-          <motion.a
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            href="https://velog.io/@wglee0511"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 glass rounded-full hover:bg-white/10 transition-all font-medium text-lg"
-            style={{ color: 'var(--text-primary)' }}
+          {/* Available status */}
+          <div
+            className="flex items-center gap-2 px-5 py-3 border-t"
+            style={{ borderColor: 'var(--hts-border)', background: 'rgba(0,208,132,0.04)' }}
           >
-            <ExternalLink size={24} />
-            Velog
-          </motion.a>
+            <CheckCircle size={14} style={{ color: 'var(--up-color)' }} />
+            <span className="text-xs font-ticker" style={{ color: 'var(--up-color)' }}>
+              Available for new opportunities — 즉시 합류 가능
+            </span>
+          </div>
         </motion.div>
 
+        {/* CTA buttons */}
         <motion.div
-           initial={{ opacity: 0 }}
-           whileInView={{ opacity: 1 }}
-           viewport={{ once: true }}
-           transition={{ delay: 0.8, duration: 1 }}
-           className="mt-24 text-sm font-medium tracking-wide"
-           style={{ color: 'var(--text-muted)' }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="flex flex-col sm:flex-row items-center gap-4"
         >
-          <p>Available for new opportunities.</p>
+          {/* Primary: 전량 매수 */}
+          <motion.a
+            whileHover={{ scale: 1.03, boxShadow: '0 12px 40px -8px rgba(0,208,132,0.4)' }}
+            whileTap={{ scale: 0.97 }}
+            href="mailto:ranazang@naver.com"
+            className="w-full sm:flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-xl font-bold text-base transition-all"
+            style={{
+              background: 'var(--up-color)',
+              color: '#051a0d',
+              boxShadow: '0 8px 24px -6px rgba(0,208,132,0.3)',
+            }}
+          >
+            <Mail size={20} />
+            WG.LEE 전량 매수 (Hire Me)
+          </motion.a>
+
+          {/* Secondary links */}
+          <div className="flex gap-3">
+            <motion.a
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://github.com/wglee0511"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-5 py-4 glass rounded-xl font-medium text-sm transition-all"
+              style={{ color: 'var(--text-primary)' }}
+            >
+              <Github size={20} />
+              GitHub
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+              href="https://velog.io/@wglee0511"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 px-5 py-4 glass rounded-xl font-medium text-sm transition-all"
+              style={{ color: 'var(--text-primary)' }}
+            >
+              <ExternalLink size={20} />
+              Velog
+            </motion.a>
+          </div>
         </motion.div>
+
+        {/* Disclaimer */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.9, duration: 1 }}
+          className="mt-10 text-center text-[11px] font-ticker"
+          style={{ color: 'var(--text-muted)' }}
+        >
+          ※ 본 정보는 채용 목적에 한하며 과거 실적이 미래 성과를 보장하지는 않습니다.
+        </motion.p>
       </div>
-      {/* Decorative Blur */}
-      <div className="absolute -bottom-20 -right-20 w-96 h-96 bg-accent-magenta/5 rounded-full blur-[100px]" />
     </section>
   );
 };
