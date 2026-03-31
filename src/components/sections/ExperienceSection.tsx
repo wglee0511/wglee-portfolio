@@ -36,8 +36,8 @@ const renderItemWithBadges = (text: string) => {
             className="inline-flex items-center gap-0.5 font-ticker font-bold mx-1 px-1.5 py-0.5 rounded text-[11px] align-middle"
             style={{
               color: isDown ? 'var(--down-color)' : 'var(--up-color)',
-              background: isDown ? 'rgba(33,150,243,0.1)' : 'rgba(0,208,132,0.1)',
-              border: `1px solid ${isDown ? 'rgba(33,150,243,0.2)' : 'rgba(0,208,132,0.2)'}`,
+              background: isDown ? 'rgba(255,71,87,0.1)' : 'rgba(0,208,132,0.1)',
+              border: `1px solid ${isDown ? 'rgba(255,71,87,0.2)' : 'rgba(0,208,132,0.2)'}`,
             }}
           >
             {isDown ? <TrendingDown size={9} /> : <TrendingUp size={9} />}

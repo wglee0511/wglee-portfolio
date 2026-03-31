@@ -36,7 +36,7 @@ const CandleChart = () => {
       {candles.map((c, i) => {
         const x = i * gap + gap / 2;
         const up = c.c >= c.o;
-        const color = up ? '#00d084' : '#2196f3';
+        const color = up ? '#00d084' : '#ff4757';
         const bodyTop = toY(Math.max(c.o, c.c));
         const bodyBot = toY(Math.min(c.o, c.c));
         const bodyH = Math.max(bodyBot - bodyTop, 2);
@@ -92,9 +92,9 @@ const HeroSection = () => {
           backgroundSize: '60px 40px',
         }}
       />
-      {/* Glow blobs */}
-      <div className="absolute top-1/4 left-[10%] w-[30vw] h-[30vw] min-w-[300px] min-h-[300px] rounded-full blur-[120px] animate-pulse pointer-events-none" style={{ background: 'rgba(0,208,132,0.04)' }} />
-      <div className="absolute bottom-1/4 right-[10%] w-[40vw] h-[40vw] min-w-[400px] min-h-[400px] rounded-full blur-[140px] animate-pulse pointer-events-none" style={{ background: 'rgba(33,150,243,0.04)', animationDelay: '700ms' }} />
+      {/* Glow blobs using radial gradients */}
+      <div className="absolute top-1/4 left-[10%] w-[800px] h-[800px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(0,208,132,0.04) 0%, transparent 60%)' }} />
+      <div className="absolute bottom-1/4 right-[10%] w-[900px] h-[900px] translate-x-1/4 translate-y-1/4 pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(255,71,87,0.03) 0%, transparent 60%)' }} />
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95, filter: 'blur(10px)' }}

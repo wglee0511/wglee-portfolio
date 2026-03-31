@@ -63,7 +63,7 @@ const investmentPoints = [
 const AboutSection = () => {
   return (
     <section id="about" className="py-24 px-6 relative">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg h-64 blur-[120px] pointer-events-none" style={{ background: 'var(--glow-green)' }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none" style={{ background: 'radial-gradient(circle, var(--glow-green) 0%, transparent 60%)' }} />
 
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Heading */}
@@ -125,7 +125,7 @@ const AboutSection = () => {
                   className="inline-flex items-center gap-1 text-[10px] font-ticker font-semibold px-2 py-0.5 rounded"
                   style={{
                     color: item.up ? 'var(--up-color)' : 'var(--down-color)',
-                    background: item.up ? 'rgba(0,208,132,0.08)' : 'rgba(33,150,243,0.08)',
+                    background: item.up ? 'rgba(0,208,132,0.08)' : 'rgba(255,71,87,0.08)',
                   }}
                 >
                   {item.up ? <TrendingUp size={10} /> : <TrendingDown size={10} />}

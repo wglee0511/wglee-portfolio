@@ -116,7 +116,7 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => {
             className="inline-flex items-center gap-1 font-ticker text-xs font-bold px-2 py-0.5 rounded"
             style={{
               color: project.up ? 'var(--up-color)' : 'var(--down-color)',
-              background: project.up ? 'rgba(0,208,132,0.1)' : 'rgba(33,150,243,0.1)',
+              background: project.up ? 'rgba(0,208,132,0.1)' : 'rgba(255,71,87,0.1)',
             }}
           >
             {project.up ? <TrendingUp size={10} /> : <TrendingDown size={10} />}
@@ -132,7 +132,7 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => {
         {project.screenshots ? (
           <>
             <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0f1624 0%, #1a1f35 50%, #0d1520 100%)' }} />
-            <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(ellipse at 30% 50%, rgba(0,208,132,0.2) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(33,150,243,0.12) 0%, transparent 60%)' }} />
+            <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(ellipse at 30% 50%, rgba(0,208,132,0.2) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(255,71,87,0.12) 0%, transparent 60%)' }} />
 
             {/* App icon */}
             {project.icon && (

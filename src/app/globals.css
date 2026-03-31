@@ -31,7 +31,7 @@
   --nav-bg: rgba(19, 23, 34, 0.85);
   --timeline-border: rgba(42, 46, 57, 0.6);
   --glow-green: rgba(0, 208, 132, 0.04);
-  --glow-blue: rgba(33, 150, 243, 0.03);
+  --glow-blue: rgba(255, 71, 87, 0.03);
   --glow-red: rgba(255, 71, 87, 0.02);
   /* Legacy compat */
   --glow-purple: rgba(179, 102, 255, 0.04);
@@ -45,7 +45,7 @@
   --footer-bg: rgba(0, 0, 0, 0.3);
   /* Trading specific */
   --up-color: #00d084;
-  --down-color: #2196f3;
+  --down-color: #ff4757;
   --neutral-color: #787b86;
   --hts-border: rgba(42, 46, 57, 0.8);
   --hts-header: rgba(26, 30, 43, 0.9);
@@ -78,7 +78,7 @@
   --footer-border: rgba(0, 0, 0, 0.07);
   --footer-bg: rgba(235, 238, 248, 0.7);
   --up-color: #009960;
-  --down-color: #1565c0;
+  --down-color: #ef4444;
   --neutral-color: #4b5563;
   --hts-border: rgba(0, 0, 0, 0.1);
   --hts-header: rgba(240, 243, 250, 0.95);
@@ -123,8 +123,8 @@ body {
 
 .badge-down {
   color: var(--down-color);
-  background: rgba(33, 150, 243, 0.08);
-  border: 1px solid rgba(33, 150, 243, 0.2);
+  background: rgba(255, 71, 87, 0.08);
+  border: 1px solid rgba(255, 71, 87, 0.2);
 }
 
 /* ─── Monospace ticker font ─── */
@@ -159,6 +159,7 @@ body {
     radial-gradient(circle at 85% 70%, var(--glow-blue) 0%, transparent 40%),
     radial-gradient(circle at 50% 50%, var(--glow-red) 0%, transparent 60%);
   filter: blur(60px);
+  transform: scale(1.5);
   pointer-events: none;
 }
 

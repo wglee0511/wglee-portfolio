@@ -16,12 +16,15 @@ const orderRows = [
 const ContactSection = () => {
   return (
     <section id="contact" className="py-32 px-6 relative overflow-hidden">
-      {/* Background glow */}
+      {/* Background glow using radial gradients instead of heavy blur to prevent sharp box rendering artifacts */}
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70vw] h-[70vw] max-w-[700px] max-h-[700px] rounded-full blur-[160px] pointer-events-none"
-        style={{ background: 'rgba(0,208,132,0.04)' }}
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120vw] h-[120vw] max-w-[1200px] max-h-[1200px] pointer-events-none"
+        style={{ background: 'radial-gradient(circle, rgba(0,208,132,0.04) 0%, transparent 60%)' }}
       />
-      <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full blur-[100px]" style={{ background: 'rgba(33,150,243,0.04)' }} />
+      <div 
+        className="absolute -bottom-40 -right-40 w-[800px] h-[800px] pointer-events-none" 
+        style={{ background: 'radial-gradient(circle, rgba(255,71,87,0.04) 0%, transparent 60%)' }} 
+      />
 
       <div className="max-w-2xl mx-auto relative z-10">
         {/* Section heading */}
@@ -173,16 +176,6 @@ const ContactSection = () => {
         </motion.div>
 
         {/* Disclaimer */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.9, duration: 1 }}
-          className="mt-10 text-center text-[11px] font-ticker"
-          style={{ color: 'var(--text-muted)' }}
-        >
-          ※ 본 정보는 채용 목적에 한하며 과거 실적이 미래 성과를 보장하지는 않습니다.
-        </motion.p>
       </div>
     </section>
   );
