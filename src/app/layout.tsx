@@ -82,7 +82,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${inter.variable} ${outfit.variable} scroll-smooth`} suppressHydrationWarning>
+    <html lang="ko" className={`${inter.variable} ${outfit.variable} scroll-smooth overflow-x-hidden w-full`} suppressHydrationWarning>
       <head>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-49P8D5SCZ1"
@@ -97,17 +97,19 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="antialiased selection:bg-accent-blue/30 selection:text-white">
+      <body className="antialiased selection:bg-accent-blue/30 selection:text-white overflow-x-hidden w-full">
         <JsonLd />
         <ThemeProvider>
-          <div className="glow-mesh" aria-hidden="true" />
-          <Navbar />
-          <div className="sticky top-0 z-40">
-            <StockTicker />
+          <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+            <div className="glow-mesh" aria-hidden="true" />
+            <Navbar />
+            <div className="sticky top-0 z-40">
+              <StockTicker />
+            </div>
+            {children}
+            <Footer />
+            <ScrollToTop />
           </div>
-          {children}
-          <Footer />
-          <ScrollToTop />
         </ThemeProvider>
       </body>
     </html>
