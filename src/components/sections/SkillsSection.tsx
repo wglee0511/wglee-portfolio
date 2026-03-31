@@ -9,12 +9,12 @@ const SkillsSection = () => {
     {
       title: "Frontend",
       icon: <Monitor size={24} />,
-      skills: ["React", "Next.js", "TypeScript", "Redux (Saga · Toolkit)", "Zustand", "MobX", "React Query", "TailwindCSS", "D3.js", "Vite", "i18next"]
+      skills: ["React", "Next.js", "TypeScript", "Redux (Saga · Toolkit)", "Zustand", "MobX", "React Query", "D3.js", "Vite", "i18next"]
     },
     {
       title: "Native / Desktop",
       icon: <Smartphone size={24} />,
-      skills: ["React Native", "Jetpack Compose", "Jetpack Glance", "Electron", "Swift", "Kotlin"]
+      skills: ["React Native", "Electron", "Swift", "Kotlin"]
     },
     {
       title: "Infra & Tools",
@@ -24,7 +24,7 @@ const SkillsSection = () => {
     {
       title: "Dev Suite",
       icon: <Settings size={24} />,
-      skills: ["Claude Code", "Cursor", "PostgreSQL", "React Native Skia", "Python"]
+      skills: ["React Native Skia", "Python"]
     }
   ];
 

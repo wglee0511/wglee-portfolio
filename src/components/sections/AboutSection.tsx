@@ -57,7 +57,7 @@ const AboutSection = () => {
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8"
         >
           {[
-            { value: "4+", label: "Years Exp." },
+            { value: "3Y+", label: "Years Exp." },
             { value: "10+", label: "Projects" },
             { value: "3+", label: "Companies" },
             { value: "69%", label: "Perf. Boost" }

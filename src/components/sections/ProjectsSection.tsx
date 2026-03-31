@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Code, Calendar } from 'lucide-react';
+import Image from 'next/image';
 
 const ProjectsSection = () => {
   const projects = [
@@ -21,7 +22,14 @@ const ProjectsSection = () => {
         "인앱결제 + 광고를 게임 경제 구조와 연결한 수익화 흐름 구현"
       ],
       tech: ["React Native", "React Query", "Supabase Auth", "PostgreSQL", "Edge Functions", "i18n"],
-      link: "https://github.com/wglee0511/code-slugger"
+      link: null,
+      appStoreLink: "https://apps.apple.com/kr/app/code-slugger/id6759213279",
+      icon: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/9f/d0/969fd098-adec-5761-a674-6d03dbecb562/Placeholder.mill/230x0w.png",
+      screenshots: [
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/30/a3/fc30a32c-31b5-3dd7-f45b-d53a21dc4a14/IMG_6859_appstore_1242x2688.png/300x0w.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/0a/61/67/0a6167a1-f13f-1948-05fe-ded7da3342e5/IMG_6860_appstore_1242x2688.png/300x0w.png",
+        "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/22/2d/60/222d60cb-3aa2-e285-cb3f-38e6566094ba/IMG_6861_appstore_1242x2688.png/300x0w.png",
+      ]
     },
     {
       title: "암호화폐 자동매매 시스템",
@@ -70,25 +78,111 @@ const ProjectsSection = () => {
               <div className="h-48 md:h-56 flex items-center justify-center relative overflow-hidden"
                 style={{ background: 'linear-gradient(135deg, var(--surface), var(--card-bg))' }}
               >
-                <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500 z-10" style={{ background: 'rgba(0,0,0,0.1)' }} />
+                {'screenshots' in project && project.screenshots ? (
+                  <>
+                    {/* Dark navy background matching app style */}
+                    <div className="absolute inset-0" style={{ background: 'linear-gradient(135deg, #0f1624 0%, #1a1f35 50%, #0d1520 100%)' }} />
+                    {/* Subtle glow */}
+                    <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(ellipse at 30% 50%, rgba(6,160,232,0.25) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(100,214,200,0.15) 0%, transparent 60%)' }} />
 
-                {/* Decorative glowing orb behind icon */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-accent-blue/20 rounded-full blur-[40px] group-hover:bg-accent-magenta/20 group-hover:scale-150 transition-all duration-700" />
+                    {/* App icon top-left */}
+                    <div className="absolute top-5 left-5 z-20">
+                      <Image
+                        src={project.icon}
+                        alt="Code Slugger icon"
+                        width={48}
+                        height={48}
+                        className="rounded-xl shadow-lg"
+                        unoptimized
+                      />
+                    </div>
 
-                <Code size={48} className="text-accent-blue/40 group-hover:text-accent-magenta/60 transition-colors duration-500 relative z-20 group-hover:scale-110 transform" />
+                    {/* Screenshots arranged side by side */}
+                    <div className="relative flex items-end justify-center gap-3 h-full pt-4 pb-0 z-10">
+                      {/* Left screenshot - slightly tilted & lower */}
+                      <div className="relative w-[90px] translate-y-4 -rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:-rotate-2 group-hover:translate-y-2 transition-all duration-500">
+                        <Image
+                          src={project.screenshots[1]}
+                          alt="screenshot 2"
+                          width={90}
+                          height={195}
+                          className="w-full h-auto"
+                          unoptimized
+                        />
+                      </div>
+                      {/* Center screenshot - front and center */}
+                      <div className="relative w-[100px] shadow-[0_20px_50px_rgba(6,160,232,0.3)] rounded-[12px] overflow-hidden group-hover:-translate-y-1 transition-all duration-500 z-10">
+                        <Image
+                          src={project.screenshots[0]}
+                          alt="screenshot 1"
+                          width={100}
+                          height={217}
+                          className="w-full h-auto"
+                          unoptimized
+                        />
+                      </div>
+                      {/* Right screenshot - slightly tilted & lower */}
+                      <div className="relative w-[90px] translate-y-4 rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:rotate-2 group-hover:translate-y-2 transition-all duration-500">
+                        <Image
+                          src={project.screenshots[2]}
+                          alt="screenshot 3"
+                          width={90}
+                          height={195}
+                          className="w-full h-auto"
+                          unoptimized
+                        />
+                      </div>
+                    </div>
 
-                <div className="absolute top-6 left-6 z-20">
-                  <span
-                    className="px-4 py-1.5 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest"
-                    style={{
-                      background: 'rgba(0,0,0,0.5)',
-                      border: '1px solid var(--card-border)',
-                      color: 'var(--text-primary)',
-                    }}
-                  >
-                    {project.category}
-                  </span>
-                </div>
+                    {/* App Store badge */}
+                    {'appStoreLink' in project && project.appStoreLink && (
+                      <a
+                        href={project.appStoreLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute bottom-4 right-5 z-20 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold backdrop-blur-md transition-all hover:scale-105"
+                        style={{ background: 'rgba(255,255,255,0.12)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff' }}
+                      >
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        App Store
+                      </a>
+                    )}
+                  </>
+                ) : (
+                  <>
+                    <div className="absolute inset-0 group-hover:bg-transparent transition-colors duration-500 z-10" style={{ background: 'rgba(0,0,0,0.1)' }} />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-accent-blue/20 rounded-full blur-[40px] group-hover:bg-accent-magenta/20 group-hover:scale-150 transition-all duration-700" />
+                    <Code size={48} className="text-accent-blue/40 group-hover:text-accent-magenta/60 transition-colors duration-500 relative z-20 group-hover:scale-110 transform" />
+                    <div className="absolute top-6 left-6 z-20">
+                      <span
+                        className="px-4 py-1.5 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest"
+                        style={{
+                          background: 'rgba(0,0,0,0.5)',
+                          border: '1px solid var(--card-border)',
+                          color: 'var(--text-primary)',
+                        }}
+                      >
+                        {project.category}
+                      </span>
+                    </div>
+                  </>
+                )}
+
+                {!('screenshots' in project && project.screenshots) && null}
+                {'screenshots' in project && project.screenshots && (
+                  <div className="absolute top-5 right-5 z-20">
+                    <span
+                      className="px-3 py-1.5 backdrop-blur-md rounded-full text-[10px] font-bold uppercase tracking-widest"
+                      style={{
+                        background: 'rgba(0,0,0,0.45)',
+                        border: '1px solid rgba(255,255,255,0.15)',
+                        color: '#fff',
+                      }}
+                    >
+                      {project.category}
+                    </span>
+                  </div>
+                )}
               </div>
 
               <div className="p-8 flex flex-col flex-grow" style={{ background: 'var(--surface)' }}>
