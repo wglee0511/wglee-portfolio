@@ -137,19 +137,19 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => {
             {/* App icon */}
             {project.icon && (
               <div className="absolute top-5 left-5 z-20">
-                <Image src={project.icon} alt="icon" width={48} height={48} className="rounded-xl shadow-lg" unoptimized />
+                <Image src={project.icon} alt="Code Slugger 앱 아이콘 - 숫자 추리 게임" width={48} height={48} className="rounded-xl shadow-lg" unoptimized />
               </div>
             )}
 
             <div className="relative flex items-end justify-center gap-3 h-full pt-4 pb-0 z-10">
               <div className="relative w-[90px] translate-y-4 -rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:-rotate-2 group-hover:translate-y-2 transition-all duration-500">
-                <Image src={project.screenshots[1]} alt="screenshot 2" width={90} height={195} className="w-full h-auto" unoptimized />
+                <Image src={project.screenshots[1]} alt="Code Slugger 게임 플레이 화면 - 점수 입력 인터페이스" width={90} height={195} className="w-full h-auto" unoptimized />
               </div>
               <div className="relative w-[100px] shadow-[0_20px_50px_rgba(0,208,132,0.2)] rounded-[12px] overflow-hidden group-hover:-translate-y-1 transition-all duration-500 z-10">
-                <Image src={project.screenshots[0]} alt="screenshot 1" width={100} height={217} className="w-full h-auto" unoptimized />
+                <Image src={project.screenshots[0]} alt="Code Slugger 앱 홈 화면 - 숫자 야구 모바일 게임" width={100} height={217} className="w-full h-auto" unoptimized priority />
               </div>
               <div className="relative w-[90px] translate-y-4 rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:rotate-2 group-hover:translate-y-2 transition-all duration-500">
-                <Image src={project.screenshots[2]} alt="screenshot 3" width={90} height={195} className="w-full h-auto" unoptimized />
+                <Image src={project.screenshots[2]} alt="Code Slugger 결과 화면 - 정답 공개 애니메이션" width={90} height={195} className="w-full h-auto" unoptimized />
               </div>
             </div>
 

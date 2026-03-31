@@ -128,7 +128,7 @@ const HeroSection = () => {
           className="mb-4"
         >
           <h1 className="fluid-h1 font-bold tracking-tight" style={{ color: 'var(--text-primary)' }}>
-            <span className="text-gradient">WG.LEE</span>
+            <span className="text-gradient" aria-label="이원교 프론트엔드 개발자 포트폴리오">WG.LEE</span>
           </h1>
         </motion.div>
 

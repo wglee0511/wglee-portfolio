@@ -55,6 +55,7 @@ const skillCategories: SkillCategory[] = [
       { name: "React Native", weight: 92, opinion: "Strong Buy" },
       { name: "Swift (iOS)", weight: 70, opinion: "Buy" },
       { name: "Kotlin (Android)", weight: 68, opinion: "Buy" },
+      { name: "Jetpack Compose", weight: 65, opinion: "Hold" },
       { name: "Electron", weight: 60, opinion: "Hold" },
     ]
   },

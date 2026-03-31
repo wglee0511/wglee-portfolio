@@ -1,6 +1,5 @@
 # 이원교 — 프론트엔드 개발자 (React / React Native)
 
-- **연락처**: +82-10-6599-3677
 - **이메일**: ranazang@naver.com
 - **GitHub**: https://github.com/wglee0511
 - **Velog**: https://velog.io/@wglee0511/posts
