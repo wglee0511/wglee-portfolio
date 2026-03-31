@@ -25,10 +25,11 @@ export default function ScrollToTop() {
           whileTap={{ scale: 0.9 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Scroll to top"
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center rounded-full transition-all shadow-[0_0_20px_rgba(0,225,255,0.3)] hover:shadow-[0_0_30px_rgba(0,225,255,0.6)]"
+          className="fixed bottom-8 right-8 z-50 w-12 h-12 flex items-center justify-center rounded-full transition-all"
           style={{
-            background: "linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-purple))",
-            color: "#fff",
+            background: "var(--up-color)",
+            color: "#051a0d",
+            boxShadow: "0 8px 24px -6px rgba(0, 208, 132, 0.4)",
           }}
         >
           <ArrowUp size={18} />

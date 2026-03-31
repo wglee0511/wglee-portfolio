@@ -8,7 +8,11 @@ const Navbar = () => {
   const { setTheme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => setMounted(true), []);
+  useEffect(() => {
+    // delay to avoid sync effect warning and ensure hydration is fully done
+    const timer = setTimeout(() => setMounted(true), 0);
+    return () => clearTimeout(timer);
+  }, []);
 
   const navItems = [
     { name: 'About', href: '#about' },
@@ -21,14 +25,14 @@ const Navbar = () => {
   const isDark = resolvedTheme === 'dark';
 
   return (
-    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-6 py-3 glass rounded-full">
-      <ul className="flex items-center gap-6 md:gap-8">
+    <nav className="fixed top-14 left-1/2 -translate-x-1/2 z-50 px-4 sm:px-6 py-2.5 sm:py-3 glass rounded-full max-w-[95vw] shadow-lg">
+      <ul className="flex items-center gap-3 sm:gap-6 md:gap-8 overflow-x-auto no-scrollbar px-1">
         {navItems.map((item) => (
-          <li key={item.name}>
+          <li key={item.name} className="shrink-0">
             <a
               href={item.href}
               style={{ color: 'var(--text-secondary)' }}
-              className="text-sm font-medium hover:text-white transition-colors"
+              className="text-xs sm:text-sm font-medium hover:text-white transition-colors"
             >
               {item.name}
             </a>

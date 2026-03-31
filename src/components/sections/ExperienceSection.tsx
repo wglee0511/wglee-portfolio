@@ -11,6 +11,7 @@ interface Task {
 
 interface Experience {
   company: string;
+  url: string;
   role: string;
   period: string;
   description: string;
@@ -58,6 +59,7 @@ const ExperienceSection = () => {
   const experiences: Experience[] = [
     {
       company: "주식회사 루티너리 (Routinery Inc.)",
+      url: "https://www.routinery.app/ko",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2024.11 - 현재",
       description: "200개 국가, 500만 명 이상이 사용하는 루틴·습관 플래너 앱",
@@ -120,6 +122,7 @@ const ExperienceSection = () => {
     },
     {
       company: "주식회사 메이크델타 (Make Delta Inc.)",
+      url: "https://makedelta.io/",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2023.07 - 2024.04",
       description: "20,000+ 직장인 트레이더가 사용하는 모바일 트레이딩 분석 서비스 스타트업",
@@ -160,6 +163,7 @@ const ExperienceSection = () => {
     },
     {
       company: "주식회사 페이히어 (Payhere Inc.)",
+      url: "https://payhere.in/",
       role: "프론트엔드 개발자 (프로덕트 팀)",
       period: "2021.12 - 2023.06",
       description: "48,000+ 가맹점이 이용하는 오프라인 매장용 결제 서비스(POS) 스타트업",
@@ -261,12 +265,15 @@ const ExperienceSection = () => {
                 >
                   <Calendar size={12} style={{ color: 'var(--up-color)' }} /> {exp.period}
                 </span>
-                <span
-                  className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold tracking-tight"
+                <a
+                  href={exp.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-2xl md:text-3xl font-bold tracking-tight hover:underline underline-offset-4 w-fit"
                   style={{ color: 'var(--text-primary)' }}
                 >
                   <Building2 size={22} style={{ color: 'var(--up-color)' }} className="shrink-0" /> {exp.company}
-                </span>
+                </a>
               </div>
 
               <h3 className="text-sm font-semibold mb-4 tracking-wide font-ticker" style={{ color: 'var(--text-muted)' }}>

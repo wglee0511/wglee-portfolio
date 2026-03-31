@@ -19,9 +19,9 @@ export default function Icon() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #03040b 0%, #121226 100%)',
+          background: 'linear-gradient(135deg, #131722 0%, #1a1e2d 100%)',
           borderRadius: '8px',
-          border: '1px solid rgba(255,255,255,0.1)',
+          border: '1px solid rgba(0, 208, 132, 0.4)',
         }}
       >
         <span
@@ -30,7 +30,7 @@ export default function Icon() {
             fontWeight: 800,
             color: 'transparent',
             backgroundClip: 'text',
-            backgroundImage: 'linear-gradient(135deg, #00e1ff 0%, #ff3399 100%)',
+            backgroundImage: 'linear-gradient(135deg, #00d084 0%, #00b8d9 100%)',
           }}
         >
           W
