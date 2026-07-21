@@ -53,24 +53,28 @@ const skillCategories: SkillCategory[] = [
     totalWeight: 30,
     skills: [
       { name: "React Native", weight: 92, opinion: "Strong Buy" },
+      { name: "Expo (SDK 56/57)", weight: 85, opinion: "Strong Buy" },
       { name: "Swift (iOS)", weight: 70, opinion: "Buy" },
       { name: "Kotlin (Android)", weight: 68, opinion: "Buy" },
-      { name: "Jetpack Compose", weight: 65, opinion: "Hold" },
+      { name: "Jetpack Compose / Glance", weight: 65, opinion: "Hold" },
+      { name: "HealthKit / Health Connect", weight: 62, opinion: "Hold" },
+      { name: "Geofencing / Background Task", weight: 70, opinion: "Buy" },
       { name: "Electron", weight: 60, opinion: "Hold" },
     ]
   },
   {
-    title: "Infra & Tools",
+    title: "Infra & Data",
     sectorCode: "INF",
     icon: <Database size={20} />,
     totalWeight: 18,
     skills: [
-      { name: "Firebase / Supabase", weight: 80, opinion: "Strong Buy" },
+      { name: "Supabase (Auth·RLS·Edge)", weight: 82, opinion: "Strong Buy" },
+      { name: "Firebase / Firestore", weight: 80, opinion: "Strong Buy" },
       { name: "GitHub Actions", weight: 78, opinion: "Buy" },
-      { name: "Fastlane", weight: 75, opinion: "Buy" },
+      { name: "Fastlane / EAS", weight: 75, opinion: "Buy" },
+      { name: "SQLite / MMKV", weight: 72, opinion: "Buy" },
       { name: "Docker / GCP", weight: 65, opinion: "Buy" },
-      { name: "AWS", weight: 60, opinion: "Hold" },
-      { name: "Storybook", weight: 70, opinion: "Buy" },
+      { name: "Vercel / AWS", weight: 62, opinion: "Hold" },
     ]
   },
   {
@@ -79,8 +83,12 @@ const skillCategories: SkillCategory[] = [
     icon: <Settings size={20} />,
     totalWeight: 7,
     skills: [
+      { name: "Claude Code (Hooks·MCP)", weight: 85, opinion: "Strong Buy" },
+      { name: "Jest / RNTL", weight: 75, opinion: "Buy" },
       { name: "React Native Skia", weight: 72, opinion: "Buy" },
+      { name: "Sentry / PostHog", weight: 68, opinion: "Buy" },
       { name: "Python", weight: 65, opinion: "Buy" },
+      { name: "Storybook", weight: 70, opinion: "Buy" },
     ]
   }
 ];

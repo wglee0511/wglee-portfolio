@@ -10,20 +10,22 @@
 |------|----|
 | 이름 | 이원교 |
 | 영문 닉네임 | WG.LEE, Rowan |
-| 포지션 | 프론트엔드 개발자 (React / React Native) |
+| 포지션 | 프론트엔드 개발자 (React Native / React) — 네이티브 · AI 개발 환경 구축 |
 | 경력 | 4년차 (2021.12 ~) |
 | 이메일 | ranazang@naver.com |
+| 홈페이지 | https://wglee.getcodeforge.dev |
 | GitHub | https://github.com/wglee0511 |
 | Velog | https://velog.io/@wglee0511/posts |
-| 현 직장 | 주식회사 루티너리 (Routinery Inc.) |
+| 최근 직장 | 주식회사 루티너리 (Routinery Inc.) — 2024.11 ~ 2026.07 |
 | 학력 | 경희대학교 기계공학과 학사 (2015.03 ~ 2018.08) |
 
 ---
 
 ## 한 줄 소개
 
-웹과 앱을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자.
+앱과 웹을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자.
 체감이 아닌 실사용자 지표(P50/P95)로 개선 전후를 직접 측정하고 검증한다.
+React Native를 기반으로 하되 필요하면 네이티브로 범위를 넓히고, AI 개발 환경을 팀이 쓸 수 있는 구조로 만든다.
 
 ---
 

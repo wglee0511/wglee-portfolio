@@ -6,7 +6,7 @@
 
 ## 전체 스택
 
-`React` `React Native` `TypeScript` `Next.js` `Zustand` `React Query` `Redux` `redux-saga` `redux-toolkit` `MobX` `D3.js` `Electron` `Storybook` `GitHub Actions`
+`React` `React Native` `Expo` `TypeScript` `Next.js` `Zustand` `React Query` `Redux` `redux-saga` `redux-toolkit` `MobX` `D3.js` `react-native-svg` `Electron` `Storybook` `Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `Wear OS` `HealthKit` `Health Connect` `Geofencing` `Supabase` `PostgreSQL` `SQLite` `MMKV` `Firestore` `GitHub Actions` `Fastlane` `EAS` `Docker` `GCP` `Vercel` `Jest` `Maestro` `Sentry` `PostHog`
 
 ---
 

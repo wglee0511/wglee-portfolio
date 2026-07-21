@@ -6,13 +6,22 @@
 
 ## 주식회사 루티너리 (Routinery Inc.)
 
-**프론트엔드 개발자 — 프로덕트 팀** | 2024.11 ~ 재직 중 | 정규직
+**프론트엔드 개발자 — 프로덕트 팀** | 2024.11 ~ 2026.07 (1년 9개월) | 정규직
 
 200개 국가, 500만 명 이상이 사용하는 루틴·습관 플래너 앱
 
-**사용 기술:** React Native, React, TypeScript, Swift, Kotlin, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next
+**사용 기술:** React Native, React, TypeScript, Swift, Kotlin, Jetpack Compose, Jetpack Glance, AppIntents, Wear OS, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next, Claude Code (Hooks · Subagents · MCP)
 
 ---
+
+### AI 개발 하네스 구축 및 팀 배포
+
+- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계, **1주일 내 Phase 1~4 단계적 도입** 후 개발자 **3인 전원**에 배포
+- 파일 편집 시 ESLint 자동 수정, 작업 종료 시 타입 검증 후 차단하는 **검증 계층 구성** — 레거시 에러가 누적된 코드베이스에서 **신규 작성 코드에만 품질 게이트 적용**
+- **React Native 코드 리뷰 서브에이전트** 도입 — 프로젝트에서 실제 발생한 크래시 패턴과 성능 안티패턴을 자동 검사 항목으로 규칙화
+- iOS/Android **빌드 진단 서브에이전트** 도입 — 긴 Xcode·Gradle 로그를 격리된 컨텍스트에서 분석해 원인만 반환, 에이전트 전체에 자동 수정 권한을 제거하고 진단·보고로 역할 한정
+- Linear·Figma **MCP 연동**으로 티켓 컨텍스트 자동 로드 및 디자인 기반 구현 흐름 구성, 동일 하네스를 **Codex 환경으로 포팅**해 특정 도구 종속성 제거
+- 팀원 온보딩 문서 작성 후 PR 리뷰를 거쳐 도입, 이후 **다른 팀원들이 규칙을 추가하며 공동 운영**
 
 ### 앱 전반 성능 개선
 

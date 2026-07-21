@@ -7,7 +7,7 @@ import { TrendingUp, TrendingDown, BarChart2, Cpu, Globe, Zap } from 'lucide-rea
 const fundamentals = [
   {
     label: "시가총액 (경력)",
-    value: "3Y+",
+    value: "4Y+",
     sub: "Years Exp.",
     icon: <BarChart2 size={16} />,
     up: true,
@@ -15,7 +15,7 @@ const fundamentals = [
   },
   {
     label: "프로젝트 수",
-    value: "10+",
+    value: "13+",
     sub: "Projects",
     icon: <Cpu size={16} />,
     up: true,
@@ -48,7 +48,19 @@ const investmentPoints = [
   },
   {
     title: "플랫폼 경계 설계",
-    desc: "홈 위젯·Wear OS·백그라운드 이벤트 등 플랫폼 경계 영역을 직접 설계하고 구현합니다. 코드 분석 → 계획 수립 → AI 피드백 사이클로 낯선 영역도 단독 구현합니다.",
+    desc: "React Native를 기반으로 하되 제품에 필요하면 네이티브로 범위를 넓힙니다. 홈 위젯·Wear OS·백그라운드 위치 알림을 Kotlin·Swift·Jetpack Compose로 단독 구현했습니다.",
+    badge: "Strong Buy",
+    up: true,
+  },
+  {
+    title: "AI 개발 환경 구축",
+    desc: "코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 하네스를 설계해 개발자 3인 전원에게 배포했고, 이후 팀원들이 규칙을 추가하며 공동 운영했습니다.",
+    badge: "Strong Buy",
+    up: true,
+  },
+  {
+    title: "제품 단독 완주",
+    desc: "기획·설계·구현·배포까지 혼자 끝내는 사이클을 반복합니다. 2026년 상반기에만 복약 기록 앱·위치 리마인더 앱·주유소 추천 웹을 PRD부터 배포까지 완주했습니다.",
     badge: "Strong Buy",
     up: true,
   },
@@ -155,7 +167,7 @@ const AboutSection = () => {
           >
             투자 포인트 (Investment Points)
           </div>
-          <div className="grid md:grid-cols-3 gap-0 rounded-b-xl overflow-hidden" style={{ border: '1px solid var(--hts-border)' }}>
+          <div className="grid md:grid-cols-3 gap-px rounded-b-xl overflow-hidden" style={{ border: '1px solid var(--hts-border)', background: 'var(--hts-border)' }}>
             {investmentPoints.map((pt, i) => (
               <motion.div
                 key={i}
@@ -163,7 +175,6 @@ const AboutSection = () => {
                 className="p-6 transition-colors"
                 style={{
                   background: 'var(--card-bg)',
-                  borderRight: i < investmentPoints.length - 1 ? '1px solid var(--hts-border)' : 'none',
                 }}
               >
                 <div className="flex items-start justify-between gap-2 mb-3">

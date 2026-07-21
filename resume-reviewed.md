@@ -1,6 +1,7 @@
-# 이원교 — 프론트엔드 개발자 (React / React Native)
+# 이원교 — 프론트엔드 개발자 (React Native / React) — 네이티브 · AI 개발 환경 구축
 
 - **이메일**: ranazang@naver.com
+- **홈페이지**: https://wglee.getcodeforge.dev
 - **GitHub**: https://github.com/wglee0511
 - **Velog**: https://velog.io/@wglee0511/posts
 
@@ -8,28 +9,56 @@
 
 ## 소개
 
-웹과 앱을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. 글로벌 **500만 사용자** 서비스에서 메모리 사용량을 **69%** 줄이고 앱 초기 실행 시간을 **26%** 단축한 경험이 있습니다.
+앱과 웹을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. 글로벌 **500만 사용자** 서비스에서 메모리 사용량을 **69%** 줄이고 앱 초기 실행 시간을 **26%** 단축한 경험이 있습니다.
 
 성능 저하의 구조적 원인을 찾아 코드 수준에서 해결합니다. 체감이 아닌 실사용자 지표(P50/P95)로 개선 전후를 직접 측정하고 검증하는 방식으로 일합니다.
 
-플랫폼 경계 영역(홈 위젯·Wear OS·백그라운드 이벤트)을 직접 설계하고 구현합니다. 코드 분석 → 계획 수립 → AI 피드백 사이클로 AI를 설계 파트너 삼아 낯선 영역도 단독으로 구현합니다.
+React Native를 기반으로 하되, 제품에 필요하다면 네이티브 영역으로 범위를 넓힙니다. Kotlin·Swift·Jetpack Compose·Glance는 경험이 없던 기술이었지만, 코드베이스 분석 → 구현 계획 수립 → 결과 검증 사이클로 AI를 학습·설계 파트너 삼아 홈 위젯·Wear OS·백그라운드 위치 알림·CI/CD 파이프라인을 모두 단독으로 구현했습니다.
+
+이 방식을 개인 작업에 두지 않고 팀이 쓸 수 있는 구조로 만듭니다. 루티너리에서 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 하네스를 설계해 개발자 3인 전원에게 배포했고, 이후 다른 팀원들이 규칙을 추가하며 함께 운영했습니다.
+
+기획·설계·구현·배포까지 혼자 끝내는 사이클을 반복합니다. 2026년 상반기에만 복약 기록 앱(Cadence), 위치 기반 리마인더 앱(스팟 스테이플러), 경로 기반 주유소 추천 웹(찍고가)을 PRD 작성부터 배포까지 단독으로 완주했습니다.
 
 ---
 
 ## 기술 스택
 
-`React` `React Native` `TypeScript` `Next.js` `Zustand` `React Query` `Redux` `redux-saga` `redux-toolkit` `MobX` `D3.js` `Electron` `Storybook` `GitHub Actions`
+**프론트엔드**
+`React` `React Native` `Expo` `TypeScript` `Next.js` `Zustand` `React Query` `Redux` `redux-saga` `redux-toolkit` `MobX` `D3.js` `react-native-svg` `Electron` `Storybook`
+
+**네이티브**
+`Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `DataStore` `HealthKit` `Health Connect` `Geofencing`
+
+**데이터 · 백엔드**
+`Supabase` `PostgreSQL` `RLS` `Edge Functions` `SQLite` `MMKV` `Firestore`
+
+**인프라 · 자동화**
+`GitHub Actions` `Fastlane` `EAS` `Docker` `GCP` `Vercel` `Firebase`
+
+**테스트 · 모니터링**
+`Jest` `React Native Testing Library` `Maestro` `pgTAP` `Sentry` `PostHog` `GA4`
+
+**AI 개발 환경**
+`Claude Code` `Codex` `MCP` `Hooks` `Subagents` `Skills` `Agent 기반 코드 리뷰 · 빌드 진단 자동화`
 
 ---
 
 ## 경력
 
 ### 주식회사 루티너리 (Routinery Inc.)
-**프론트엔드 개발자 — 프로덕트 팀** | 2024.11 ~ 재직 중 | 정규직
+**프론트엔드 개발자 — 프로덕트 팀** | 2024.11 ~ 2026.07 (1년 9개월) | 정규직
 
 200개 국가, 500만 명 이상이 사용하는 루틴·습관 플래너 앱
 
 ---
+
+_AI 개발 하네스 구축 및 팀 배포_
+- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계, **1주일 내 Phase 1~4 단계적 도입** 후 개발자 **3인 전원**에 배포
+- 파일 편집 시 ESLint 자동 수정, 작업 종료 시 타입 검증 후 차단하는 **검증 계층 구성** — 레거시 에러가 누적된 코드베이스에서 **신규 작성 코드에만 품질 게이트 적용**
+- **React Native 코드 리뷰 서브에이전트** 도입 — 프로젝트에서 실제 발생한 크래시 패턴과 성능 안티패턴을 자동 검사 항목으로 규칙화
+- iOS/Android **빌드 진단 서브에이전트** 도입 — 긴 Xcode·Gradle 로그를 격리된 컨텍스트에서 분석해 원인만 반환, 에이전트 전체에 자동 수정 권한을 제거하고 진단·보고로 역할 한정
+- Linear·Figma **MCP 연동**으로 티켓 컨텍스트 자동 로드 및 디자인 기반 구현 흐름 구성, 동일 하네스를 **Codex 환경으로 포팅**해 특정 도구 종속성 제거
+- 팀원 온보딩 문서 작성 후 PR 리뷰를 거쳐 도입, 이후 **다른 팀원들이 규칙을 추가하며 공동 운영**
 
 _앱 전반 성능 개선_
 - React Query 구독 구조 재설계 및 **Selector 패턴** 적용으로 불필요한 리렌더링 제거
@@ -66,7 +95,7 @@ _CI/CD 자동화 인프라 구축 (Fastlane)_
 - Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, `git rev-list --count` 기반 versionCode 자동 계산
 - 빌드 완료 시 Slack Dev 그룹 자동 알림 연동
 
-**사용 기술**: React Native, React, TypeScript, Swift, Kotlin, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next
+**사용 기술**: React Native, React, TypeScript, Swift, Kotlin, Jetpack Compose, Jetpack Glance, AppIntents, Wear OS, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next, Claude Code (Hooks · Subagents · MCP)
 
 ---
 
@@ -132,10 +161,68 @@ _예약업 온라인 스토어 웹 앱 개발_
 
 ## 프로젝트
 
-### Code Slugger — 숫자야구 모바일 게임 (iOS / Android)
-**개인 프로젝트** | 2026.02 ~ 2026.03
+### Cadence — GLP-1 복약 기록 앱 (iOS)
+**개인 프로젝트** | 2026.07
 
-회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 실서비스.
+위고비·오젬픽·마운자로 등 GLP-1 약물 사용자를 위한 복약 기록 앱. 주사·경구 복용 기록, 증량(titration) 일정 추적, 부작용·체중 로깅, 진료용 PDF 리포트 내보내기까지 지원하는 실서비스.
+
+- **13종 약물 카탈로그**: 약물별 표준 증량 사다리(위고비 0.25→2.4mg 등)와 투여 주기(주 1회·매일·하루 2회·경구)를 데이터로 모델링, 현재 단계와 다음 증량 시점을 자동 산출
+- **오프라인 퍼스트 아키텍처**: SQLite를 진실의 원천으로 두고 테이블별 리포지토리로 접근을 격리, Zustand는 "오늘"·활성 플랜 등 파생 상태만 보유해 상태 중복 제거
+- **클라우드 동기화**: Supabase 기반 Apple·Google·이메일 로그인 + 게스트 모드, 다기기 동기화를 last-write-wins로 병합하고 동기화 자체는 옵트인으로 설계
+- **약물 농도 추정 곡선**: 공개 반감기 기반 지수 감쇠 합으로 체내 약물량 변화를 SVG로 시각화 (교육용 근사치)
+- **SVG 시각화 자체 구현**: 진행 링·증량 계단·체중 차트·주사 부위 바디맵을 외부 차트 라이브러리 없이 직접 구현, 6개 주사 부위 자동 순환 로직 포함
+- **의사용 PDF 내보내기**: 기간별 주사·체중·증상 기록을 HTML→PDF로 렌더링해 시스템 공유 시트로 전달
+- **건강 앱 연동**: Apple HealthKit / Android Health Connect에서 체중·걸음 수·안정 시 심박수·수면·활동 에너지를 선택적으로 읽어 리포트에 반영
+- **테스트 가능한 순수 로직 분리**: 스케줄·포매팅 로직을 네이티브 import 없이 유지해 Jest로 검증, 네이티브 의존 모듈은 타입체크로만 커버하는 경계 설계
+- **네이티브 설정 코드화**: `ios/`·`android/`를 prebuild 산출물로 두고 모든 네이티브 설정을 Expo config plugin으로 관리해 직접 수정 금지 원칙 유지
+- **운영 계측**: Sentry 크래시 모니터링 + PostHog 분석 연동, RevenueCat 인앱 구독, 5개 국어(한·영·일·중·서) 로케일 자동 감지
+
+**사용 기술**: Expo SDK 57, React Native 0.86 (New Architecture · React Compiler), TypeScript, Expo Router, SQLite, Zustand, MMKV, Supabase, RevenueCat, react-native-svg, i18next, Sentry, PostHog, Jest, Maestro, GitHub Actions
+
+---
+
+### 스팟 스테이플러 (Spot Stapler) — 위치 기반 리마인더 앱 (iOS)
+**개인 프로젝트** | 2026.06 ~ 2026.07
+
+"장소에 할 일을 고정한다"는 컨셉의 위치 기반 알림 앱. 앱을 종료한 상태에서도 등록한 장소에 도착하면 OS 지오펜스가 알림을 발송하는 구조.
+
+- **앱 종료 상태 지오펜싱**: expo-task-manager 백그라운드 태스크로 OS 위치 감지 이벤트를 처리, 앱 프로세스가 없어도 로컬 알림 발송. Android 재부팅 후 지오펜스 재등록 처리 포함
+- **중복 알림 방지**: 동일 위치 재발송 제한(30분) 로직을 순수 함수로 분리해 단위 테스트로 검증
+- **오프라인 큐**: 네트워크 단절 시 생성·수정·삭제 요청을 로컬에 보관했다가 온라인 복귀 시 순차 반영, 모든 작업을 **클라이언트 생성 UUID 기반 멱등**으로 설계해 중복 실행에도 안전
+- **Supabase RLS 설계**: 위치·구독·설정 3개 테이블에 Row Level Security를 적용해 사용자별 데이터 접근을 DB 레벨에서 차단, 신규 유저 설정 자동 생성 트리거 구성, pgTAP으로 정책 검증
+- **익명 인증**: 회원가입 없이 익명 세션으로 즉시 사용 가능하도록 구성, SQLite 기반 세션 저장 + AppState 연동 토큰 갱신
+- **권한 UX 설계**: 위치·백그라운드 위치·알림 3종 권한을 사유형 체크리스트 + 상태 배지로 제시해 거부 시 복구 경로 제공
+- **프리미엄 게이팅**: 무료 1개 / 구독 무제한 정책과 해지 시 초과분 비활성화·재구독 시 복원 흐름 구현 (RevenueCat)
+- **브랜드 디자인 시스템**: 브랜드 토큰(color·radius) 기반 light/dark/system 테마, 종이 메모 카드·핀 앱마크 등 자체 UI 프리미티브 구축, Pretendard·JetBrains Mono 번들 및 폰트 로딩 게이팅
+- **테스트·문서 자산**: 30개 테스트 파일로 지오펜스 로직·오프라인 큐·i18n을 검증, 5개 국어 스토어 스크린샷을 HTML 템플릿에서 자동 렌더링하는 파이프라인 구성
+
+**사용 기술**: Expo SDK 56, React Native 0.85, TypeScript, Expo Router, expo-location, expo-task-manager, expo-notifications, expo-maps, Supabase (Auth · Postgres · RLS · pgTAP), RevenueCat, i18n-js, Jest, React Native Testing Library
+
+---
+
+### 찍고가 (zzikgoga) — 경로 위 최저가 주유소 · 휴게소 추천 웹 서비스
+**개인 프로젝트** | 2026.07 · [zzikgoga.getcodeforge.dev](https://zzikgoga.getcodeforge.dev)
+
+"가는 길 그대로, 가장 싼 주유소를 찍고 가요" — 유턴·왕복 없이 경로를 벗어나지 않고 들를 수 있는 최저가 주유소와 휴게소를 추천하는 서비스. 로그인 없이 전 기능 사용 가능.
+
+- **런타임 의존성 제로**: Next.js 15 · React 19 · TypeScript 외 프로덕션 의존성 없이 구현. 지도·차트·상태관리·CSS 프레임워크를 모두 배제하고 CSS 변수 기반 디자인 토큰으로 직접 구성
+- **경로↔주유소 매칭 알고리즘 자체 구현**: 경로 폴리라인을 8지점 샘플링 → 반경 검색 → 중복 제거 → **폴리라인 최단거리 계산으로 200m 이내만 필터**(부족 시 500m 완화) → 경로 이탈 시간·절약액 산출
+- **좌표계 변환 직접 구현**: 오피넷이 사용하는 KATEC(TM128) ↔ WGS84 변환을 외부 라이브러리 없이 구현
+- **경로 대안 병합**: TMAP 추천·무료우선·고속도로·최단거리 4종을 병렬 탐색한 뒤, 사실상 동일한 경로를 자동 병합해 실제로 구별되는 선택지만 카드로 제시
+- **4개 외부 API 오케스트레이션**: 카카오맵 SDK · 카카오 로컬 · TMAP 경로 · 오피넷 유가를 조합, **모든 서버 키를 Next.js Route Handler 프록시 뒤에 은닉**하고 키가 없으면 데모 모드(SVG 일러스트 지도)로 폴백하는 단계적 성능 저하 설계
+- **실데이터 방어 처리**: 오피넷 EUC-KR 응답 방어 디코딩, 도로 구분 필드가 없는 휴게소 주유소를 브랜드·명칭 휴리스틱으로 판별
+- **반응형 단일 라우트**: 동일 라우트에서 모바일(지도+바텀시트)과 PC(좌측 패널+대형 지도)로 분기, 핀↔리스트 선택 상태 동기화
+- **로그인 없는 개인화**: localStorage 3개 키로 최근 검색·선택 경로·휴게소 스냅샷을 관리해 홈·내 경로·휴게소 페이지에 자동 반영
+- **수익화·SEO**: 카카오 애드핏 슬롯을 환경변수로 on/off 하되 **가격 정렬에는 개입하지 않도록 분리**, JSON-LD 구조화 데이터·사이트맵·OG 구성, Vercel 서울 리전 배포로 국내 API 지연 최소화
+
+**사용 기술**: Next.js 15 (App Router · Route Handlers), React 19, TypeScript, 순수 CSS(디자인 토큰), 카카오맵 JS SDK, 카카오 로컬 API, TMAP 경로 API, 오피넷 API, Vercel
+
+---
+
+### Code Slugger — 숫자야구 모바일 게임 (iOS)
+**개인 프로젝트** | 2026.02 ~ 2026.07 (서비스 종료)
+
+회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 앱을 App Store에 출시해 운영했습니다.
 
 - **익명 로그인**: Supabase Auth 익명 로그인으로 앱 실행 즉시 세션 발급, 별도 회원가입 없이 바로 플레이 가능
 - **계정 복구 플로우**: 8자리 Recovery ID 발급으로 기기 변경·재설치 시에도 계정 연속성 유지

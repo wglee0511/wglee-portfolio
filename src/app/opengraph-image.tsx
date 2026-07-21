@@ -84,7 +84,7 @@ export default async function Image() {
 
         {/* Tech stack */}
         <div style={{ fontSize: 18, color: '#787b86', marginBottom: 40 }}>
-          React · React Native · TypeScript · Next.js
+          React Native · React · TypeScript · Next.js
         </div>
 
         {/* Stats row */}

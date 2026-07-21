@@ -169,7 +169,7 @@ const HeroSection = () => {
           className="max-w-2xl mx-auto text-base sm:text-lg mb-12 leading-relaxed"
           style={{ color: 'var(--text-secondary)' }}
         >
-          웹과 앱을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
+          앱과 웹을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. <br className="hidden sm:block"/>
           글로벌 500만 사용자 서비스에서 메모리 사용량을 <span className="font-ticker font-bold" style={{ color: 'var(--up-color)' }}>-69%</span> 줄이고 앱 초기 실행 시간을 <span className="font-ticker font-bold" style={{ color: 'var(--up-color)' }}>-26%</span> 단축했습니다.
         </motion.p>
 

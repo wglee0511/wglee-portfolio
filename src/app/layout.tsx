@@ -20,11 +20,12 @@ export const metadata: Metadata = {
     default: "이원교 | Frontend Developer Portfolio",
     template: "%s | 이원교 포트폴리오",
   },
-  description: "4년차 프론트엔드 개발자 이원교의 포트폴리오. React, React Native, TypeScript를 다루며 메모리 최적화 -69%, 번들사이즈 -43% 성능 개선 경험 보유. 500만 MAU 서비스 운영.",
+  description: "4년차 프론트엔드 개발자 이원교의 포트폴리오. React Native·React 기반 앱·웹 개발, 네이티브(Kotlin·Swift) 확장과 AI 개발 환경 구축. 메모리 최적화 -69%, 번들사이즈 -43% 성능 개선 경험 보유. 500만 MAU 서비스 운영.",
   keywords: [
     "프론트엔드 개발자", "Frontend Developer", "React 개발자", "React Native 개발자",
-    "React", "React Native", "TypeScript", "Next.js", "D3.js", "Zustand",
-    "성능 최적화", "모바일 앱 개발", "크로스플랫폼",
+    "React", "React Native", "Expo", "TypeScript", "Next.js", "D3.js", "Zustand",
+    "Supabase", "Kotlin", "Swift", "Jetpack Compose",
+    "성능 최적화", "모바일 앱 개발", "크로스플랫폼", "AI 개발 환경",
     "이원교", "Rowan", "포트폴리오", "개발자 포트폴리오",
   ],
   authors: [{ name: "이원교", url: SITE_URL }],
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
     url: SITE_URL,
     siteName: '이원교 포트폴리오',
     title: '이원교 | Frontend Developer Portfolio',
-    description: '4년차 프론트엔드 개발자 이원교의 포트폴리오. React, React Native 기반 모바일·웹 서비스 개발. 메모리 -69%, 번들 -43% 성능 개선.',
+    description: '4년차 프론트엔드 개발자 이원교의 포트폴리오. React Native·React 기반 앱·웹 개발, 네이티브 확장과 AI 개발 환경 구축. 메모리 -69%, 번들 -43% 성능 개선.',
     images: [
       {
         url: '/opengraph-image',
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '이원교 | Frontend Developer Portfolio',
-    description: '4년차 프론트엔드 개발자 이원교의 포트폴리오. React · React Native · TypeScript.',
+    description: '4년차 프론트엔드 개발자 이원교의 포트폴리오. React Native · React · TypeScript.',
     images: ['/opengraph-image'],
     creator: '@wglee0511',
   },

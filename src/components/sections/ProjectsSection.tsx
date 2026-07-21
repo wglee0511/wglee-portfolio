@@ -2,20 +2,101 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, Code, Calendar, TrendingUp, TrendingDown, ChevronDown } from 'lucide-react';
+import { Github, Code, Calendar, TrendingUp, TrendingDown, ChevronDown, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 
 const projects = [
   {
+    symbol: "CADENCE",
+    title: "Cadence — GLP-1 복약 기록 앱",
+    period: "2026.07",
+    category: "Health (iOS)",
+    sector: "Healthcare / Mobile",
+    price: "₩ 9,400",
+    change: "+41.2%",
+    up: true,
+    description: "위고비·오젬픽·마운자로 등 GLP-1 약물 사용자를 위한 복약 기록 앱. 주사·경구 복용 기록, 증량(titration) 일정 추적, 부작용·체중 로깅, 진료용 PDF 리포트 내보내기까지 지원합니다.",
+    highlights: [
+      "13종 약물 카탈로그 — 약물별 표준 증량 사다리와 투여 주기(주 1회·매일·하루 2회·경구)를 데이터로 모델링, 다음 증량 시점 자동 산출",
+      "오프라인 퍼스트 아키텍처 — SQLite를 진실의 원천으로 두고 테이블별 리포지토리로 접근 격리, Zustand는 파생 상태만 보유",
+      "Supabase 기반 Apple·Google·이메일 로그인 + 게스트 모드, 다기기 동기화를 last-write-wins로 병합 (동기화는 옵트인)",
+      "공개 반감기 기반 지수 감쇠 합으로 체내 약물 농도 추정 곡선을 SVG로 시각화",
+      "진행 링·증량 계단·체중 차트·주사 부위 바디맵을 외부 차트 라이브러리 없이 직접 구현, 6개 주사 부위 자동 순환",
+      "Apple HealthKit / Android Health Connect 연동 — 체중·걸음 수·심박수·수면·활동 에너지를 리포트에 반영",
+      "기간별 기록을 HTML→PDF로 렌더링해 의료진에게 전달하는 의사용 내보내기",
+      "네이티브 의존성 기준으로 테스트 경계 설계 — 순수 로직은 Jest, 네이티브 모듈은 타입체크로 커버",
+      "Sentry 크래시 모니터링 + PostHog 분석, RevenueCat 인앱 구독, 5개 국어 로케일 자동 감지"
+    ],
+    tech: ["Expo SDK 57", "React Native 0.86", "TypeScript", "SQLite", "Zustand", "Supabase", "RevenueCat", "Sentry"],
+    link: null,
+    appStoreLink: null,
+    icon: null,
+    screenshots: null,
+  },
+  {
+    symbol: "SPOTSTAP",
+    title: "스팟 스테이플러 (Spot Stapler)",
+    period: "2026.06 ~ 2026.07",
+    category: "Utility (iOS)",
+    sector: "Productivity / Mobile",
+    price: "₩ 8,600",
+    change: "+28.9%",
+    up: true,
+    description: "\"장소에 할 일을 고정한다\"는 컨셉의 위치 기반 알림 앱. 앱을 종료한 상태에서도 등록한 장소에 도착하면 OS 지오펜스가 알림을 발송하는 구조입니다.",
+    highlights: [
+      "앱 종료 상태 지오펜싱 — expo-task-manager 백그라운드 태스크로 OS 위치 이벤트 처리, 앱 프로세스 없이 로컬 알림 발송",
+      "Android 재부팅 후 지오펜스 재등록 처리 및 동일 위치 재발송 제한(30분) 로직을 순수 함수로 분리해 단위 테스트로 검증",
+      "오프라인 큐 — 네트워크 단절 시 요청을 보관 후 복귀 시 순차 반영, 클라이언트 생성 UUID 기반 멱등 설계로 중복 실행에도 안전",
+      "Supabase RLS 설계 — 3개 테이블에 Row Level Security를 적용해 사용자별 접근을 DB 레벨에서 차단, pgTAP으로 정책 검증",
+      "익명 인증 — 회원가입 없이 즉시 사용, SQLite 기반 세션 저장 + AppState 연동 토큰 갱신",
+      "위치·백그라운드 위치·알림 3종 권한을 사유형 체크리스트 + 상태 배지로 제시해 거부 시 복구 경로 제공",
+      "무료 1개 / 구독 무제한 게이팅, 해지 시 초과분 비활성화·재구독 시 복원 흐름 (RevenueCat)",
+      "30개 테스트 파일로 지오펜스·오프라인 큐·i18n 검증, 5개 국어 스토어 스크린샷 자동 렌더링 파이프라인 구성"
+    ],
+    tech: ["Expo SDK 56", "React Native", "TypeScript", "expo-location", "Supabase", "RLS / pgTAP", "RevenueCat", "Jest"],
+    link: null,
+    appStoreLink: null,
+    icon: null,
+    screenshots: null,
+  },
+  {
+    symbol: "ZZIKGOGA",
+    title: "찍고가 — 최저가 주유소 추천",
+    period: "2026.07",
+    category: "Web Service",
+    sector: "Mobility / Web",
+    price: "₩ 8,100",
+    change: "+22.4%",
+    up: true,
+    description: "\"가는 길 그대로, 가장 싼 주유소를 찍고 가요\" — 유턴·왕복 없이 경로를 벗어나지 않고 들를 수 있는 최저가 주유소와 휴게소를 추천하는 웹 서비스. 로그인 없이 전 기능을 사용할 수 있습니다.",
+    highlights: [
+      "런타임 의존성 제로 — Next.js·React·TypeScript 외 프로덕션 의존성 없이 구현, 지도·차트·상태관리·CSS 프레임워크를 모두 배제",
+      "경로↔주유소 매칭 알고리즘 자체 구현 — 폴리라인 8지점 샘플링 → 반경 검색 → 중복 제거 → 최단거리 200m 이내 필터 → 이탈 시간·절약액 산출",
+      "오피넷이 사용하는 KATEC(TM128) ↔ WGS84 좌표계 변환을 외부 라이브러리 없이 직접 구현",
+      "TMAP 경로 대안 4종을 병렬 탐색한 뒤 사실상 동일한 경로를 자동 병합해 구별되는 선택지만 제시",
+      "카카오맵·카카오 로컬·TMAP·오피넷 4개 API 오케스트레이션 — 모든 서버 키를 Route Handler 프록시 뒤에 은닉",
+      "키가 없으면 데모 모드(SVG 일러스트 지도)로 폴백하는 단계적 성능 저하 설계",
+      "오피넷 EUC-KR 응답 방어 디코딩, 도로 구분 필드가 없는 휴게소 주유소를 브랜드·명칭 휴리스틱으로 판별",
+      "동일 라우트에서 모바일(지도+바텀시트) / PC(좌측 패널+대형 지도) 반응형 분기, 핀↔리스트 선택 상태 동기화",
+      "로그인 없이 localStorage 3개 키로 최근 검색·선택 경로·휴게소 스냅샷을 관리해 전 페이지에 자동 반영"
+    ],
+    tech: ["Next.js 15", "React 19", "TypeScript", "카카오맵 SDK", "TMAP API", "오피넷 API", "Vercel"],
+    link: null,
+    appStoreLink: null,
+    liveLink: "https://zzikgoga.getcodeforge.dev",
+    icon: null,
+    screenshots: null,
+  },
+  {
     symbol: "CSLUGG",
     title: "Code Slugger",
-    period: "2026.02 ~ 2026.03",
+    period: "2026.02 ~ 2026.07 (서비스 종료)",
     category: "Mobile Game (B2C)",
     sector: "Consumer / Game",
     price: "₩ 4,200",
     change: "+12.5%",
     up: true,
-    description: "회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 실서비스.",
+    description: "회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 앱을 App Store에 출시해 운영했습니다.",
     highlights: [
       "Supabase Auth 기반 익명 로그인 — 회원가입 없이 앱 실행 즉시 플레이 가능",
       "8자리 Recovery ID 기반 계정 복구 플로우로 기기 변경·재설치 시에도 연속성 유지",
@@ -27,7 +108,7 @@ const projects = [
     ],
     tech: ["React Native", "React Query", "Supabase Auth", "PostgreSQL", "Edge Functions", "i18n"],
     link: null,
-    appStoreLink: "https://apps.apple.com/kr/app/code-slugger/id6759213279",
+    appStoreLink: null,
     icon: "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/96/9f/d0/969fd098-adec-5761-a674-6d03dbecb562/Placeholder.mill/230x0w.png",
     screenshots: [
       "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fc/30/a3/fc30a32c-31b5-3dd7-f45b-d53a21dc4a14/IMG_6859_appstore_1242x2688.png/300x0w.png",
@@ -75,6 +156,7 @@ interface Project {
   tech: string[];
   link: string | null;
   appStoreLink: string | null;
+  liveLink?: string | null;
   icon: string | null;
   screenshots: string[] | null;
 }
@@ -137,19 +219,19 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => {
             {/* App icon */}
             {project.icon && (
               <div className="absolute top-5 left-5 z-20">
-                <Image src={project.icon} alt="Code Slugger 앱 아이콘 - 숫자 추리 게임" width={48} height={48} className="rounded-xl shadow-lg" unoptimized />
+                <Image src={project.icon} alt={`${project.title} 앱 아이콘`} width={48} height={48} className="rounded-xl shadow-lg" unoptimized />
               </div>
             )}
 
             <div className="relative flex items-end justify-center gap-3 h-full pt-4 pb-0 z-10">
               <div className="relative w-[90px] translate-y-4 -rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:-rotate-2 group-hover:translate-y-2 transition-all duration-500">
-                <Image src={project.screenshots[1]} alt="Code Slugger 게임 플레이 화면 - 점수 입력 인터페이스" width={90} height={195} className="w-full h-auto" unoptimized />
+                <Image src={project.screenshots[1]} alt={`${project.title} 앱 화면 - 플레이 인터페이스`} width={90} height={195} className="w-full h-auto" unoptimized />
               </div>
               <div className="relative w-[100px] shadow-[0_20px_50px_rgba(0,208,132,0.2)] rounded-[12px] overflow-hidden group-hover:-translate-y-1 transition-all duration-500 z-10">
-                <Image src={project.screenshots[0]} alt="Code Slugger 앱 홈 화면 - 숫자 야구 모바일 게임" width={100} height={217} className="w-full h-auto" unoptimized priority />
+                <Image src={project.screenshots[0]} alt={`${project.title} 앱 홈 화면`} width={100} height={217} className="w-full h-auto" unoptimized priority />
               </div>
               <div className="relative w-[90px] translate-y-4 rotate-3 shadow-2xl rounded-[12px] overflow-hidden opacity-80 group-hover:opacity-100 group-hover:rotate-2 group-hover:translate-y-2 transition-all duration-500">
-                <Image src={project.screenshots[2]} alt="Code Slugger 결과 화면 - 정답 공개 애니메이션" width={90} height={195} className="w-full h-auto" unoptimized />
+                <Image src={project.screenshots[2]} alt={`${project.title} 앱 결과 화면`} width={90} height={195} className="w-full h-auto" unoptimized />
               </div>
             </div>
 
@@ -248,14 +330,24 @@ const ProjectCard = ({ project, idx }: { project: Project; idx: number }) => {
           )}
         </AnimatePresence>
 
-        {project.link && (
+        {(project.link || project.liveLink) && (
           <div className="flex items-center gap-6 pt-4 mt-4" style={{ borderTop: '1px solid var(--surface-border)' }}>
-            <a href={project.link} target="_blank" rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm font-semibold transition-colors w-fit"
-              style={{ color: 'var(--text-secondary)' }}
-            >
-              <Github size={18} /> Source Code
-            </a>
+            {project.link && (
+              <a href={project.link} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-semibold transition-colors w-fit"
+                style={{ color: 'var(--text-secondary)' }}
+              >
+                <Github size={18} /> Source Code
+              </a>
+            )}
+            {project.liveLink && (
+              <a href={project.liveLink} target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm font-semibold transition-colors w-fit"
+                style={{ color: 'var(--up-color)' }}
+              >
+                <ExternalLink size={18} /> 서비스 바로가기
+              </a>
+            )}
           </div>
         )}
       </div>
