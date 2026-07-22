@@ -10,13 +10,13 @@
 
 200개 국가, 500만 명 이상이 사용하는 루틴·습관 플래너 앱
 
-**사용 기술:** React Native, React, TypeScript, Swift, Kotlin, Jetpack Compose, Jetpack Glance, AppIntents, Wear OS, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next, Claude Code (Hooks · Subagents · MCP)
+**사용 기술:** React Native, React, TypeScript, Swift, Kotlin, Jetpack Compose, Jetpack Glance, AppIntents, Wear OS, Zustand, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next, Claude Code (MCP · Subagents)
 
 ---
 
 ### AI 개발 하네스 구축 및 팀 배포
 
-- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계, **1주일 내 Phase 1~4 단계적 도입** 후 개발자 **3인 전원**에 배포
+- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계해 **단계적으로 도입**하고 **팀 전체에 배포**
 - 파일 편집 시 ESLint 자동 수정, 작업 종료 시 타입 검증 후 차단하는 **검증 계층 구성** — 레거시 에러가 누적된 코드베이스에서 **신규 작성 코드에만 품질 게이트 적용**
 - **React Native 코드 리뷰 서브에이전트** 도입 — 프로젝트에서 실제 발생한 크래시 패턴과 성능 안티패턴을 자동 검사 항목으로 규칙화
 - iOS/Android **빌드 진단 서브에이전트** 도입 — 긴 Xcode·Gradle 로그를 격리된 컨텍스트에서 분석해 원인만 반환, 에이전트 전체에 자동 수정 권한을 제거하고 진단·보고로 역할 한정
@@ -36,37 +36,24 @@
 
 - 내비게이션 그룹의 즉시 import를 제거해 **약 50개 화면을 콜드 스타트 JS 평가 대상에서 제외**
 - 시작 단계별 구간을 마커로 계측하는 스크립트를 만들어 n=10 중앙값으로 개선 전후 비교 (Debug 빌드 기준)
-  - Splash 초기화: 11,455ms → 8,658ms (**-24.4%**)
-  - JS 총 로딩: 17,658ms → 13,805ms (**-21.8%**)
+  - Splash 초기화 (**-24.4%**) · JS 총 로딩 (**-21.8%**)
 - 프로덕션 시작 단계별 duration을 Amplitude로 전송하는 telemetry 구축
 
 ### 상태 관리 구조 개선
 
-- React Query 구독 구조 재설계 및 Selector 패턴 적용(`useShallow` 100여 곳)으로 불필요한 리렌더링 제거
+- React Query 구독 구조 재설계 및 Selector 패턴 전면 적용으로 불필요한 리렌더링 제거
 - Zustand 스토어 중복 통합, computed 기반 파생 상태 최적화, hydration 완료 후 마이그레이션 실행 순서 보장
 - 무한 증가하던 타이머 기록을 **200개 링 버퍼**로 제한하고, 파생 상태로 전개되던 루틴 활동 이력을 **18개월 윈도우**로 캡 (원본 이력은 보존)
 - 타임라인 뷰 토글 시 리마운트 churn으로 **누르는 횟수마다 약 20MB가 회수되지 않던 누수**를 lazy mount + keep-alive로 해결
 
-### Android / iOS 체크리스트 위젯 신규 개발
+### 위젯 시스템 설계 및 현대화 (Android / iOS / Wear OS)
 
 - Zustand 스토어 변경 → Shared Storage → 앱 진입 시 데이터 병합 → Firestore 순차 동기화로 앱-위젯 상태 동기화 파이프라인 설계
 - 수정 시각 기반 item 단위 충돌 해결 로직으로 앱·위젯 동시 수정 시 데이터 정합성 확보
+- Grid / Calendar / Weekly / Streak 4종 위젯을 RemoteViews에서 Jetpack Glance로 전면 재작성, Receiver 클래스명 유지 + 내부 구현 교체 방식으로 기존 사용자 위젯을 유지한 채 무중단 마이그레이션 수행
 - iOS 17+ AppIntents 기반 인터랙티브 위젯, Android suspend 기반 단계형 갱신 처리 등 플랫폼별 UX 구현
-- 4종 위젯 설정 화면 공통 컴포넌트 구조화로 신규 위젯 확장 비용 절감
-
-### Android 홈 위젯 시스템 현대화
-
-- Grid / Calendar / Weekly / Streak 4종 위젯을 RemoteViews에서 Jetpack Glance 기반으로 전면 재작성
-- 레거시 코드 약 1,600라인 및 불필요한 drawable variant 28개 제거
-- 런타임 크기 기반 반응형 레이아웃 구현 (Calendar 셀 자동 조정, Weekly 레이아웃 자동 전환)
-- DataStore 기반으로 위젯 상태 저장 구조 개선, 프로세스 재시작 시 상태 소실 문제 해결
-- Receiver 클래스명 유지 + 내부 구현 교체 방식으로 기존 사용자 위젯을 유지한 채 무중단 마이그레이션 수행
-
-### Wear OS 앱 UI 시스템 현대화
-
-- Android Wear OS 모듈 UI를 기존 XML 레이아웃에서 100% Jetpack Compose로 마이그레이션
-- Compose 환경에 맞는 커스텀 테마(Color / Typography / Shape) 및 디자인 시스템 재구축
-- WearDataLayer(DataClient)를 통해 메인 앱 데이터 변경 시 워치 UI 자동 갱신 연동
+- DataStore 기반으로 위젯 상태 저장 구조를 개선해 프로세스 재시작 시 상태 소실 문제 해결, 런타임 크기 기반 반응형 레이아웃 적용
+- Wear OS 모듈 UI를 XML 레이아웃에서 Jetpack Compose로 마이그레이션하고 WearDataLayer(DataClient)로 메인 앱 데이터 변경 시 워치 UI 자동 갱신 연동
 
 ### Android Geofence 기반 위치 알림 모듈 개발
 
@@ -75,9 +62,9 @@
 
 ### CI/CD 자동화 인프라 구축 (Fastlane)
 
-- iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드, package.json 버전 자동 동기화(sync_version lane)
-- Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, git rev-list --count 기반 versionCode 자동 계산
-- 빌드 완료 시 Slack Dev 그룹 자동 알림 연동
+- iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드, 앱 버전 자동 동기화
+- Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, versionCode 자동 계산
+- 빌드 완료 시 Slack 자동 알림 연동으로 배포 상태 공유
 
 ---
 

@@ -53,7 +53,7 @@ const projects = [
       "무료 1개 / 구독 무제한 게이팅, 해지 시 초과분 비활성화·재구독 시 복원 흐름 (RevenueCat)",
       "30개 테스트 파일로 지오펜스·오프라인 큐·i18n 검증, 5개 국어 스토어 스크린샷 자동 렌더링 파이프라인 구성"
     ],
-    tech: ["Expo SDK 56", "React Native", "TypeScript", "expo-location", "Supabase", "RLS / pgTAP", "RevenueCat", "Jest"],
+    tech: ["Expo SDK 56", "React Native", "TypeScript", "expo-location", "Supabase", "PostgreSQL", "RevenueCat", "Jest"],
     link: null,
     appStoreLink: null,
     icon: null,
@@ -90,7 +90,7 @@ const projects = [
   {
     symbol: "CSLUGG",
     title: "Code Slugger",
-    period: "2026.02 ~ 2026.07 (서비스 종료)",
+    period: "2026.02 ~ 2026.07",
     category: "Mobile Game (B2C)",
     sector: "Consumer / Game",
     price: "₩ 4,200",

@@ -9,13 +9,13 @@
 
 ## 소개
 
-앱과 웹을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. 글로벌 **500만 사용자** 서비스에서 메모리 사용량을 **69%** 줄이고 앱 초기 실행 시간을 **26%** 단축한 경험이 있습니다.
+앱과 웹을 넘나들며 실제 사용자에게 닿는 제품을 만드는 프론트엔드 개발자입니다. 글로벌 **500만 사용자** 서비스에서 메모리 누수를 추적해 네이티브 힙 사용량을 **69%** 줄이고, 콜드 스타트를 **20% 이상** 단축한 경험이 있습니다.
 
-성능 저하의 구조적 원인을 찾아 코드 수준에서 해결합니다. 체감이 아닌 실사용자 지표(P50/P95)로 개선 전후를 직접 측정하고 검증하는 방식으로 일합니다.
+성능 저하의 구조적 원인을 찾아 코드 수준에서 해결합니다. 체감이 아닌 계측 데이터로 개선 전후를 직접 측정하고 검증하는 방식으로 일합니다.
 
 React Native를 기반으로 하되, 제품에 필요하다면 네이티브 영역으로 범위를 넓힙니다. Kotlin·Swift·Jetpack Compose·Glance는 경험이 없던 기술이었지만, 코드베이스 분석 → 구현 계획 수립 → 결과 검증 사이클로 AI를 학습·설계 파트너 삼아 홈 위젯·Wear OS·백그라운드 위치 알림·CI/CD 파이프라인을 모두 단독으로 구현했습니다.
 
-이 방식을 개인 작업에 두지 않고 팀이 쓸 수 있는 구조로 만듭니다. 루티너리에서 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 하네스를 설계해 개발자 3인 전원에게 배포했고, 이후 다른 팀원들이 규칙을 추가하며 함께 운영했습니다.
+이 방식을 개인 작업에 두지 않고 팀이 쓸 수 있는 구조로 만듭니다. 루티너리에서 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 하네스를 설계해 팀 전체에 배포했고, 이후 다른 팀원들이 규칙을 추가하며 함께 운영했습니다.
 
 기획·설계·구현·배포까지 혼자 끝내는 사이클을 반복합니다. 2026년 상반기에만 복약 기록 앱(Cadence), 위치 기반 리마인더 앱(스팟 스테이플러), 경로 기반 주유소 추천 웹(찍고가)을 PRD 작성부터 배포까지 단독으로 완주했습니다.
 
@@ -24,22 +24,22 @@ React Native를 기반으로 하되, 제품에 필요하다면 네이티브 영�
 ## 기술 스택
 
 **프론트엔드**
-`React` `React Native` `Expo` `TypeScript` `Next.js` `Zustand` `React Query` `Redux` `redux-saga` `redux-toolkit` `MobX` `D3.js` `react-native-svg` `Electron` `Storybook`
+`React` `React Native` `Expo` `TypeScript` `Next.js` `Zustand` `React Query` `Redux (Saga · Toolkit)` `D3.js` `react-native-svg` `Storybook`
 
 **네이티브**
-`Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `DataStore` `HealthKit` `Health Connect` `Geofencing`
+`Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `HealthKit` `Health Connect` `Geofencing`
 
 **데이터 · 백엔드**
-`Supabase` `PostgreSQL` `RLS` `Edge Functions` `SQLite` `MMKV` `Firestore`
+`Supabase` `PostgreSQL` `Edge Functions` `SQLite` `Firestore`
 
 **인프라 · 자동화**
 `GitHub Actions` `Fastlane` `EAS` `Docker` `GCP` `Vercel` `Firebase`
 
 **테스트 · 모니터링**
-`Jest` `React Native Testing Library` `Maestro` `pgTAP` `Sentry` `PostHog` `GA4`
+`Jest` `React Native Testing Library` `Maestro` `Sentry` `PostHog` `GA4`
 
 **AI 개발 환경**
-`Claude Code` `Codex` `MCP` `Hooks` `Subagents` `Skills` `Agent 기반 코드 리뷰 · 빌드 진단 자동화`
+`Claude Code` `Codex` `MCP` `Agent 기반 코드 리뷰 · 빌드 진단 자동화`
 
 ---
 
@@ -53,7 +53,7 @@ React Native를 기반으로 하되, 제품에 필요하다면 네이티브 영�
 ---
 
 _AI 개발 하네스 구축 및 팀 배포_
-- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계, **1주일 내 Phase 1~4 단계적 도입** 후 개발자 **3인 전원**에 배포
+- 코드 리뷰·타입 검증·빌드 진단을 자동화하는 AI 개발 환경을 단독 설계해 **단계적으로 도입**하고 **팀 전체에 배포**
 - 파일 편집 시 ESLint 자동 수정, 작업 종료 시 타입 검증 후 차단하는 **검증 계층 구성** — 레거시 에러가 누적된 코드베이스에서 **신규 작성 코드에만 품질 게이트 적용**
 - **React Native 코드 리뷰 서브에이전트** 도입 — 프로젝트에서 실제 발생한 크래시 패턴과 성능 안티패턴을 자동 검사 항목으로 규칙화
 - iOS/Android **빌드 진단 서브에이전트** 도입 — 긴 Xcode·Gradle 로그를 격리된 컨텍스트에서 분석해 원인만 반환, 에이전트 전체에 자동 수정 권한을 제거하고 진단·보고로 역할 한정
@@ -71,43 +71,31 @@ _메모리 누수 해결로 OutOfMemoryError 제거_
 _콜드 스타트 지연 로딩 전환_
 - 내비게이션 그룹의 즉시 import를 제거해 **약 50개 화면을 콜드 스타트 JS 평가 대상에서 제외**
 - 시작 단계별 구간을 마커로 계측하는 스크립트를 만들어 n=10 중앙값으로 개선 전후 비교 (Debug 빌드 기준)
-  - **Splash 초기화**: 11,455ms → 8,658ms (**-24.4%**)
-  - **JS 총 로딩**: 17,658ms → 13,805ms (**-21.8%**)
+  - **Splash 초기화** (**-24.4%**) · **JS 총 로딩** (**-21.8%**)
 - 프로덕션 시작 단계별 duration을 Amplitude로 전송하는 telemetry 구축
 
 _상태 관리 구조 개선_
-- React Query 구독 구조 재설계 및 **Selector 패턴** 적용(`useShallow` 100여 곳)으로 불필요한 리렌더링 제거
+- React Query 구독 구조 재설계 및 **Selector 패턴** 전면 적용으로 불필요한 리렌더링 제거
 - Zustand 스토어 중복 통합, computed 기반 파생 상태 최적화, **hydration 완료 후 마이그레이션 실행** 순서 보장
 - 무한 증가하던 타이머 기록을 **200개 링 버퍼**로 제한하고, 파생 상태로 전개되던 루틴 활동 이력을 **18개월 윈도우**로 캡 (원본 이력은 보존)
 - 타임라인 뷰 토글 시 리마운트 churn으로 **누르는 횟수마다 약 20MB가 회수되지 않던 누수**를 lazy mount + keep-alive로 해결
 
-_Android / iOS 체크리스트 위젯 신규 개발_
+_위젯 시스템 설계 및 현대화 (Android / iOS / Wear OS)_
 - Zustand 스토어 변경 → Shared Storage → 앱 진입 시 데이터 병합 → Firestore 순차 동기화로 **앱-위젯 상태 동기화 파이프라인** 설계
 - **수정 시각 기반 item 단위 충돌 해결 로직**으로 앱·위젯 동시 수정 시 데이터 정합성 확보
+- Grid / Calendar / Weekly / Streak 4종 위젯을 RemoteViews에서 **Jetpack Glance**로 전면 재작성, Receiver 클래스명 유지 + 내부 구현 교체 방식으로 기존 사용자 위젯을 유지한 채 **무중단 마이그레이션** 수행
 - iOS 17+ **AppIntents** 기반 인터랙티브 위젯, Android **suspend** 기반 단계형 갱신 처리 등 플랫폼별 UX 구현
-- 4종 위젯 설정 화면 공통 컴포넌트 구조화로 신규 위젯 확장 비용 절감
-
-_Android 홈 위젯 시스템 현대화_
-- Grid / Calendar / Weekly / Streak 4종 위젯을 RemoteViews에서 **Jetpack Glance** 기반으로 전면 재작성
-- 레거시 코드 약 **1,600라인** 및 불필요한 drawable variant **28개** 제거
-- 런타임 크기 기반 반응형 레이아웃 구현 (Calendar 셀 자동 조정, Weekly 레이아웃 자동 전환)
-- DataStore 기반으로 위젯 상태 저장 구조 개선, 프로세스 재시작 시 **상태 소실 문제 해결**
-- Receiver 클래스명 유지 + 내부 구현 교체 방식으로 기존 사용자 위젯을 유지한 채 **무중단 마이그레이션** 수행
-
-_Wear OS 앱 UI 시스템 현대화_
-- Android Wear OS 모듈 UI를 기존 XML 레이아웃에서 **100% Jetpack Compose**로 마이그레이션
-- Compose 환경에 맞는 커스텀 테마(Color / Typography / Shape) 및 디자인 시스템 재구축
-- State 기반 UI 구조 적용으로 데이터 변경에 즉각 반응하는 동적 화면 구현
-- **WearDataLayer(DataClient)**를 통해 메인 앱 데이터 변경 시 워치 UI 자동 갱신 연동
+- DataStore 기반으로 위젯 상태 저장 구조를 개선해 프로세스 재시작 시 **상태 소실 문제 해결**, 런타임 크기 기반 반응형 레이아웃 적용
+- Wear OS 모듈 UI를 XML 레이아웃에서 **Jetpack Compose**로 마이그레이션하고 **WearDataLayer(DataClient)**로 메인 앱 데이터 변경 시 워치 UI 자동 갱신 연동
 
 _Android Geofence 기반 위치 알림 모듈 개발_
 - React Native Headless JS, 네이티브 모듈, BroadcastReceiver를 활용해 **앱 종료 상태에서도 동작**하는 백그라운드 이벤트 처리 구조 설계
 - 사용자 설정에 따라 Geofence **동적 등록/해제** 구현으로 장소 연계 루틴 알림 기능 제공
 
 _CI/CD 자동화 인프라 구축 (Fastlane)_
-- iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드(심사 제출 분리), `package.json` 버전 자동 동기화(sync_version lane)
-- Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, `git rev-list --count` 기반 versionCode 자동 계산
-- 빌드 완료 시 Slack Dev 그룹 자동 알림 연동
+- iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드, 앱 버전 자동 동기화
+- Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, versionCode 자동 계산
+- 빌드 완료 시 Slack 자동 알림 연동으로 배포 상태 공유
 
 **사용 기술**: React Native, React, TypeScript, Swift, Kotlin, Jetpack Compose, Jetpack Glance, AppIntents, Wear OS, Zustand, MobX, Firestore, Fastlane, Firebase App Distribution, GitHub Actions, i18next, Claude Code (Hooks · Subagents · MCP)
 
@@ -234,7 +222,7 @@ _예약업 온라인 스토어 웹 앱 개발_
 ---
 
 ### Code Slugger — 숫자야구 모바일 게임 (iOS)
-**개인 프로젝트** | 2026.02 ~ 2026.07 (서비스 종료)
+**개인 프로젝트** | 2026.02 ~ 2026.07
 
 회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 앱을 App Store에 출시해 운영했습니다.
 

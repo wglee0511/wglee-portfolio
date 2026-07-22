@@ -17,7 +17,7 @@ const items: TickerItem[] = [
   { symbol: "TS", value: "5Y+", change: "+12.0%", up: true },
   { symbol: "RQ", value: "Mastered", change: "+28.5%", up: true },
   { symbol: "D3", value: "Canvas", change: "+33.0%", up: true },
-  { symbol: "LAUNCH", value: "-26%TTI", change: "▼ Faster", up: false },
+  { symbol: "LAUNCH", value: "-21.8%JS", change: "▼ Faster", up: false },
   { symbol: "KOTLIN", value: "Glance", change: "+19.4%", up: true },
   { symbol: "SWIFT", value: "AppIntents", change: "+15.7%", up: true },
   { symbol: "CI/CD", value: "Fastlane", change: "+100%", up: true },

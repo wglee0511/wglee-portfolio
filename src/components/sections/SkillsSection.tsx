@@ -40,7 +40,7 @@ const skillCategories: SkillCategory[] = [
       { name: "React / Next.js", weight: 95, opinion: "Strong Buy" },
       { name: "TypeScript", weight: 90, opinion: "Strong Buy" },
       { name: "React Query", weight: 88, opinion: "Strong Buy" },
-      { name: "Zustand / MobX", weight: 82, opinion: "Buy" },
+      { name: "Zustand", weight: 82, opinion: "Buy" },
       { name: "D3.js", weight: 75, opinion: "Buy" },
       { name: "Redux (Saga·Toolkit)", weight: 70, opinion: "Buy" },
       { name: "Vite / i18next", weight: 68, opinion: "Buy" },
@@ -68,7 +68,7 @@ const skillCategories: SkillCategory[] = [
     icon: <Database size={20} />,
     totalWeight: 18,
     skills: [
-      { name: "Supabase (Auth·RLS·Edge)", weight: 82, opinion: "Strong Buy" },
+      { name: "Supabase / PostgreSQL", weight: 82, opinion: "Strong Buy" },
       { name: "Firebase / Firestore", weight: 80, opinion: "Strong Buy" },
       { name: "GitHub Actions", weight: 78, opinion: "Buy" },
       { name: "Fastlane / EAS", weight: 75, opinion: "Buy" },
