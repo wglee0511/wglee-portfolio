@@ -10,6 +10,10 @@
 | [01_experience.md](./01_experience.md) | 루티너리 경력 — AI 하네스 · 성능 · 상태관리 · 위젯 · 위치알림 · CI/CD | 1–88 |
 | [02_growth_and_projects.md](./02_growth_and_projects.md) | 네이티브 학습 · 개인 프로젝트 3종 · 이전 경력 | 89–153 |
 | [03_collaboration.md](./03_collaboration.md) | 협업 · 문제 해결 · 성장 · 지원 동기 | 154–203 |
+| **[04_answers.md](./04_answers.md)** | **답변 가이드 — 자주 나오는 30선의 답변 뼈대** | — |
+
+> `04_answers.md`는 답변의 **뼈대**입니다. 그대로 외우면 티가 나니
+> `[ ]`로 표시된 본인만 아는 사실을 채워서 본인 말투로 바꿔 쓰세요.
 
 ---
 
