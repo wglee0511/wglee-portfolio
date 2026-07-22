@@ -76,13 +76,33 @@ const ExperienceSection = () => {
           ]
         },
         {
-          title: "앱 전반 성능 개선",
+          title: "메모리 누수 해결로 OutOfMemoryError 제거",
           items: [
-            "React Query 구독 구조 재설계 및 Selector 패턴 적용으로 불필요한 리렌더링 제거",
-            "Zustand 스토어 중복 통합, computed 기반 파생 상태 최적화, hydration 완료 후 지연 초기화 구조로 전환",
-            "Xcode Organizer 실사용자 지표(P50/P95) 기반으로 개선 전후 직접 측정 및 검증",
-            "Peak Memory(P95): 958.5MB → 297.4MB (-69%)",
-            "Launch Time(P50): 540ms → 400ms (-140ms, -26%)",
+            "Reanimated SharedValue 정리 누락으로 발생하던 네이티브 힙 누수를 추적해 OutOfMemoryError 크래시 해결",
+            "애니메이션 cleanup 훅 재설계 — setTimeout 누수 제거, cancelAnimation으로 이전 애니메이션 명시적 취소, isMounted 체크로 언마운트 후 worklet 실행 차단",
+            "슬라이드(15개)·타이머 서클(6개)·비교 애니메이션(4개) 등 SharedValue 25개 전반에 적용",
+            "Android Native Heap 계측으로 개선 전후 직접 측정",
+            "Total Allocations: 101.9MB → 31.2MB (-69%)",
+            "Remaining Size: 31.2MB → 11.0MB (-65%)",
+          ]
+        },
+        {
+          title: "콜드 스타트 지연 로딩 전환",
+          items: [
+            "내비게이션 그룹의 즉시 import를 제거해 약 50개 화면을 콜드 스타트 JS 평가 대상에서 제외",
+            "시작 단계별 구간을 마커로 계측하는 스크립트를 만들어 n=10 중앙값으로 개선 전후 비교 (Debug 빌드 기준)",
+            "Splash 초기화: 11,455ms → 8,658ms (-24.4%)",
+            "JS 총 로딩: 17,658ms → 13,805ms (-21.8%)",
+            "프로덕션 시작 단계별 duration을 Amplitude로 전송하는 telemetry 구축",
+          ]
+        },
+        {
+          title: "상태 관리 구조 개선",
+          items: [
+            "React Query 구독 구조 재설계 및 Selector 패턴 적용(useShallow 100여 곳)으로 불필요한 리렌더링 제거",
+            "Zustand 스토어 중복 통합, computed 기반 파생 상태 최적화, hydration 완료 후 마이그레이션 실행 순서 보장",
+            "무한 증가하던 타이머 기록을 200개 링 버퍼로 제한하고, 파생 상태로 전개되던 루틴 활동 이력을 18개월 윈도우로 캡 (원본 이력은 보존)",
+            "타임라인 뷰 토글 시 리마운트 churn으로 누르는 횟수마다 약 20MB가 회수되지 않던 누수를 lazy mount + keep-alive로 해결",
           ]
         },
         {
