@@ -79,29 +79,37 @@ const ExperienceSection = () => {
           title: "메모리 누수 해결로 OutOfMemoryError 제거",
           items: [
             "Reanimated SharedValue 정리 누락으로 발생하던 네이티브 힙 누수를 추적해 OutOfMemoryError 크래시 해결",
-            "애니메이션 cleanup 훅 재설계 — setTimeout 누수 제거, cancelAnimation으로 이전 애니메이션 명시적 취소, isMounted 체크로 언마운트 후 worklet 실행 차단",
-            "슬라이드(15개)·타이머 서클(6개)·비교 애니메이션(4개) 등 SharedValue 25개 전반에 적용",
+            "공용 cleanup 훅 설계 — 언마운트 시 cancelAnimation 일괄 호출, isMounted 플래그로 언마운트 후 worklet 콜백 실행 차단. 화면마다 개별 정리하던 구조를 훅 하나로 통일",
+            "온보딩 슬라이드(14개)·타이머 서클(6개)·비교 애니메이션(4개) 등 SharedValue 24개를 훅에 등록",
             "Android Native Heap 계측으로 개선 전후 직접 측정",
             "Total Allocations: 101.9MB → 31.2MB (-69%)",
             "Remaining Size: 31.2MB → 11.0MB (-65%)",
           ]
         },
         {
-          title: "콜드 스타트 지연 로딩 전환",
+          title: "ANR 해결 — 분석 로깅의 메인 스레드 블로킹 제거",
           items: [
-            "내비게이션 그룹의 즉시 import를 제거해 약 50개 화면을 콜드 스타트 JS 평가 대상에서 제외",
-            "시작 단계별 구간을 마커로 계측하는 스크립트를 만들어 n=10 중앙값으로 개선 전후 비교 (Debug 빌드 기준)",
-            "Splash 초기화 (-24.4%) · JS 총 로딩 (-21.8%)",
+            "이벤트 로깅 함수 하나가 분석 SDK 6종 호출과 로컬 저장소 I/O 2건을 동기 실행해 UI 렌더링 중 메인 스레드를 0.5~2초 점유, 화면 전환 시점과 겹치며 ANR 유발",
+            "InteractionManager로 무거운 작업을 렌더링 완료 이후로 분리하고 네이티브 브리지 호출을 병렬화",
+          ]
+        },
+        {
+          title: "콜드 스타트 계측 체계 구축 및 지연 로딩 검증",
+          items: [
+            "시작 단계별 구간을 마커로 계측하는 스크립트 작성 — 워밍업 제외 후 n=10 중앙값·p95로 개선 전후 비교",
+            "내비게이션 화면 62개를 React.lazy로 전환해 콜드 스타트 JS 평가 대상에서 제외, Debug 빌드 기준 Splash 초기화 (-24.4%) · JS 총 로딩 (-21.8%) 확인",
             "프로덕션 시작 단계별 duration을 Amplitude로 전송하는 telemetry 구축",
+            "프로덕션 지표 확인 후 지연 로딩을 최종 제거 — Suspense·스켈레톤의 화면 전환 비용이 시작 시간 이득보다 크다고 판단. 측정 체계와 telemetry는 유지",
           ]
         },
         {
           title: "상태 관리 구조 개선",
           items: [
-            "React Query 구독 구조 재설계 및 Selector 패턴 전면 적용으로 불필요한 리렌더링 제거",
-            "Zustand 스토어 중복 통합, computed 기반 파생 상태 최적화, hydration 완료 후 마이그레이션 실행 순서 보장",
-            "무한 증가하던 타이머 기록을 200개 링 버퍼로 제한하고, 파생 상태로 전개되던 루틴 활동 이력을 18개월 윈도우로 캡 (원본 이력은 보존)",
-            "타임라인 뷰 토글 시 리마운트 churn으로 누르는 횟수마다 약 20MB가 회수되지 않던 누수를 lazy mount + keep-alive로 해결",
+            "서버 상태를 스토어로 복사하던 구조를 걷어내 React Query가 서버 상태를 소유하도록 정리, Zustand는 구독 단위를 필요한 값으로 좁혀 불필요한 리렌더링 제거",
+            "스토어 21개의 중복 통합 및 computed 기반 파생 상태 최적화, 스토어별 version·migrate로 저장 구조 변경 대응",
+            "MobX → Zustand 마이그레이션 — 완료 플래그로 1회만 실행하고, 실패 시 앱이 중단되지 않도록 예외를 격리해 리포팅만 수행",
+            "타임라인 뷰 토글 시 삼항 분기로 무거운 Reanimated·제스처 트리가 통째로 리마운트되며 누를 때마다 약 20MB가 회수되지 않던 누수를 lazy mount + keep-alive로 수정",
+            "시간 경과형 메모리 증가 2건을 Instruments로 원인 분리하고 링 버퍼·윈도우 캡 방식으로 설계 제안 (원본 이력 보존 전제)",
           ]
         },
         {
@@ -109,7 +117,7 @@ const ExperienceSection = () => {
           items: [
             "Zustand 스토어 변경 → Shared Storage → 앱 진입 시 데이터 병합 → Firestore 순차 동기화로 앱-위젯 상태 동기화 파이프라인 설계",
             "수정 시각 기반 item 단위 충돌 해결 로직으로 앱·위젯 동시 수정 시 데이터 정합성 확보",
-            "Grid / Calendar / Weekly / Streak 4종 위젯을 RemoteViews에서 Jetpack Glance로 전면 재작성, Receiver 클래스명 유지 + 내부 구현 교체 방식으로 기존 사용자 위젯을 유지한 채 무중단 마이그레이션 수행",
+            "Grid / Calendar / Weekly / Streak / CheckList 5종 위젯을 RemoteViews에서 Jetpack Glance로 전면 재작성, Receiver 클래스명과 패키지 경로를 유지한 채 내부 구현만 교체해 기존 사용자 위젯을 깨뜨리지 않는 무중단 마이그레이션 수행",
             "iOS 17+ AppIntents 기반 인터랙티브 위젯, Android suspend 기반 단계형 갱신 처리 등 플랫폼별 UX 구현",
             "DataStore 기반으로 위젯 상태 저장 구조를 개선해 프로세스 재시작 시 상태 소실 문제 해결, 런타임 크기 기반 반응형 레이아웃 적용",
             "Wear OS 모듈 UI를 XML 레이아웃에서 Jetpack Compose로 마이그레이션하고 WearDataLayer(DataClient)로 메인 앱 데이터 변경 시 워치 UI 자동 갱신 연동",
@@ -127,7 +135,17 @@ const ExperienceSection = () => {
           items: [
             "iOS DEV/PROD 빌드 파이프라인 단독 구축 — Firebase App Distribution 테스터 배포, TestFlight 업로드, 앱 버전 자동 동기화",
             "Android DEV APK / PROD APK / PROD AAB 빌드 자동화 — Google Play Internal Testing 업로드, versionCode 자동 계산",
+            "package.json을 버전 단일 원본으로 두고 빌드 번호를 커밋 수에서 파생해 수동 증가 누락·중복 제거",
+            "스토어 업로드까지만 자동화하고 실제 출시는 사람이 판단하도록 분리 (TestFlight 심사 제출 skip, Play 내부 테스트 draft 업로드)",
             "빌드 완료 시 Slack 자동 알림 연동으로 배포 상태 공유",
+          ]
+        },
+        {
+          title: "자체 CodePush 배포 인프라 구축 및 데이터 유실 방어",
+          items: [
+            "App Center 종료에 대응해 S3 + CloudFront 기반 자체 번들 배포 체계 구성 (릴리스·롤백 워크플로, Sentry 소스맵 업로드 연동)",
+            "릴리스 히스토리를 CDN에서 읽을 경우 캐시된 404·구버전 응답을 빈 히스토리로 오인해 이전 배포 이력 전체가 소실될 수 있는 결함을 발견",
+            "읽기 경로를 S3 원본으로 고정하고, 쓰기 전 기존 히스토리의 상위집합 여부를 검증해 손실이 발생하면 쓰기를 중단하도록 방어 로직 추가",
           ]
         },
       ],
