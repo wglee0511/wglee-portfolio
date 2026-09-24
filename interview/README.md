@@ -35,7 +35,7 @@
 | **[19_cj_review.md](./19_cj_review.md)** | **🔴 CJ푸드빌 1차 면접 복기 — 실제 질문 17개와 다시 쓴 답변** | — |
 | **[20_resume_fix.md](./20_resume_fix.md)** | **⚠️ 제출용 PDF 수정 문구 — 면접에서 걸린 두 문장** | — |
 | **[21_experience_doc.md](./21_experience_doc.md)** | **📄 경험기술서 — 지원서 붙여넣기용 (3개사 11개 프로젝트)** | — |
-| **[22_ykplan_interview.md](./22_ykplan_interview.md)** | **🎯 와이케이기획 — 최근 프로젝트 5개 기반 기술 질문 20개** | — |
+| **[22_ykplan_interview.md](./22_ykplan_interview.md)** | **🎯 와이케이기획(법률 AI) — 공고 대조 + 프로젝트 기반 질문 18개** | — |
 
 ### 기술 면접 — 스택별
 
