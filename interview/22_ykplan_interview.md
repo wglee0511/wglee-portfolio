@@ -436,6 +436,106 @@
 **포인트** — **"가린 줄 알았는데 다른 경로로 새고 있었다"** 는 발견입니다.
 법률 도메인은 **정보 노출 경계**가 핵심이라 이 사례가 특히 잘 맞습니다.
 
+### 📐 평가가 언제 열리는지 — 이 그림으로 설명하세요
+
+```svg
+<svg viewBox="0 0 780 480" width="100%" style="max-width:780px;height:auto" role="img"
+     aria-label="평가 블라인드 공개 규칙. 양쪽이 모두 쓰면 즉시 공개, 3일이 지나면 한쪽만 써도 자동 공개, 공개 전에는 내용과 평점 평균을 모두 가린다">
+  <defs>
+    <marker id="a3" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="var(--text-secondary)"/>
+    </marker>
+  </defs>
+  <style>
+    .b    { fill: var(--surface); stroke: var(--surface-border); rx: 8; }
+    .hide { fill: rgba(120,123,134,.16); stroke: #787b86; rx: 8; stroke-dasharray: 4 3; }
+    .open { fill: rgba(0,208,132,.14);  stroke: #00d084; rx: 8; }
+    .time { fill: rgba(33,150,243,.14); stroke: #2196f3; rx: 8; }
+    .warn { fill: rgba(255,71,87,.10);  stroke: #ff4757; rx: 8; }
+    .n    { fill: var(--text-primary);   font: 700 13px sans-serif; }
+    .d    { fill: var(--text-secondary); font: 11px sans-serif; }
+    .g    { fill: var(--text-secondary); font: 10px sans-serif; }
+    .f    { fill: var(--text-secondary); font: 10px monospace; }
+    .ln   { stroke: var(--text-secondary); stroke-width: 1.4; marker-end: url(#a3); fill: none; }
+  </style>
+
+  <!-- 입력 -->
+  <rect class="b" x="20" y="20" width="180" height="46"/>
+  <text class="n" x="34" y="40">워커가 평가를 씀</text>
+  <text class="d" x="34" y="56">사장님 → 워커</text>
+
+  <rect class="b" x="20" y="86" width="180" height="46"/>
+  <text class="n" x="34" y="106">사장님이 평가를 씀</text>
+  <text class="d" x="34" y="122">워커 → 사장님</text>
+
+  <!-- 판정 -->
+  <rect class="hide" x="260" y="46" width="200" height="60"/>
+  <text class="n"    x="274" y="68">저장하되 가린다</text>
+  <text class="d"    x="274" y="85">revealed_at = NULL</text>
+  <text class="d"    x="274" y="99">내용 · 평점 평균 모두</text>
+
+  <path class="ln" d="M200 43 H250 V60 H260"/>
+  <path class="ln" d="M200 109 H250 V92 H260"/>
+
+  <!-- 두 갈래 -->
+  <rect class="open" x="530" y="20" width="230" height="64"/>
+  <text class="n"    x="544" y="42">① 짝이 맞으면 즉시 공개</text>
+  <text class="d"    x="544" y="59">서로 뒤바뀐 한 쌍이 다 있을 때</text>
+  <text class="f"    x="544" y="74">reviewer ↔ reviewee</text>
+
+  <rect class="time" x="530" y="104" width="230" height="64"/>
+  <text class="n"    x="544" y="126">② 3일이 지나면 자동 공개</text>
+  <text class="d"    x="544" y="143">한쪽만 썼어도 배치가 연다</text>
+  <text class="f"    x="544" y="158">ReviewWindow = 3일</text>
+
+  <path class="ln" d="M460 62 H500 V52 H530"/>
+  <path class="ln" d="M460 90 H500 V136 H530"/>
+
+  <!-- 왜 기한이 필요한가 -->
+  <rect class="warn" x="530" y="188" width="230" height="58"/>
+  <text class="d"    x="544" y="208">기한이 없으면</text>
+  <text class="d"    x="544" y="224">안 쓰는 게 이득이 되어</text>
+  <text class="d"    x="544" y="240">아무도 안 쓰게 된다</text>
+  <path class="ln" d="M645 168 V188"/>
+
+  <!-- 설계에서 걸린 두 가지 -->
+  <text class="n" x="20" y="300">설계하면서 걸린 두 가지</text>
+
+  <rect class="warn" x="20" y="316" width="360" height="72"/>
+  <text class="n"    x="34" y="337">⚠ 평점 평균으로 내용이 새어나감</text>
+  <text class="d"    x="34" y="355">이전 평가가 하나뿐인 사람의 평균이</text>
+  <text class="d"    x="34" y="371">5.0 → 3.0 으로 바뀌면 1점인 게 드러남</text>
+  <text class="g"    x="34" y="384">→ 평균도 공개 시점까지 같이 가림</text>
+
+  <rect class="warn" x="400" y="316" width="360" height="72"/>
+  <text class="n"    x="414" y="337">⚠ 여러 명이 일하면 남의 평가가 열림</text>
+  <text class="d"    x="414" y="355">일감 단위로 짝을 보면, A 의 짝이 맞는 순간</text>
+  <text class="d"    x="414" y="371">같은 일감의 B 평가까지 같이 열림</text>
+  <text class="g"    x="414" y="384">→ 일감이 아니라 사람 쌍을 기준으로</text>
+
+  <!-- 범례 -->
+  <rect class="hide" x="20" y="418" width="14" height="14"/>
+  <text class="g"    x="42" y="429">가린 상태</text>
+  <rect class="open" x="130" y="418" width="14" height="14"/>
+  <text class="g"    x="152" y="429">공개</text>
+  <rect class="warn" x="220" y="418" width="14" height="14"/>
+  <text class="g"    x="242" y="429">설계에서 걸린 지점</text>
+</svg>
+```
+
+### 이 그림으로 말할 순서
+
+| 순서 | 말할 것 |
+|---|---|
+| **1** | 평가는 **일단 저장하되 가립니다.** 공개 여부를 시각 하나로 관리합니다 |
+| **2** | **양쪽이 다 쓰면 그 자리에서** 둘 다 열립니다 |
+| **3** | 한쪽이 안 쓰면 **3일 뒤 배치가 엽니다.** 기한이 없으면 안 쓰는 게 이득이 됩니다 |
+| **4** | 여기서 **평점 평균도 같이 가려야** 한다는 걸 발견했습니다 |
+| **5** | 그리고 **일감이 아니라 사람 쌍**이 기준이어야 했습니다 (Q8로 연결) |
+
+> **법률 도메인과 이어붙일 문장** — **"무엇을 가릴지보다, 가린 게 다른 경로로 새는지를 봐야 한다"** 는 걸
+> 여기서 배웠습니다. 법률 문서도 같은 성격일 것 같습니다.
+
 ---
 
 ### Q8. 그 기능에서 버그를 발견한 적이 있나요?
