@@ -341,6 +341,23 @@ body {
   border-top: 1px solid var(--surface-border);
 }
 
+/* 다이어그램 — 좁은 화면에서도 폭에 맞춰 줄어든다. */
+.md-figure {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--surface-border);
+  border-radius: 0.6rem;
+  background: var(--surface);
+  overflow-x: auto;
+}
+
+.md-figure svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
 /* 표는 좁은 화면에서 본문이 아니라 표 자체가 스크롤되게 한다. */
 .md-table-wrap {
   margin: 1.25rem 0;

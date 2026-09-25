@@ -90,7 +90,9 @@ export const renderMarkdown = (source: string): string => {
     const line = lines[i];
 
     // 코드 펜스
-    if (/^```/.test(line)) {
+    const fence = line.match(/^```(\w*)/);
+    if (fence) {
+      const lang = fence[1];
       const body: string[] = [];
       i += 1;
       while (i < lines.length && !/^```/.test(lines[i])) {
@@ -98,7 +100,13 @@ export const renderMarkdown = (source: string): string => {
         i += 1;
       }
       i += 1;
-      out.push(`<pre><code>${escapeHtml(body.join('\n'))}</code></pre>`);
+      const code = body.join('\n');
+      if (lang === 'svg') {
+        // 다이어그램은 SVG 를 그대로 내보낸다. 외부 라이브러리 없이 브라우저가 바로 그린다.
+        out.push(`<div class="md-figure">${code}</div>`);
+      } else {
+        out.push(`<pre><code>${escapeHtml(code)}</code></pre>`);
+      }
       continue;
     }
 

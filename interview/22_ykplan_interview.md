@@ -188,6 +188,107 @@
 > 개인 프로젝트 **암호화폐 자동매매 시스템**에 LLM이 들어가 있습니다.
 > 커밋 224개 중 **208개가 본인 작업**이라 기여도 문제도 없습니다.
 
+### 📐 이 프로젝트가 어떻게 생겼는지 — 설명할 때 이 그림을 머릿속에 두세요
+
+```svg
+<svg viewBox="0 0 760 440" width="100%" style="max-width:760px;height:auto" role="img"
+     aria-label="자동매매 파이프라인: 지표 계산이 신호를 만들고, LLM은 확인만 하며, 어느 단계가 막혀도 진입 안 함으로 수렴">
+  <defs>
+    <marker id="ar" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <polygon points="0 0, 9 3.5, 0 7" fill="var(--text-secondary)"/>
+    </marker>
+  </defs>
+  <style>
+    .bx  { fill: var(--surface); stroke: var(--surface-border); rx: 8; }
+    .sig { fill: rgba(0,208,132,.14); stroke: #00d084; rx: 8; }
+    .llm { fill: rgba(255,179,0,.14);  stroke: #d99b00; rx: 8; }
+    .rsk { fill: rgba(33,150,243,.14); stroke: #2196f3; rx: 8; }
+    .stop{ fill: rgba(255,71,87,.10);  stroke: #ff4757; rx: 8; stroke-dasharray: 4 3; }
+    .t   { fill: var(--text-primary);   font: 600 13px sans-serif; }
+    .s   { fill: var(--text-secondary); font: 11px sans-serif; }
+    .lb  { fill: var(--text-secondary); font: 10px sans-serif; }
+    .ln  { stroke: var(--text-secondary); stroke-width: 1.4; marker-end: url(#ar); fill: none; }
+  </style>
+
+  <!-- 좌측 본선 -->
+  <rect class="bx"  x="20"  y="20"  width="150" height="46"/>
+  <text class="t"   x="34"  y="40">① 종목 훑기</text>
+  <text class="s"   x="34"  y="56">scanner</text>
+
+  <rect class="bx"  x="20"  y="86"  width="150" height="46"/>
+  <text class="t"   x="34"  y="106">② 시세 수집</text>
+  <text class="s"   x="34"  y="122">collector</text>
+
+  <rect class="sig" x="20"  y="152" width="150" height="58"/>
+  <text class="t"   x="34"  y="172">③ 지표 계산</text>
+  <text class="s"   x="34"  y="188">ta_analyst</text>
+  <text class="s"   x="34"  y="202">신호를 만든다</text>
+
+  <rect class="llm" x="20"  y="230" width="150" height="58"/>
+  <text class="t"   x="34"  y="250">⑤ LLM 확인</text>
+  <text class="s"   x="34"  y="266">decision</text>
+  <text class="s"   x="34"  y="280">진짜인가 함정인가</text>
+
+  <rect class="rsk" x="20"  y="308" width="150" height="58"/>
+  <text class="t"   x="34"  y="328">⑥ 리스크 검사</text>
+  <text class="s"   x="34"  y="344">risk</text>
+  <text class="s"   x="34"  y="358">금액·손절가 결정</text>
+
+  <rect class="bx"  x="20"  y="386" width="150" height="40"/>
+  <text class="t"   x="34"  y="411">⑦ 주문 실행</text>
+
+  <path class="ln" d="M95 66 V86"/>
+  <path class="ln" d="M95 132 V152"/>
+  <path class="ln" d="M95 210 V230"/>
+  <path class="ln" d="M95 288 V308"/>
+  <path class="ln" d="M95 366 V386"/>
+
+  <!-- 우측: 막히는 경로 -->
+  <rect class="stop" x="330" y="158" width="190" height="40"/>
+  <text class="s"    x="344" y="183">신호 없음 → LLM 호출 안 함</text>
+
+  <rect class="stop" x="330" y="240" width="190" height="40"/>
+  <text class="s"    x="344" y="258">거부 · 오류 · 방향 불일치</text>
+  <text class="s"    x="344" y="273">→ 진입 안 함</text>
+
+  <rect class="stop" x="330" y="318" width="190" height="40"/>
+  <text class="s"    x="344" y="343">한도 초과 → 진입 안 함</text>
+
+  <path class="ln" d="M170 178 H330"/>
+  <path class="ln" d="M170 258 H330"/>
+  <path class="ln" d="M170 336 H330"/>
+
+  <!-- 보유 중 -->
+  <rect class="bx" x="330" y="386" width="190" height="40"/>
+  <text class="t"  x="344" y="405">⑧ 보유 중 감시</text>
+  <text class="s"  x="344" y="419">monitor · 거래소 손절·익절</text>
+  <path class="ln" d="M170 406 H330"/>
+
+  <!-- 범례 -->
+  <rect class="sig" x="560" y="24" width="14" height="14"/>
+  <text class="lb"  x="582" y="35">코드가 정한다</text>
+  <rect class="llm" x="560" y="48" width="14" height="14"/>
+  <text class="lb"  x="582" y="59">LLM 은 여기만</text>
+  <rect class="stop" x="560" y="72" width="14" height="14"/>
+  <text class="lb"  x="582" y="83">막히는 지점</text>
+
+  <text class="s" x="560" y="120">④ 거시 판단(macro)은</text>
+  <text class="s" x="560" y="136">선택이라 생략했습니다</text>
+</svg>
+```
+
+**이 그림에서 말할 것 세 가지**
+
+| 짚을 것 | 왜 중요한가 |
+|---|---|
+| **③에서 신호가 만들어짐** | LLM은 신호를 못 만듭니다. 후보가 있어야 불립니다 |
+| **⑤는 통과/거부만** | 방향·금액·손절가는 ⑥이 정합니다 |
+| **⑤가 실패해도 ⑥⑦은 안 돌아감** | 어느 단계가 막혀도 결과는 "진입 안 함" |
+
+> **한 줄로 요약하면** — **왼쪽으로 갈수록 기계가 정하고, LLM은 가운데서 문을 닫을 수만 있습니다.**
+
+---
+
 **뼈대 (한 문장으로 시작하세요)**
 > 있습니다. 자동매매 시스템에서 **LLM에게 매매 판단을 맡기는 대신 거부권만 준** 구조를 만들었습니다.
 
