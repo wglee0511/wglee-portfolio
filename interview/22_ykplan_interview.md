@@ -188,104 +188,127 @@
 > 개인 프로젝트 **암호화폐 자동매매 시스템**에 LLM이 들어가 있습니다.
 > 커밋 224개 중 **208개가 본인 작업**이라 기여도 문제도 없습니다.
 
-### 📐 이 프로젝트가 어떻게 생겼는지 — 설명할 때 이 그림을 머릿속에 두세요
+### 📐 이 프로젝트가 어떻게 생겼는지 — 에이전트 8개가 순서대로 일합니다
+
+> 각 단계가 **파일 하나**에 대응합니다. 면접에서 이 순서대로 말하면 구조가 그대로 전달됩니다.
 
 ```svg
-<svg viewBox="0 0 760 440" width="100%" style="max-width:760px;height:auto" role="img"
-     aria-label="자동매매 파이프라인: 지표 계산이 신호를 만들고, LLM은 확인만 하며, 어느 단계가 막혀도 진입 안 함으로 수렴">
+<svg viewBox="0 0 780 560" width="100%" style="max-width:780px;height:auto" role="img"
+     aria-label="okx-trade 에이전트 8개의 처리 순서. 종목 고르기, 시세 모으기, 지표 계산, 거시 판단, LLM 확인, 리스크 계산, 주문 실행, 보유 감시">
   <defs>
-    <marker id="ar" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+    <marker id="a2" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
       <polygon points="0 0, 9 3.5, 0 7" fill="var(--text-secondary)"/>
     </marker>
   </defs>
   <style>
-    .bx  { fill: var(--surface); stroke: var(--surface-border); rx: 8; }
+    .b   { fill: var(--surface); stroke: var(--surface-border); rx: 8; }
     .sig { fill: rgba(0,208,132,.14); stroke: #00d084; rx: 8; }
     .llm { fill: rgba(255,179,0,.14);  stroke: #d99b00; rx: 8; }
     .rsk { fill: rgba(33,150,243,.14); stroke: #2196f3; rx: 8; }
-    .stop{ fill: rgba(255,71,87,.10);  stroke: #ff4757; rx: 8; stroke-dasharray: 4 3; }
-    .t   { fill: var(--text-primary);   font: 600 13px sans-serif; }
-    .s   { fill: var(--text-secondary); font: 11px sans-serif; }
-    .lb  { fill: var(--text-secondary); font: 10px sans-serif; }
-    .ln  { stroke: var(--text-secondary); stroke-width: 1.4; marker-end: url(#ar); fill: none; }
+    .st  { fill: rgba(255,71,87,.10);  stroke: #ff4757; rx: 8; stroke-dasharray: 4 3; }
+    .n   { fill: var(--text-primary);   font: 700 13px sans-serif; }
+    .f   { fill: var(--text-secondary); font: 10px monospace; }
+    .d   { fill: var(--text-secondary); font: 11px sans-serif; }
+    .g   { fill: var(--text-secondary); font: 10px sans-serif; }
+    .ln  { stroke: var(--text-secondary); stroke-width: 1.4; marker-end: url(#a2); fill: none; }
   </style>
 
-  <!-- 좌측 본선 -->
-  <rect class="bx"  x="20"  y="20"  width="150" height="46"/>
-  <text class="t"   x="34"  y="40">① 종목 훑기</text>
-  <text class="s"   x="34"  y="56">scanner</text>
+  <rect class="b"   x="20" y="16"  width="230" height="52"/>
+  <text class="n"   x="34" y="36">① 종목 고르기</text>
+  <text class="f"   x="34" y="51">scanner.py</text>
+  <text class="d"   x="34" y="63">거래대금 미달 제외 · 변동성 순 정렬</text>
 
-  <rect class="bx"  x="20"  y="86"  width="150" height="46"/>
-  <text class="t"   x="34"  y="106">② 시세 수집</text>
-  <text class="s"   x="34"  y="122">collector</text>
+  <rect class="b"   x="20" y="84"  width="230" height="52"/>
+  <text class="n"   x="34" y="104">② 시세 모으기</text>
+  <text class="f"   x="34" y="119">collector.py</text>
+  <text class="d"   x="34" y="131">봉 데이터 · 펀딩비 조회</text>
 
-  <rect class="sig" x="20"  y="152" width="150" height="58"/>
-  <text class="t"   x="34"  y="172">③ 지표 계산</text>
-  <text class="s"   x="34"  y="188">ta_analyst</text>
-  <text class="s"   x="34"  y="202">신호를 만든다</text>
+  <rect class="sig" x="20" y="152" width="230" height="58"/>
+  <text class="n"   x="34" y="172">③ 지표 계산 — 신호를 만든다</text>
+  <text class="f"   x="34" y="187">ta_analyst.py</text>
+  <text class="d"   x="34" y="200">RSI · MACD · VWAP → 방향·손절가·목표가</text>
 
-  <rect class="llm" x="20"  y="230" width="150" height="58"/>
-  <text class="t"   x="34"  y="250">⑤ LLM 확인</text>
-  <text class="s"   x="34"  y="266">decision</text>
-  <text class="s"   x="34"  y="280">진짜인가 함정인가</text>
+  <rect class="b"   x="20" y="226" width="230" height="46"/>
+  <text class="n"   x="34" y="246">④ 거시 판단 <tspan class="g">(선택)</tspan></text>
+  <text class="f"   x="34" y="261">macro.py</text>
 
-  <rect class="rsk" x="20"  y="308" width="150" height="58"/>
-  <text class="t"   x="34"  y="328">⑥ 리스크 검사</text>
-  <text class="s"   x="34"  y="344">risk</text>
-  <text class="s"   x="34"  y="358">금액·손절가 결정</text>
+  <rect class="llm" x="20" y="288" width="230" height="58"/>
+  <text class="n"   x="34" y="308">⑤ LLM 확인 — 통과 아니면 거부</text>
+  <text class="f"   x="34" y="323">decision.py</text>
+  <text class="d"   x="34" y="336">"이 진입이 진짜인가, 함정인가"</text>
 
-  <rect class="bx"  x="20"  y="386" width="150" height="40"/>
-  <text class="t"   x="34"  y="411">⑦ 주문 실행</text>
+  <rect class="rsk" x="20" y="362" width="230" height="58"/>
+  <text class="n"   x="34" y="382">⑥ 리스크 계산</text>
+  <text class="f"   x="34" y="397">risk.py</text>
+  <text class="d"   x="34" y="410">금액 · 손절가 · 하루 손실 한도</text>
 
-  <path class="ln" d="M95 66 V86"/>
-  <path class="ln" d="M95 132 V152"/>
-  <path class="ln" d="M95 210 V230"/>
-  <path class="ln" d="M95 288 V308"/>
-  <path class="ln" d="M95 366 V386"/>
+  <rect class="b"   x="20" y="436" width="230" height="46"/>
+  <text class="n"   x="34" y="456">⑦ 주문 실행</text>
+  <text class="f"   x="34" y="471">executor.py</text>
 
-  <!-- 우측: 막히는 경로 -->
-  <rect class="stop" x="330" y="158" width="190" height="40"/>
-  <text class="s"    x="344" y="183">신호 없음 → LLM 호출 안 함</text>
+  <rect class="b"   x="20" y="498" width="230" height="46"/>
+  <text class="n"   x="34" y="518">⑧ 보유 감시</text>
+  <text class="f"   x="34" y="533">monitor.py · ws_monitor.py</text>
 
-  <rect class="stop" x="330" y="240" width="190" height="40"/>
-  <text class="s"    x="344" y="258">거부 · 오류 · 방향 불일치</text>
-  <text class="s"    x="344" y="273">→ 진입 안 함</text>
+  <path class="ln" d="M135 68  V84"/>
+  <path class="ln" d="M135 136 V152"/>
+  <path class="ln" d="M135 210 V226"/>
+  <path class="ln" d="M135 272 V288"/>
+  <path class="ln" d="M135 346 V362"/>
+  <path class="ln" d="M135 420 V436"/>
+  <path class="ln" d="M135 482 V498"/>
 
-  <rect class="stop" x="330" y="318" width="190" height="40"/>
-  <text class="s"    x="344" y="343">한도 초과 → 진입 안 함</text>
+  <rect class="st" x="330" y="158" width="215" height="44"/>
+  <text class="d"  x="344" y="176">신호 없음</text>
+  <text class="d"  x="344" y="192">→ LLM 을 아예 안 부른다</text>
 
-  <path class="ln" d="M170 178 H330"/>
-  <path class="ln" d="M170 258 H330"/>
-  <path class="ln" d="M170 336 H330"/>
+  <rect class="st" x="330" y="230" width="215" height="38"/>
+  <text class="d"  x="344" y="254">반대 방향이면 차단</text>
 
-  <!-- 보유 중 -->
-  <rect class="bx" x="330" y="386" width="190" height="40"/>
-  <text class="t"  x="344" y="405">⑧ 보유 중 감시</text>
-  <text class="s"  x="344" y="419">monitor · 거래소 손절·익절</text>
-  <path class="ln" d="M170 406 H330"/>
+  <rect class="st" x="330" y="294" width="215" height="44"/>
+  <text class="d"  x="344" y="312">거부 · 오류 · 방향 불일치</text>
+  <text class="d"  x="344" y="328">→ 진입 안 함</text>
 
-  <!-- 범례 -->
-  <rect class="sig" x="560" y="24" width="14" height="14"/>
-  <text class="lb"  x="582" y="35">코드가 정한다</text>
-  <rect class="llm" x="560" y="48" width="14" height="14"/>
-  <text class="lb"  x="582" y="59">LLM 은 여기만</text>
-  <rect class="stop" x="560" y="72" width="14" height="14"/>
-  <text class="lb"  x="582" y="83">막히는 지점</text>
+  <rect class="st" x="330" y="370" width="215" height="44"/>
+  <text class="d"  x="344" y="388">한도 초과 · 슬롯 없음</text>
+  <text class="d"  x="344" y="404">→ 진입 안 함</text>
 
-  <text class="s" x="560" y="120">④ 거시 판단(macro)은</text>
-  <text class="s" x="560" y="136">선택이라 생략했습니다</text>
+  <rect class="b"  x="330" y="498" width="215" height="46"/>
+  <text class="d"  x="344" y="517">시간 초과 · 목표 도달 → 청산</text>
+  <text class="g"  x="344" y="533">거래소 손절·익절이 최후 방어선</text>
+
+  <path class="ln" d="M250 180 H330"/>
+  <path class="ln" d="M250 249 H330"/>
+  <path class="ln" d="M250 316 H330"/>
+  <path class="ln" d="M250 392 H330"/>
+  <path class="ln" d="M250 521 H330"/>
+
+  <rect class="sig" x="600" y="22" width="14" height="14"/>
+  <text class="g"   x="622" y="33">코드가 정한다</text>
+  <rect class="llm" x="600" y="46" width="14" height="14"/>
+  <text class="g"   x="622" y="57">LLM 은 여기만</text>
+  <rect class="rsk" x="600" y="70" width="14" height="14"/>
+  <text class="g"   x="622" y="81">돈 계산</text>
+  <rect class="st"  x="600" y="94" width="14" height="14"/>
+  <text class="g"   x="622" y="105">막히는 지점</text>
 </svg>
 ```
 
-**이 그림에서 말할 것 세 가지**
+### 에이전트별로 말할 것
 
-| 짚을 것 | 왜 중요한가 |
-|---|---|
-| **③에서 신호가 만들어짐** | LLM은 신호를 못 만듭니다. 후보가 있어야 불립니다 |
-| **⑤는 통과/거부만** | 방향·금액·손절가는 ⑥이 정합니다 |
-| **⑤가 실패해도 ⑥⑦은 안 돌아감** | 어느 단계가 막혀도 결과는 "진입 안 함" |
+| 에이전트 | 하는 일 | 면접에서 짚을 것 |
+|---|---|---|
+| **① scanner** | 거래대금이 적은 종목을 걸러내고 **변동성 순으로 정렬** | 아무 종목이나 보지 않고 **후보를 먼저 줄인다** |
+| **② collector** | 봉 데이터와 펀딩비를 가져옴 | 판단에 필요한 재료만 모음 |
+| **③ ta_analyst** | RSI·MACD·VWAP로 **방향·손절가·목표가를 결정** | **신호는 여기서 만들어집니다. LLM이 아니라요** |
+| **④ macro** | 뉴스에서 시장 분위기를 읽어 **반대 방향을 막음** | 켜고 끌 수 있고, **막기만 할 뿐 만들지 못함** |
+| **⑤ decision** | LLM에게 **"이 진입이 진짜인가"** 한 가지만 물음 | **통과 아니면 거부.** 방향을 바꾸면 그 진입은 취소 |
+| **⑥ risk** | 금액·손절가 계산, 하루 손실 한도 검사 | **돈 계산은 LLM이 못 건드림** |
+| **⑦ executor** | 실제 주문 전송 | 여기 도달하려면 ③⑤⑥을 모두 통과해야 함 |
+| **⑧ monitor** | 보유 중 가격 감시, 시간 초과·목표 도달 시 청산 | **거래소에 손절·익절이 이미 걸려 있음** |
 
-> **한 줄로 요약하면** — **왼쪽으로 갈수록 기계가 정하고, LLM은 가운데서 문을 닫을 수만 있습니다.**
+**한 줄로 요약하면** — **③이 만들고, ⑤는 거부만 하고, ⑥이 돈을 정합니다.**
+어느 단계가 막혀도 결과는 **"진입 안 함"** 으로 수렴합니다.
 
 ---
 
