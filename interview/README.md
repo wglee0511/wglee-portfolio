@@ -36,6 +36,7 @@
 | **[20_resume_fix.md](./20_resume_fix.md)** | **⚠️ 제출용 PDF 수정 문구 — 면접에서 걸린 두 문장** | — |
 | **[21_experience_doc.md](./21_experience_doc.md)** | **📄 경험기술서 — 지원서 붙여넣기용 (3개사 11개 프로젝트)** | — |
 | **[22_ykplan_interview.md](./22_ykplan_interview.md)** | **🎯 와이케이기획(법률 AI) — 공고 대조 + 프로젝트 기반 질문 18개** | — |
+| **[23_ykplan_review.md](./23_ykplan_review.md)** | **🔴 와이케이기획 1차·2차 면접 복기 — 말 습관 분석 + 실제 질문 19개와 다시 쓴 답변** | — |
 
 ### 기술 면접 — 스택별
 
