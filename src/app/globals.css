@@ -287,6 +287,25 @@ body {
   color: var(--text-primary);
 }
 
+/* 인용 안쪽도 블록으로 렌더되므로, 상자 위아래에 여백이 겹치지 않게 한다. */
+.md-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.md-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.md-body blockquote p {
+  margin-bottom: 0.625rem;
+}
+
+.md-body blockquote h3,
+.md-body blockquote h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.375rem;
+}
+
 .md-body ul,
 .md-body ol {
   margin: 0 0 1.125rem 1.125rem;

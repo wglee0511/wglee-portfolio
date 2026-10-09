@@ -137,16 +137,15 @@ export const renderMarkdown = (source: string): string => {
       continue;
     }
 
-    // 인용 — 연속된 > 를 한 블록으로 묶는다
+    // 인용 — 연속된 > 를 한 블록으로 묶고, 안쪽도 같은 규칙으로 렌더한다.
+    // (인용 안의 ### 제목 · 목록 · 표 · 코드펜스가 기호 그대로 보이지 않게)
     if (/^>\s?/.test(line)) {
       const body: string[] = [];
       while (i < lines.length && /^>\s?/.test(lines[i])) {
         body.push(lines[i].replace(/^>\s?/, ''));
         i += 1;
       }
-      out.push(
-        `<blockquote>${renderInline(body.join('\n')).replace(/\n/g, '<br />')}</blockquote>`,
-      );
+      out.push(`<blockquote>${renderMarkdown(body.join('\n'))}</blockquote>`);
       continue;
     }
 
