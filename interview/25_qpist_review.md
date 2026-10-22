@@ -845,6 +845,116 @@ CodePush는 **앱이 서버에 "새 거 있어요?" 하고 물어볼 때만** �
 | **긴 목록은 보이는 것만** | 대화가 길면 화면에 보이는 메시지만 그림 (`FlatList` · 가상화) |
 | **필요한 것만 구독** | 상태 관리 도구에서 메시지 전체가 아니라 **필요한 조각만 골라 구독** |
 
+**코드로 보면** `🌐 개념 정리`
+
+**→ 아래 코드는 설명용 예시입니다.** `stream.onToken`은 토큰이 올 때마다 부르는 가상의 구독 함수이고, 실제로는 SSE·WebSocket 라이브러리의 이벤트가 이 자리에 들어갑니다.
+
+**❌ 문제 코드 — 토큰마다 setState**
+
+```tsx
+function Chat({ stream }: { stream: TokenStream }) {
+  const [messages, setMessages] = useState<Message[]>([]);
+
+  useEffect(() => {
+    return stream.onToken((token) => {
+      // 토큰 하나 = 렌더 한 번. 1초에 30~50번
+      setMessages((prev) => {
+        const last = prev[prev.length - 1];
+        return [...prev.slice(0, -1), { ...last, text: last.text + token }];
+      });
+    });
+  }, [stream]);
+
+  return messages.map((m) => <MessageBubble key={m.id} message={m} />);
+}
+```
+
+**→ 토큰마다 setState가 불려서 Chat 전체가 다시 그려집니다.** 자식인 `MessageBubble`도 **끝난 메시지까지 전부** 다시 그려집니다.
+
+**→ 자동 배칭으로는 못 막습니다.** 자동 배칭은 **같은 순간에 일어난** 여러 setState를 묶는 기능입니다. 토큰은 **네트워크 이벤트마다 따로** 오기 때문에 매번 렌더가 일어납니다.
+
+**✅ ① 토큰은 ref에 모으고, 화면 주기마다 한 번만 반영**
+
+```tsx
+function useStreamingText(stream: TokenStream) {
+  const [text, setText] = useState('');
+  const bufferRef = useRef('');                  // React가 지켜보지 않는 상자
+  const frameRef = useRef<number | null>(null);  // 예약해 둔 프레임 번호
+
+  useEffect(() => {
+    const flush = () => {
+      frameRef.current = null;
+      const chunk = bufferRef.current;
+      bufferRef.current = '';
+      setText((prev) => prev + chunk);           // 프레임당 한 번만 렌더
+    };
+
+    const unsubscribe = stream.onToken((token) => {
+      bufferRef.current += token;                // 쌓기만 하고 그리지 않음
+      if (frameRef.current === null) {
+        frameRef.current = requestAnimationFrame(flush);
+      }
+    });
+
+    return () => {
+      unsubscribe();
+      if (frameRef.current !== null) cancelAnimationFrame(frameRef.current);
+    };
+  }, [stream]);
+
+  return text;
+}
+```
+
+**→ ref에 쌓는 건 렌더를 일으키지 않습니다.** `.current`를 바꿔도 React는 모릅니다(Q21).
+
+**→ `requestAnimationFrame`은 다음 화면 갱신 직전에 한 번 실행됩니다.** 60Hz 화면이면 **약 16ms마다 한 번**입니다. 그 사이에 토큰이 10개 와도 **렌더는 한 번**입니다.
+
+**→ 이미 예약돼 있으면 다시 예약하지 않습니다.** `frameRef`로 확인하기 때문에 프레임마다 예약은 하나뿐입니다.
+
+**→ 언마운트할 때 예약을 취소합니다.** 화면이 사라진 뒤에 setState가 불리지 않게 하려는 것입니다.
+
+**→ 50ms 간격으로 묶어도 됩니다.** `requestAnimationFrame` 대신 `setTimeout(flush, 50)`을 써도 구조는 같습니다. 50ms면 사람 눈에는 여전히 실시간으로 보입니다.
+
+**✅ ② 끝난 메시지는 다시 그리지 않기**
+
+```tsx
+const MessageBubble = memo(function MessageBubble({ message }: { message: Message }) {
+  return <Markdown>{message.text}</Markdown>;
+});
+
+function Chat({ messages, streamingText }: Props) {
+  return (
+    <>
+      {messages.map((m) => <MessageBubble key={m.id} message={m} />)}  {/* 끝난 것: 고정 */}
+      <StreamingBubble text={streamingText} />                        {/* 받는 중인 것만 갱신 */}
+    </>
+  );
+}
+```
+
+**→ `memo`는 props가 그대로면 다시 그리지 않습니다.** 끝난 메시지는 내용이 안 바뀌니까 매번 건너뜁니다.
+
+**→ 받는 중인 메시지를 목록에서 떼어 냅니다.** 스트리밍 텍스트를 `StreamingBubble` 하나에만 넘기면, **매 프레임 다시 그려지는 건 그 하나뿐**입니다.
+
+**→ ⚠️ 끝난 메시지 객체를 새로 만들면 memo가 소용없습니다.** `memo`는 **객체가 같은지(참조)** 를 비교합니다. 목록을 갱신할 때 `prev.map(m => ({ ...m }))`처럼 전부 새로 만들면 매번 다시 그려집니다.
+
+**✅ ③ 마크다운 변환은 급하지 않은 일로 미루기**
+
+```tsx
+function StreamingBubble({ text }: { text: string }) {
+  const deferredText = useDeferredValue(text);  // 급한 일(입력·스크롤)을 먼저 처리
+  const html = useMemo(() => renderMarkdown(deferredText), [deferredText]);
+  return <MarkdownView html={html} />;
+}
+```
+
+**→ `useDeferredValue`는 "이 값은 조금 늦어도 된다"고 React에 알려 줍니다.** 사용자가 스크롤하거나 입력하는 중이면 그걸 먼저 처리하고, 마크다운은 **한가할 때** 다시 만듭니다.
+
+**→ `useMemo`로 같은 텍스트면 변환을 다시 하지 않습니다.** 변환은 `deferredText`가 실제로 바뀔 때만 일어납니다.
+
+**→ 그래도 변환은 매번 처음부터입니다.** 답이 아주 길면 **끝난 문단은 따로 떼어 고정**하고, 마지막 문단만 다시 변환하는 방법까지 갑니다.
+
 **다시 쓴 답변** `🌐 개념 정리` + `📁 내 경험`
 
 **→ 토큰마다 setState해서 메시지 목록 전체가 1초에 수십 번 다시 그려지는 걸 의심합니다.** 마크다운 변환도 **매번 처음부터** 돕니다.
