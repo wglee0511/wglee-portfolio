@@ -390,34 +390,76 @@
 
 **실제 답변** — 그리지 못하고 넘어감.
 
-**다시 쓴 답변** `📁 내 경험` — **종이에 그대로 그릴 수 있게 외우세요.**
+**다시 쓴 답변** `📁 내 경험` — **루티너리 코드(`ios/fastlane/Fastfile` · `android/fastlane/Fastfile` · `.github/workflows/codepush-*.yml`) 기준입니다. 종이에 그대로 그릴 수 있게 외우세요.**
+
+**→ 먼저 큰 그림: 배포 경로가 두 갈래입니다.**
+
+| 무엇이 바뀌었나 | 경로 | 어디서 돌리나 |
+|---|---|---|
+| **네이티브 코드** (라이브러리 · 권한 · 네이티브 모듈) | **Fastlane** → 앱 스토어 바이너리 | **개발자 맥에서 실행** (`yarn ios:archive:prd` 등 → `bundle exec fastlane <lane>`) |
+| **JS만** | **CodePush** → S3 + CloudFront | **GitHub Actions** (`workflow_dispatch` — 버튼으로 실행) |
+
+**⚠️ 네이티브 빌드는 GitHub Actions에서 돌지 않습니다.** 워크플로는 CodePush 배포·롤백 3개뿐입니다. "CI에서 빌드한다"고 말하면 틀립니다.
 
 ```
-[iOS]
-GitHub Actions (수동 실행: DEV / PROD 선택)
-  → 의존성 설치 (yarn · CocoaPods)
-  → Fastlane lane
-      → 버전 이름: package.json에서 읽음
-      → 빌드 번호: 커밋 수로 자동 계산
-      → 인증서·프로비저닝 준비 [ match 사용 여부 ]
-      → gym으로 빌드 (.ipa)
-      → DEV: Firebase App Distribution (테스터 배포)
-        PROD: TestFlight 업로드 (심사 제출은 안 함, skip_submission)
-  → Slack 알림
+[iOS — Fastlane, 맥에서 실행]
+lane 3개: firebase_stg (DEV) · firebase_prd (PROD) · archive_prd (스토어)
 
-[Android]
-  → versionCode 자동 계산
-  → DEV APK / PROD APK / PROD AAB 빌드 (gradle)
-  → DEV: Firebase App Distribution
-    PROD: Google Play 내부 테스트 트랙 (draft)
-  → Slack 알림
+  ① 비밀값 로드: env/.env.secrets (dotenv)
+  ② sync_version
+      → 버전 이름: package.json의 version
+      → 빌드 번호: git 커밋 수 + 1
+      → 둘 다 ios/Config.xcconfig 에 기록 (VERSION · BUILD_NUMBER)
+  ③ gym으로 .ipa 빌드
+      → firebase_stg / firebase_prd: DEV·PROD scheme, development 내보내기, 자동 서명
+      → archive_prd: PROD scheme, app-store 내보내기, 수동 서명
+        (프로비저닝 프로파일 5개: 앱 · 위젯 · 워치 · 인텐트 · 알림 확장)
+  ④ 업로드
+      → firebase_stg / firebase_prd: Firebase App Distribution (testers 그룹)
+      → archive_prd: App Store Connect API 키로 TestFlight 업로드
+        (skip_submission — 심사 제출 안 함)
+  ⑤ Slack 알림: 테스트 빌드는 QA 채널, TestFlight는 릴리스 채널
+
+[Android — Fastlane, 맥에서 실행]
+lane 3개: firebase_stg (dev 플레이버) · firebase_prd (prod 플레이버) · archive_prd (스토어)
+
+  ① yarn android:clean 후 실행, 비밀값 로드
+  ② ENVFILE로 환경 선택: env/.env.dev / env/.env.prod
+  ③ gradle 빌드
+      → firebase_stg / firebase_prd: assemble → APK
+      → archive_prd: bundle → AAB
+  ④ 버전
+      → versionName: build.gradle이 package.json에서 읽음
+      → versionCode: git 커밋 수 + 1062000 (archive_prd는 +1 해서 overrideVersionCode로 넘김)
+  ⑤ 업로드
+      → firebase_*: Firebase App Distribution
+      → archive_prd: Google Play 내부 테스트 트랙, draft 상태
+  ⑥ Slack 알림
+
+[CodePush — GitHub Actions, 버튼으로 실행]
+codepush-dev-deploy (staging) · codepush-prod-deploy (production) · codepush-rollback
+
+  ① 입력: 플랫폼 · 바이너리 버전 · 강제 업데이트 여부 · 롤아웃 % · 제외할 에셋
+  ② 의존성 설치 (Node 22 · yarn 캐시)
+  ③ 새 번들 버전 계산: S3 원본의 배포 기록 JSON을 읽어 patch +1
+  ④ npx code-push release → 번들과 배포 기록을 S3에 올림, CloudFront로 배포
+  ⑤ 같은 번들로 소스맵 생성 → Sentry에 업로드
+     (release 이름에 바이너리 버전 + CodePush 번들 버전을 같이 넣음)
+  ⑥ Slack 알림 (성공·실패 모두 — if: always())
+
+  롤백: 배포 기록에서 문제 버전을 enabled: false로 → 그 아래 활성 버전으로 돌아감
+        (활성 버전이 없으면 스토어 바이너리 원래 번들로 돌아감)
 ```
 
-**→ 핵심은 "테스트 트랙까지 자동, 출시는 사람"입니다.** 출시는 기획·QA 확인과 타이밍(이벤트, 주말)이 걸린 판단이라 남겼습니다.
+**→ 핵심은 "테스트 트랙까지 자동, 출시는 사람"입니다.** TestFlight는 **심사 제출 없이**, Play는 **draft**로만 올립니다. 출시는 기획·QA 확인과 타이밍(이벤트, 주말)이 걸린 판단이라 남겼습니다.
 
-**→ 버전은 원본이 하나입니다.** iOS와 Android가 **`package.json` 하나**를 읽고, 빌드 번호는 **커밋 수**에서 만들어서 사람이 올리다 겹치는 일이 없습니다.
+**→ 버전은 원본이 하나입니다.** iOS와 Android가 **`package.json` 하나**를 읽고, 빌드 번호는 **git 커밋 수**에서 만들어서 사람이 올리다 겹치는 일이 없습니다. Android versionCode에는 커밋 수에 **1062000**을 더합니다. **[ 더한 이유 — 기존 스토어 versionCode보다 크게 맞추려던 값인지 확인 ]**
 
-**→ "Fastlane 내부는요?"** lane은 **작업 순서를 묶은 함수**이고, `gym`(iOS 빌드) · `gradle`(Android 빌드) · `pilot`/`upload_to_testflight` · `supply`/`upload_to_play_store` · `firebase_app_distribution` 같은 **action**을 차례로 부릅니다. `🌐 개념 정리`
+**→ JS만 바뀌면 스토어를 안 거칩니다.** CodePush 배포는 **바이너리 버전에 묶여서** 나갑니다. 네이티브가 다른 옛 앱에는 새 JS가 가지 않습니다.
+
+**→ "왜 네이티브 빌드는 CI에 안 올렸나요?"** **[ 실제 이유 — 예: iOS 빌드에 macOS 러너 비용, 서명 인증서를 CI에 두는 부담, 배포 빈도가 낮아 로컬로 충분 ]**. 지금이라면 **macOS 러너 + 인증서 관리(match 등)** 로 옮기겠다고 답합니다.
+
+**→ "Fastlane 내부는요?"** lane은 **작업 순서를 묶은 함수**입니다. 루티너리 lane은 `gym`(iOS 빌드) · `gradle`(Android 빌드) · `upload_to_testflight` · `upload_to_play_store` · `firebase_app_distribution` · `slack` **action**을 차례로 부릅니다. 버전 동기화는 `sync_version`이라는 **직접 만든 lane**입니다.
 
 ---
 
@@ -435,7 +477,7 @@ GitHub Actions (수동 실행: DEV / PROD 선택)
 
 **→ 숫자가 있다면:** 배포 한 번에 들던 시간 **[ 예: 1시간 → 버튼 1번 + 대기 n분 ]**, 배포 빈도 **[ 주 n회 ]**. **모르면 지어내지 말고** "시간을 잰 적은 없지만 수동 단계가 n개에서 0개가 됐다"고 말합니다.
 
-**→ 부족했던 점도 말합니다.** **성공 알림만 있고 실패 알림이 없었습니다.** 지금이라면 실패 알림과 **빌드 캐시**(CocoaPods·Gradle)부터 넣겠습니다.
+**→ 부족했던 점도 말합니다.** **Fastlane lane은 성공 알림만 있고 실패 알림이 없었습니다**(CodePush 워크플로는 실패도 알림). 지금이라면 실패 알림과 **빌드 캐시**(CocoaPods·Gradle)부터 넣겠습니다.
 
 ---
 

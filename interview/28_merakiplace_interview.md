@@ -333,25 +333,39 @@ Zustand 변경 → Shared Storage(App Group / DataStore) → 위젯 다시 그�
 
 ### Q15. 배포 자동화는 어떻게 구성했나요? 그려 주세요.
 
-**답변** `📁 내 경험` — [27번 Q12](./27_wrtn_review.md)의 그림을 그대로 씁니다.
+**답변** `📁 내 경험` — 루티너리 코드 기준입니다. 자세한 그림은 [27번 Q12](./27_wrtn_review.md)에 있습니다.
+
+**→ 배포 경로가 두 갈래입니다. 네이티브는 Fastlane으로 맥에서, JS만 바뀌면 CodePush를 GitHub Actions 버튼으로 냅니다.**
 
 ```
-GitHub Actions (DEV / PROD 선택)
-  → Fastlane lane
-      → 버전: package.json 하나가 원본
-      → 빌드 번호: 커밋 수로 자동 (Android versionCode 자동 계산)
-      → iOS: 빌드 → DEV는 Firebase App Distribution / PROD는 TestFlight (심사 제출 X)
-      → Android: DEV APK · PROD APK · PROD AAB → Play 내부 테스트 트랙 (draft)
+[네이티브 바이너리 — Fastlane, 개발자 맥에서 실행]
+yarn ios:archive:prd 등 → bundle exec fastlane <lane>
+  lane: firebase_stg (DEV) · firebase_prd (PROD) · archive_prd (스토어)
+  → 버전 이름: package.json 하나가 원본
+  → 빌드 번호: git 커밋 수로 자동
+      iOS: 커밋 수 + 1 → Config.xcconfig
+      Android: 커밋 수 + 1062000 → versionCode
+  → iOS: gym → DEV·PROD 테스트 빌드는 Firebase App Distribution
+                스토어 빌드는 TestFlight (심사 제출 X)
+  → Android: ENVFILE로 dev/prod 선택 → APK는 Firebase App Distribution
+                                       AAB는 Play 내부 테스트 트랙 (draft)
   → Slack 알림
 
-JS만 바뀌면 → CodePush (S3 + CloudFront) — 롤아웃 비율 · 강제 업데이트 · 롤백
+[JS만 바뀌면 — CodePush, GitHub Actions 버튼으로 실행]
+  입력: 플랫폼 · 바이너리 버전 · 강제 업데이트 · 롤아웃 %
+  → S3 원본의 배포 기록을 읽어 새 번들 버전 계산
+  → code-push release → S3 + CloudFront
+  → Sentry 소스맵 업로드 → Slack 알림 (성공·실패 모두)
+  롤백: 문제 버전을 비활성화 → 아래 활성 버전 (없으면 스토어 바이너리 번들)
 ```
 
 **→ 핵심은 "테스트 트랙까지 자동, 출시는 사람"입니다.** 출시는 기획·QA 확인과 타이밍이 걸린 판단이라 남겼습니다.
 
-**→ 공고 스택과 거의 같습니다.** GitHub Actions · Fastlane · Firebase App Distribution · CodePush.
+**→ 공고 스택과 거의 같습니다.** Fastlane · Firebase App Distribution · CodePush · GitHub Actions · Sentry. 단 **GitHub Actions는 CodePush에만** 썼습니다. "CI에서 앱을 빌드했다"고 말하면 틀립니다.
 
-**→ "성과는요?"** **[ 이전 배포 방식과 걸리던 시간 ]**. 모르면 **"시간을 잰 적은 없지만, 사람이 하던 단계가 n개에서 0개가 됐고 빌드 번호 충돌이 없어졌다"** 고 말합니다. 부족했던 점은 **실패 알림이 없었던 것**입니다.
+**→ "왜 네이티브 빌드는 CI에 안 올렸나요?"** **[ 실제 이유 ]**. 지금이라면 **macOS 러너 + 서명 인증서 관리(match 등)** 로 옮기겠다고 답합니다. 공고의 "빌드·배포 병목 해결"과 바로 이어집니다.
+
+**→ "성과는요?"** **[ 이전 배포 방식과 걸리던 시간 ]**. 모르면 **"시간을 잰 적은 없지만, 사람이 하던 단계가 n개에서 0개가 됐고 빌드 번호 충돌이 없어졌다"** 고 말합니다. 부족했던 점은 **Fastlane lane에 실패 알림이 없었던 것**입니다. CodePush 워크플로는 실패도 알립니다.
 
 ---
 
