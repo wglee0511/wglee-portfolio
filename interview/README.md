@@ -48,7 +48,7 @@
 | **[25_qpist_review.md](./25_qpist_review.md)** | **🔴 큐피스트 1차 면접 복기 — AI 챗 앱 포지션 · 실제 질문 25개 · 내 경험 답변 + 모르는 개념 쉬운 정리** | — |
 | **[26_wrtn_interview.md](./26_wrtn_interview.md)** | **🎯 뤼튼(크랙·캬라푸·OOC) Mobile App Engineer — 공고 대조 + 루티너리 커밋 근거 질문 27개** | — |
 | **[27_wrtn_review.md](./27_wrtn_review.md)** | **🔴 뤼튼 1차 면접 복기 — 실제 질문 26개 · 이력서와 어긋난 답(Skia·OTA) · RN 내부 개념 정리** | — |
-| **[28_merakiplace_interview.md](./28_merakiplace_interview.md)** | **🎯 메라키플레이스(나만의닥터) Product Engineer(FE) — 1차 면접 대비 — 제출용 이력서(PDF) · 공고 · 후기(8건) 기반 질문 22개** | — |
+| **[28_merakiplace_interview.md](./28_merakiplace_interview.md)** | **🎯 메라키플레이스(나만의닥터) Product Engineer(FE) — 1차 면접 대비 — 제출용 이력서(PDF) · 공고 · 후기(8건) 기반 질문 23개** | — |
 
 ### 기술 면접 — 스택별
 
