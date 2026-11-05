@@ -67,7 +67,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **결과 노출 위치: 웹 경로 `/documents`**
 
 - 검색 결과는 포트폴리오 사이트의 `/documents` 경로(예: https://wglee.getcodeforge.dev/documents)에 보여준다. (구현됨: `src/app/documents/`, 데이터 `src/data/documents.json`, 로더 `src/lib/documents.ts`. noindex + `robots.txt` Disallow.)
-- **목록 화면**은 `회사명 / 지역명` 순서로만 보여준다. 다른 정보는 목록에 넣지 않는다.
+- **목록 화면**은 `번호 / 회사명 / 지역명` 순서로만 보여준다. 번호는 1부터 위에서 아래로 순서대로 매기고(회사 단위), 다른 정보는 목록에 넣지 않는다. 재검색으로 목록이 바뀌면 번호도 1부터 다시 매긴다.
 - **회사명을 클릭하면 상세 화면**으로 이동하고, 거기에 아래 두 가지를 받아와 보여준다.
   - **회사 정보**: 업종 · 규모 · 위치 · 주요 서비스 · 기술 스택 등 확인된 것
   - **지원 경로**: 공고가 올라온 사이트별 링크와 회사 자체 채용 페이지 링크
