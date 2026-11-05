@@ -20,7 +20,7 @@ AI를 코드 생성기가 아니라 **설계 파트너**로 씁니다. 기능마
 ## 기술 스택
 
 **프론트엔드**
-`React` `React Native` `Expo` `TypeScript` `Next.js` `Zustand` `React Query` `Redux (Saga · Toolkit)` `D3.js` `react-native-svg` `Storybook`
+`React` `React Native` `Expo` `TypeScript` `JavaScript` `Next.js` `Zustand` `MobX` `React Query` `Redux (Saga · Toolkit)` `Reanimated` `React Native Skia` `D3.js` `Chart.js` `Canvas API` `WebView` `Electron` `react-native-svg` `Storybook`
 
 **네이티브**
 `Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `HealthKit` `Health Connect` `Geofencing`
@@ -29,10 +29,10 @@ AI를 코드 생성기가 아니라 **설계 파트너**로 씁니다. 기능마
 `Supabase` `PostgreSQL` `Edge Functions` `SQLite` `Firestore`
 
 **인프라 · 자동화**
-`GitHub Actions` `Fastlane` `EAS` `Docker` `GCP` `Vercel` `Firebase`
+`GitHub Actions` `Fastlane` `EAS` `CodePush` `Docker` `GCP` `AWS (S3 · CloudFront)` `Vercel` `Firebase`
 
 **테스트 · 모니터링**
-`Jest` `React Native Testing Library` `Maestro` `Sentry` `PostHog` `GA4`
+`Jest` `React Native Testing Library` `Maestro` `Sentry` `Amplitude` `PostHog` `GA4` `Crashlytics`
 
 **AI 개발 환경**
 `Claude Code (Hooks · Subagents · MCP)` `Codex` `spec → plan → 구현 → 검증 워크플로` `Agent 기반 코드 리뷰 · 빌드 진단 자동화` `AGENTS.md 기반 팀 규칙 운영`
@@ -120,25 +120,27 @@ _자체 CodePush 배포 인프라 구축 및 데이터 유실 방어_
 ---
 
 _암호화폐 트레이딩 전략 기반 실시간 알림 앱 개발 (iOS / Android)_
-- **40종 이상**의 기술적 지표(RSI · MACD · 볼린저 밴드 · 일목균형표 등)를 Atom → Molecule → Strategy 계층 구조로 조합하는 커스텀 전략 빌더 구현, **8개 거래소** 멀티 마켓 지원
+- **40종 이상**의 기술적 지표(RSI · MACD · 볼린저 밴드 · 일목균형표 등)를 Atom → Molecule → Strategy 계층 구조로 조합하는 커스텀 전략 빌더 구현, **5개 거래소 · 8개 마켓**(현물·선물) 멀티 마켓 지원
 - FCM + Notifee 기반 전략 트리거 알림 구현, 앱 상태(포그라운드/백그라운드/종료)에 관계없이 **일관된 알림 수신 보장**
-- Apple / Google **인앱 구독 결제(IAP)** 3단계 요금제 통합 구현
+- Apple / Google **인앱 구독 결제(IAP)** 3단계 요금제 통합 구현, 요금제별 지표·알림 수 제한을 Zustand 스토어 메서드로 캡슐화
+- 토큰 만료 시 **갱신 → 원 요청 재시도**를 Axios 인터셉터로 처리하고, 동시 요청은 큐로 모아 **갱신이 1회만** 실행되도록 구현. Google · Kakao · Apple 3종 로그인을 단일 인터페이스로 통합
 
 _트레이딩 차트 및 시세조회 웹뷰 페이지_
 - Canvas API로 캔들스틱 지표 라인을 픽셀 단위 직접 렌더링해 **DOM 재계산 없이 고빈도 리드로우** 처리
-- D3의 scaleTime · scaleLinear · zoom · drag를 활용한 줌/패닝, 크로스헤어, 툴팁 구현
-- Vite manualChunks로 대형 라이브러리를 개별 청크 분리 + React.lazy + Suspense로 지연 로딩 전환 → **번들 크기 43% 절감**
+- D3의 scaleTime · scaleLinear · zoom · drag를 활용한 줌/패닝, 크로스헤어, 툴팁 구현. 사용자 피드백(유저 보이스)을 받아 **지표 18종 추가**
+- `postMessage` 기반 **앱↔WebView 양방향 브릿지** 개발 — 앱이 인증 토큰·마켓·코인 초기값을 전달하고 WebView가 사용자 이벤트를 회신
+- Vite manualChunks로 패키지별 청크 분리 + React.lazy + Suspense 지연 로딩 → **청크 1,500KB → 850KB(-43%)**, Lighthouse 성능 **60 → 82점**
 
 _주식 트레이딩 분석 앱 출시_
-- iOS / Android 초기 설정 및 구조 설계, 배포, 심사 프로세스 전담
-- WebView + Canvas 기반 암호화폐 앱과 달리 네이티브 렌더링 성능 확보를 위해 **React Native Skia**로 캔들 차트 구현
+- iOS / Android 초기 설정 및 구조 설계, 배포, 심사 프로세스 전담, FCM 푸시·딥링크 연동
+- WebView + Canvas 기반 암호화폐 앱과 달리 네이티브 렌더링 성능 확보를 위해 **React Native Skia**로 OHLCV 캔들 차트 구현
 
 _모바일 디자인 시스템 구축_
-- 파운데이션(Color · Typography · Spacing) 토큰부터 컴포넌트까지 **0→1 설계 및 배포** 전담
-- Storybook 웹 배포로 컴포넌트 사용 예시 제공, GitHub Actions 기반 **GitHub Package 자동 배포 파이프라인** 구축
+- 파운데이션 토큰(색상 **50+** · 타이포그래피 **20종** · 반경 8단계)부터 **컴포넌트 20+종 · 아이콘 80+개**까지 **0→1 설계 및 배포** 전담. 이후 주식 앱(StockMeerkat)에서 사내 패키지로 재사용
+- Storybook(스토리 20개)을 GitHub Pages에 배포해 디자이너·개발자가 브라우저에서 사용 예시를 확인, GitHub Actions 기반 **GitHub Package 자동 배포 파이프라인** 구축(CommonJS · ES Module · 타입 선언 3종 빌드)
 - 디자이너와 협업하여 토큰 정의 → 컴포넌트 스펙 → 코드 구현 프로세스 정립
 
-**사용 기술**: React Native, React, TypeScript, Vite, D3, Zustand, i18next, AWS S3/Route53/CloudFront, Fastlane, Firebase App Distribution
+**사용 기술**: React Native, React, TypeScript, Vite, D3, Canvas API, React Native Skia, Reanimated, Zustand, React Query, i18next, Storybook, Notifee, FCM, Sentry, Amplitude, CodePush, AWS S3/Route53/CloudFront, Fastlane, Firebase App Distribution
 
 ---
 
@@ -151,7 +153,9 @@ _모바일 디자인 시스템 구축_
 
 _고객 관리 프리미엄 기능 개발_
 - **48,000+** 가맹점 중 유료 구독 전환 확대를 목표로, 유저 보이스 기반 스탬프 적립·쿠폰 발송·고객관리 분석 시각화 등 신규 기능 개발
-- Firebase Analytics 기반 사용자 행동 분석으로 이탈 구간 파악 및 UI/UX 개선 리팩토링 진행
+- 매출·상품·고객·포인트·쿠폰 분석을 보여주는 **매장 분석 웹**(저장소 전체 278 커밋 중 **69건** 작성, 2021.12~2023.06)을 Chart.js로 구현 — 쿠폰 현황·기여도 분석과 **가맹·구독 신청 유도 배너**로 유료 전환 동선 연결
+- 하나의 웹을 **PC POS(Electron)와 POS WebView** 환경에서 공용으로 쓰도록 비가맹점·PC POS 분기, 피처 플래그, 가상 키보드(이메일 입력) 대응
+- GA4 이벤트 설계와 Sentry 연동으로 사용자 행동·에러를 추적해 이탈 구간을 파악하고 UI/UX 개선 리팩토링 진행. 결제 시각이 23:59인 건이 선택일에 반영되지 않는 등 **날짜 경계 집계 오류**를 수정
 
 _고객 대면 앱 출시 (0→1)_
 - 매장-고객 간 포인트/스탬프 적립, 카드 서명 등 대면 결제 흐름을 처리하는 앱 신규 개발
@@ -168,7 +172,7 @@ _예약업 온라인 스토어 웹 앱 개발_
 - 예약 캘린더, 매장 지도 표기, 휴대폰 인증 등 핵심 기능 개발
 - AWS S3/Route53/CloudFront 기반 정적 배포 구성
 
-**사용 기술**: React, React Native, Electron, TypeScript, Next.js, Redux (Thunk · Saga · Toolkit), AWS S3/Route53/CloudFront, Fastlane, Firebase App Distribution
+**사용 기술**: React, React Native, Electron, TypeScript, JavaScript, Next.js, Redux (Thunk · Saga · Toolkit), RTK Query, Chart.js, Pusher, WebView, Sentry, Firebase Analytics · Crashlytics · Remote Config, CodePush, AWS S3/Route53/CloudFront, Fastlane, Firebase App Distribution
 
 ---
 

@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /interview
+Disallow: /documents
 
 Sitemap: https://wglee.getcodeforge.dev/sitemap.xml
