@@ -20,6 +20,8 @@ export type JobPosting = {
     summary?: string;
   };
   infoSources: { label: string; url: string }[];
+  /** 공고 본문·기술 태그에 React Native가 확인된 공고 */
+  rn: boolean;
   maybeSame: boolean;
   checkedAt: string;
 };
@@ -28,6 +30,8 @@ export type Company = {
   key: string;
   name: string;
   regions: string[];
+  /** 이 회사의 공고 중 React Native 확인된 것이 있는지 */
+  rn: boolean;
   postings: JobPosting[];
 };
 
@@ -36,12 +40,14 @@ const postings = raw as JobPosting[];
 function buildCompanies(): Company[] {
   const map = new Map<string, Company>();
   for (const p of postings) {
-    const c = map.get(p.companyKey) ?? { key: p.companyKey, name: p.company, regions: [], postings: [] };
+    const c = map.get(p.companyKey) ?? { key: p.companyKey, name: p.company, regions: [], rn: false, postings: [] };
     c.postings.push(p);
+    if (p.rn) c.rn = true;
     if (!c.regions.includes(p.region)) c.regions.push(p.region);
     map.set(p.companyKey, c);
   }
-  return [...map.values()].sort((a, b) => a.name.localeCompare(b.name, 'ko'));
+  // React Native 확인 회사를 먼저, 그 안에서는 가나다순.
+  return [...map.values()].sort((a, b) => Number(b.rn) - Number(a.rn) || a.name.localeCompare(b.name, 'ko'));
 }
 
 /** 공고를 회사 단위로 묶는다. 목록은 회사당 한 줄이다. 모듈 로드 시 한 번만 계산한다. */

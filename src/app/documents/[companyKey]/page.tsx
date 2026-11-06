@@ -119,7 +119,7 @@ export default async function CompanyPage({ params }: PageProps) {
                 {p.position}
               </h3>
               <p className="mt-1.5 text-[0.8125rem] sm:text-sm" style={MUTED}>
-                {[p.region, p.career, `마감 ${p.deadline}`].filter(Boolean).join(' · ')}
+                {[p.region, p.career || '경력 확인 안 됨', `마감 ${p.deadline}`].join(' · ')}
               </p>
               {p.maybeSame && (
                 <p className="mt-1 text-[0.75rem]" style={MUTED}>같은 공고일 수 있음</p>

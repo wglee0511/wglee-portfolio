@@ -17,7 +17,7 @@
   "companyInfo": {
    "industry": "자료 처리업",
    "address": "서울 영등포구 의사당대로 83, 4,5,6,8,17,19층 (여의도동,오투타워 서울핀테크랩)",
-   "homepage": "http://thethelaw.com",
+   "homepage": "httP://thethelaw.com",
    "summary": "자료 처리,소프트웨어 개발,유통,공급 자문,홈페이지,어플리케이션 운영,관리,데이터베이스,온라인정보 제공/민원증명발급 대행,경영 컨설팅,광고 대행"
   },
   "infoSources": [
@@ -26,38 +26,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=amUraUx2NDhRSFdPTXJ3YlBmeHhsUT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "p1ee4a280",
-  "companyKey": "c634a97bc",
-  "company": "서프컴퍼니",
-  "position": "주식회사 서프컴퍼니 - 개발자 채용 (풀스택)",
-  "region": "서울 영등포구",
-  "career": "경력 2~4년",
-  "deadline": "~ 12/05(토)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55490173"
-   }
-  ],
-  "companyInfo": {
-   "industry": "응용 소프트웨어 개발 및 공급업",
-   "address": "서울 영등포구 의사당대로 83, 서울핀테크랩 4층, 5층, 6층, 8층, 17층, 19층 (여의도동,오투타워)",
-   "homepage": "http://surff.kr",
-   "summary": "프로그램 개발 및 공급,화물 운송 중개, 대리 및 관련 서비스업,데이터베이스 개발, 구축 및 판매,물류 관련 학술,연구개발업"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=QWZRblQ1cE1DU3R5ekRoYTlqNWtpZz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p51024ae4",
@@ -86,8 +57,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZmQ1SjQ3dzZUUVR0RTJUbUpkakgvQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p1278f56b",
@@ -116,8 +88,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=YkY4R3N0bEVvN1JqMkthU1o3T1NHQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pee92b43e",
@@ -146,8 +119,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=cHBiaTZiVkF2N3VTVEx0ZEljRTEzZz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pf2712345",
@@ -173,8 +147,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=L0hpd0VJUEQxZ0taNlM1UGVjWktHdz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p16aa18e2",
@@ -203,8 +178,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=Z2hmWWtKRlZoS1d4amtsQnNzbU5wUT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p41804f60",
@@ -240,8 +216,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55439025"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p3b550538",
@@ -277,8 +254,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55439017"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p974af45e",
@@ -307,46 +285,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZmRyMU9neEx0WTN4QmdYT25ibXpyZz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "pf0e96687",
-  "companyKey": "cbb215df5",
-  "company": "반프",
-  "position": "풀스텍 개발자(FullStack) 전문연구요원",
-  "region": "서울 강남구",
-  "career": "경력 1~20년",
-  "deadline": "~ 11/28(토)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55425736"
-   },
-   {
-    "site": "점핏",
-    "url": "https://jumpit.saramin.co.kr/position/55425736"
-   }
-  ],
-  "companyInfo": {
-   "industry": "전자감지장치 제조업",
-   "address": "서울 강남구 역삼로 175, 4층 (역삼동,현승빌딩)",
-   "homepage": "http://www.banf.ai",
-   "summary": "전자 감지장치 제조업"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=b2dvazZtb2U3YkVuMFZIaEhzSWY2Zz09"
-   },
-   {
-    "label": "점핏 공고",
-    "url": "https://jumpit.saramin.co.kr/position/55425736"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pe660e6b2",
@@ -378,8 +319,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55425616"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p966c4573",
@@ -411,37 +353,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55425599"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "p7961e752",
-  "companyKey": "c8b22db73",
-  "company": "리벨라",
-  "position": "풀스택 AI 개발자 경력직(4~7년차) 모집",
-  "region": "서울 서초구",
-  "career": "경력 4~7년",
-  "deadline": "~ 12/05(토)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55412373"
-   }
-  ],
-  "companyInfo": {
-   "industry": "포털 및 기타 인터넷 정보매개 서비스업",
-   "address": "서울 서초구 서래로2길 39, 4층 401호",
-   "summary": "포털 및 기타 인터넷 정보 매개 서비스업,주거용 건물 건설업,기타 건축 마무리 공사업,시스템 응용 소프트웨어 개발 및 공급업,자료 처리, 호스팅 및 관련 서비"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=aE82ZXEvNHg1QndZRmVDQ0tyUVRpZz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p2162fbee",
@@ -470,38 +384,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=K2IvTlVMZHVWY05qUVBWaEVrVHkydz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "pc35cc387",
-  "companyKey": "c51af4b90",
-  "company": "맨파워써치",
-  "position": "AI 네이티브 풀스택 엔지니어",
-  "region": "서울 마포구",
-  "career": "경력 3~10년",
-  "deadline": "~ 11/10(화)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55393862"
-   }
-  ],
-  "companyInfo": {
-   "industry": "시설관리·경비·용역",
-   "address": "서울 강남구 테헤란로 322 한신인터밸리24",
-   "homepage": "http://www.manpowersearch.co.kr",
-   "summary": "헤드헌팅 / HR컨설팅 / 평판조회"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=Vk9DbEQyOW8wVW9jc1JqWHJ6akFLZz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p8c717fbc",
@@ -529,37 +414,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=QU1HdTFJZTR3OGJWTFJKbEVtZklzQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "p2f3079f5",
-  "companyKey": "c32371a21",
-  "company": "대단바이오",
-  "position": "AI·풀스택 SW 개발자 채용 (경력 3~6년)",
-  "region": "서울 서대문구",
-  "career": "경력 3~6년",
-  "deadline": "~ 11/15(일)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55386549"
-   }
-  ],
-  "companyInfo": {
-   "industry": "자연과학 및 공학 융합 연구개발업",
-   "address": "세종 조치원읍 새내12길 54, 2층 2064호",
-   "summary": "자연과학 및 공학 융합 연구개발업"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=cCtKa3hXSlk4RXJOWlZlUFI0TENRQT09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p8a2f2e06",
@@ -588,76 +445,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WHBZYnEwdVRBb1kyWGdOYityaWxSQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "pa80c2c6b",
-  "companyKey": "cfc0bacf8",
-  "company": "에임즈인터내셔널코리아",
-  "position": "AI 전문 기업 클라우드 풀스택 개발자",
-  "region": "서울 강남구",
-  "career": "경력 3~10년",
-  "deadline": "채용시",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55371819"
-   }
-  ],
-  "companyInfo": {
-   "industry": "경영 컨설팅업",
-   "address": "서울 강남구 테헤란로 333, 10층 (역삼동,신도벤처타워)",
-   "homepage": "http://www.aimskorea.com",
-   "summary": "인사및경영컨설팅"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WGZDM2QyZFRGTlNRRCtqQUZkN29QZz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "p64e2a0a3",
-  "companyKey": "ce46018e3",
-  "company": "휴멜로",
-  "position": "[Tikita] AI 프로덕트 엔지니어 (풀스택)",
-  "region": "서울 강남구",
-  "career": "경력 3~8년",
-  "deadline": "~ 11/21(토)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55367316"
-   },
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/384525"
-   }
-  ],
-  "companyInfo": {
-   "industry": "시스템 소프트웨어 개발 및 공급업",
-   "address": "충북 청주시 청원구 오창읍 중심상업로 32-13, 제7층 701-141호 (양청리,엔젤프리존)",
-   "homepage": "https://www.humelo.com",
-   "summary": "소프트웨어 개발 및 공급업"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WE4wTWp3RGFoM1pwNkVmU3FmMzdxZz09"
-   },
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/384525"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p07366044",
@@ -686,38 +476,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=Qlo5QkhwajB0NkdoODJtcGU0LzRXZz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "pba9fb485",
-  "companyKey": "c54999144",
-  "company": "코어시큐리티",
-  "position": "금융범죄 AI 풀스택 개발자",
-  "region": "서울 송파구",
-  "career": "경력 2~20년",
-  "deadline": "~ 11/20(금)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55357203"
-   }
-  ],
-  "companyInfo": {
-   "industry": "시스템 소프트웨어 개발 및 공급업",
-   "address": "서울 송파구 법원로8길 9, 10층 (문정동,청림타워)",
-   "homepage": "http://www.coresec.co.kr",
-   "summary": "소프트웨어 자문,개발,공급/보안 컨설팅,교육"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=NEtiYkpzdi94L1RsWEl0M0k0VUNUdz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p96bd9821",
@@ -745,8 +506,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=emJsK0hLYjJUWk9yWGxvRElXQXYydz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p3a6d4c67",
@@ -775,38 +537,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=RTI1VlQwMFZSc1pFTFNyUVEzL2o1Zz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
- },
- {
-  "id": "pd7c5b56c",
-  "companyKey": "cb5cef791",
-  "company": "처음소프트",
-  "position": "Node.js(4년이상 실무 경력)  풀스택 엔지니어 채용",
-  "region": "서울 강남구",
-  "career": "경력4년↑",
-  "deadline": "~ 11/15(일)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55310337"
-   }
-  ],
-  "companyInfo": {
-   "industry": "기타 정보기술 및 컴퓨터운영 관련 서비스업",
-   "address": "서울 서초구 강남대로 341, 8층",
-   "homepage": "http://www.cheomsoft.co.kr",
-   "summary": "인터넷,인트라넷 운영,소프트웨어(대량이메일 연동,발송솔루션) 개발"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=L0RWSCtEQjhxQkphb2RwdkdMQUxTZz09"
-   }
-  ],
-  "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p852e7443",
@@ -840,8 +573,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55309483"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd5057370",
@@ -878,8 +612,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55297123"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p7c57c1e3",
@@ -908,8 +643,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=anhnd3NaUWJoT0dQR0JyUWU2Q2NGZz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pf7a42b3f",
@@ -954,8 +690,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55261762"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa01a1b1e",
@@ -1000,8 +737,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55258621"
    }
   ],
+  "rn": false,
   "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pfb7b468e",
@@ -1029,8 +767,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=Sjk2dGdVWE5sWlZ2dDRVQkh2dGF6dz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p2db74288",
@@ -1066,8 +805,9 @@
     "url": "https://www.wanted.co.kr/wd/391209"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p8318b19f",
@@ -1095,8 +835,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WG9JbHQ1VU5GK3R3SHpGcnpRK0FRQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p917ae2ef",
@@ -1133,8 +874,9 @@
     "url": "https://www.wanted.co.kr/wd/388737"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb43d7230",
@@ -1170,8 +912,9 @@
     "url": "https://www.wanted.co.kr/wd/386910"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb9f29cba",
@@ -1200,8 +943,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ZzNYVG0wSnh3MHEvcC90K2JVNjhGZz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd6c4a257",
@@ -1230,8 +974,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=N05iUWVDSUlqbDZDb05wWm4xb1lEQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p53c626ec",
@@ -1260,8 +1005,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=V3FZNFdsQjh2Q3hjNDl2by9keThrQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "peeaa474f",
@@ -1298,8 +1044,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55467331"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc9e78f4f",
@@ -1328,8 +1075,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=TlFqbGl2MGF4VUVuS3NwaWd5L21mZz09"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p14114057",
@@ -1358,8 +1106,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=UzZRYXc0bHF0NkNtT0lEUmlobHJWdz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd1fc60a6",
@@ -1396,8 +1145,9 @@
     "url": "https://www.wanted.co.kr/wd/389810"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4b638e93",
@@ -1425,8 +1175,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=T0xsMi82WXovMS9VQ2VGNkoyK3Frdz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa8d62d74",
@@ -1460,8 +1211,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55377914"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4907c711",
@@ -1498,8 +1250,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55298136"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p55aedc59",
@@ -1528,8 +1281,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=QW8zWTJoQUhFT281eGM0MW51RlFIdz09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p96db4f19",
@@ -1566,8 +1320,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55259015"
    }
   ],
-  "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd5975481",
@@ -1596,8 +1351,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=ajQzUDR6UkxxVnVTTGlGVUtOczFYQT09"
    }
   ],
-  "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa58ea846",
@@ -1625,8 +1381,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=L1d1K1VQeWdIS3FjUytpMTJmYlNLQT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pbdb86af0",
@@ -1655,8 +1412,9 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=YjE2VGp4cC9SWmNUakloL1Ntd2JGUT09"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p22b5d776",
@@ -1685,8 +1443,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55242123"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p566e55f9",
@@ -1715,8 +1474,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55427793"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p8cbb957a",
@@ -1754,8 +1514,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55376222"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p8a5bdb8f",
@@ -1784,8 +1545,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55368513"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9f2057bb",
@@ -1823,8 +1585,9 @@
     "url": "https://jumpit.saramin.co.kr/position/55361658"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p775f1509",
@@ -1851,8 +1614,9 @@
     "url": "https://www.wanted.co.kr/wd/30767"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p6bc0af52",
@@ -1879,8 +1643,9 @@
     "url": "https://www.wanted.co.kr/wd/135520"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb3eb1eac",
@@ -1907,8 +1672,9 @@
     "url": "https://www.wanted.co.kr/wd/276525"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p07cb1fd5",
@@ -1935,13 +1701,14 @@
     "url": "https://www.wanted.co.kr/wd/229817"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p312004a0",
   "companyKey": "c40a2cadc",
-  "company": "마인드로직(Mindlogi",
+  "company": "마인드로직",
   "position": "프론트엔드 엔지니어",
   "region": "서울 강남구",
   "career": "",
@@ -1963,8 +1730,9 @@
     "url": "https://www.wanted.co.kr/wd/281116"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p6aaf4429",
@@ -1991,8 +1759,9 @@
     "url": "https://www.wanted.co.kr/wd/166679"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p895a675c",
@@ -2019,8 +1788,9 @@
     "url": "https://www.wanted.co.kr/wd/118906"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4879bbd1",
@@ -2047,14 +1817,15 @@
     "url": "https://www.wanted.co.kr/wd/159691"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pda3309ee",
   "companyKey": "c99392f70",
   "company": "페이타랩(패스오더)",
-  "position": "Android Developer(React Native",
+  "position": "Android Developer(React Native)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -2075,8 +1846,9 @@
     "url": "https://www.wanted.co.kr/wd/283871"
    }
   ],
+  "rn": true,
   "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb7f5db3b",
@@ -2103,8 +1875,9 @@
     "url": "https://www.wanted.co.kr/wd/293288"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9a9c3e00",
@@ -2131,8 +1904,9 @@
     "url": "https://www.wanted.co.kr/wd/262790"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p582f49c4",
@@ -2159,8 +1933,9 @@
     "url": "https://www.wanted.co.kr/wd/304642"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9dd673c2",
@@ -2187,8 +1962,9 @@
     "url": "https://www.wanted.co.kr/wd/305324"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc35b2233",
@@ -2215,8 +1991,9 @@
     "url": "https://www.wanted.co.kr/wd/320768"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p88e39dca",
@@ -2243,14 +2020,15 @@
     "url": "https://www.wanted.co.kr/wd/321830"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pab0f722f",
   "companyKey": "c75c0977e",
   "company": "에이티씨아이",
-  "position": "Product Engineer (프론트엔드, NextJ",
+  "position": "Product Engineer (프론트엔드, NextJ)",
   "region": "서울 금천구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -2271,8 +2049,9 @@
     "url": "https://www.wanted.co.kr/wd/293447"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0ccae447",
@@ -2299,8 +2078,9 @@
     "url": "https://www.wanted.co.kr/wd/325713"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p5911baec",
@@ -2327,8 +2107,9 @@
     "url": "https://www.wanted.co.kr/wd/290984"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p84aded74",
@@ -2355,8 +2136,9 @@
     "url": "https://www.wanted.co.kr/wd/335572"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p68f7361f",
@@ -2383,8 +2165,9 @@
     "url": "https://www.wanted.co.kr/wd/335309"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p252a7874",
@@ -2411,8 +2194,9 @@
     "url": "https://www.wanted.co.kr/wd/336520"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p7d4129cd",
@@ -2439,8 +2223,9 @@
     "url": "https://www.wanted.co.kr/wd/338215"
    }
   ],
+  "rn": false,
   "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa15ee07e",
@@ -2467,8 +2252,9 @@
     "url": "https://www.wanted.co.kr/wd/340584"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p33cf035d",
@@ -2495,8 +2281,9 @@
     "url": "https://www.wanted.co.kr/wd/330270"
    }
   ],
-  "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p1a928916",
@@ -2523,8 +2310,9 @@
     "url": "https://www.wanted.co.kr/wd/343884"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p59d513bb",
@@ -2551,8 +2339,9 @@
     "url": "https://www.wanted.co.kr/wd/347680"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p93c6adf7",
@@ -2579,14 +2368,15 @@
     "url": "https://www.wanted.co.kr/wd/336499"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pcdfb9bc5",
   "companyKey": "cd2095f5f",
   "company": "다이버즈",
-  "position": "소프트웨어 엔지니어 (React / Next.js / ",
+  "position": "소프트웨어 엔지니어 (React / Next.js / )",
   "region": "서울 관악구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -2607,8 +2397,9 @@
     "url": "https://www.wanted.co.kr/wd/349671"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p80a6b002",
@@ -2635,8 +2426,9 @@
     "url": "https://www.wanted.co.kr/wd/340139"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p1f004993",
@@ -2663,8 +2455,9 @@
     "url": "https://www.wanted.co.kr/wd/356194"
    }
   ],
+  "rn": false,
   "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0eef64a5",
@@ -2691,8 +2484,9 @@
     "url": "https://www.wanted.co.kr/wd/358839"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p5513c58e",
@@ -2719,8 +2513,9 @@
     "url": "https://www.wanted.co.kr/wd/348913"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p29bf9377",
@@ -2747,14 +2542,15 @@
     "url": "https://www.wanted.co.kr/wd/359779"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p262cfcb4",
   "companyKey": "c04d4effd",
   "company": "스펙터",
-  "position": "[2년~7년] Frontend Engineer (Rea",
+  "position": "[2년~7년] Frontend Engineer (Rea)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -2775,8 +2571,9 @@
     "url": "https://www.wanted.co.kr/wd/350601"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p92769887",
@@ -2803,8 +2600,9 @@
     "url": "https://www.wanted.co.kr/wd/347683"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc1d16ca3",
@@ -2831,8 +2629,9 @@
     "url": "https://www.wanted.co.kr/wd/372883"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa4b362c1",
@@ -2859,8 +2658,9 @@
     "url": "https://www.wanted.co.kr/wd/356758"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc97ee5e3",
@@ -2887,8 +2687,9 @@
     "url": "https://www.wanted.co.kr/wd/360450"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p3f004f32",
@@ -2915,14 +2716,15 @@
     "url": "https://www.wanted.co.kr/wd/373961"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb8ebe1b4",
-  "companyKey": "c77db914c",
-  "company": "블루개러지(BlueGara",
-  "position": "FANS / 프론트엔드 개발자 (React Native",
+  "companyKey": "c4dc0e38d",
+  "company": "블루개러지",
+  "position": "FANS / 프론트엔드 개발자 (React Native)",
   "region": "서울 강동구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -2943,8 +2745,9 @@
     "url": "https://www.wanted.co.kr/wd/358349"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p1bb26b33",
@@ -2971,8 +2774,9 @@
     "url": "https://www.wanted.co.kr/wd/361794"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p258a3933",
@@ -2999,8 +2803,9 @@
     "url": "https://www.wanted.co.kr/wd/378172"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0630486a",
@@ -3027,8 +2832,9 @@
     "url": "https://www.wanted.co.kr/wd/365927"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p2b3f18ac",
@@ -3055,8 +2861,9 @@
     "url": "https://www.wanted.co.kr/wd/371270"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0e628588",
@@ -3083,8 +2890,9 @@
     "url": "https://www.wanted.co.kr/wd/378286"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb73cf5e2",
@@ -3111,8 +2919,9 @@
     "url": "https://www.wanted.co.kr/wd/379537"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p167112cb",
@@ -3139,8 +2948,9 @@
     "url": "https://www.wanted.co.kr/wd/380888"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p71d7620b",
@@ -3167,8 +2977,9 @@
     "url": "https://www.wanted.co.kr/wd/372316"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4b4cd3ba",
@@ -3195,14 +3006,15 @@
     "url": "https://www.wanted.co.kr/wd/378809"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc33a8bb8",
   "companyKey": "c25a6828a",
   "company": "더크리스피(Crispy)",
-  "position": "캐릭터 AI 챗 크러쉬팝 프론트엔드 개발자 (React",
+  "position": "캐릭터 AI 챗 크러쉬팝 프론트엔드 개발자 (React)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3223,14 +3035,15 @@
     "url": "https://www.wanted.co.kr/wd/383140"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0042156a",
   "companyKey": "c3c255437",
   "company": "엔츠",
-  "position": "B2B 탄소회계 SaaS 프론트엔드 개발자 (3년차 이",
+  "position": "B2B 탄소회계 SaaS 프론트엔드 개발자 (3년차 이)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3251,8 +3064,9 @@
     "url": "https://www.wanted.co.kr/wd/383607"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p65362da5",
@@ -3279,8 +3093,9 @@
     "url": "https://www.wanted.co.kr/wd/384174"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p0d4c13b3",
@@ -3307,14 +3122,15 @@
     "url": "https://www.wanted.co.kr/wd/380737"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p5f781e5a",
   "companyKey": "c951f47a0",
   "company": "래블업",
-  "position": "Fullstack Software Engineer (M",
+  "position": "Fullstack Software Engineer (M)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3335,8 +3151,9 @@
     "url": "https://www.wanted.co.kr/wd/385292"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd3e3ee93",
@@ -3363,8 +3180,9 @@
     "url": "https://www.wanted.co.kr/wd/386242"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p3dbd1458",
@@ -3391,8 +3209,9 @@
     "url": "https://www.wanted.co.kr/wd/388451"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd0235b07",
@@ -3419,8 +3238,9 @@
     "url": "https://www.wanted.co.kr/wd/388614"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p7a257e1f",
@@ -3447,8 +3267,9 @@
     "url": "https://www.wanted.co.kr/wd/388693"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p78c17a9b",
@@ -3475,8 +3296,9 @@
     "url": "https://www.wanted.co.kr/wd/383936"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p030901bc",
@@ -3503,8 +3325,9 @@
     "url": "https://www.wanted.co.kr/wd/382172"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pe2848038",
@@ -3531,14 +3354,15 @@
     "url": "https://www.wanted.co.kr/wd/384423"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9ab7a7f6",
   "companyKey": "c3ed0e464",
   "company": "넥스트증권",
-  "position": "Software Engineer (Full-stack,",
+  "position": "Software Engineer (Full-stack,)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3563,8 +3387,9 @@
     "url": "https://www.wanted.co.kr/wd/388899"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p26d47a30",
@@ -3591,8 +3416,9 @@
     "url": "https://www.wanted.co.kr/wd/389424"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4febc9ef",
@@ -3619,8 +3445,9 @@
     "url": "https://www.wanted.co.kr/wd/386117"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p78c1532f",
@@ -3647,8 +3474,9 @@
     "url": "https://www.wanted.co.kr/wd/390139"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p288f110a",
@@ -3675,14 +3503,15 @@
     "url": "https://www.wanted.co.kr/wd/389506"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p7586f62a",
   "companyKey": "c99392f70",
   "company": "페이타랩(패스오더)",
-  "position": "Web Frontend Developer(JavaScr",
+  "position": "Web Frontend Developer(JavaScr)",
   "region": "서울 강남구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3703,8 +3532,9 @@
     "url": "https://www.wanted.co.kr/wd/390471"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb78ede6f",
@@ -3731,8 +3561,9 @@
     "url": "https://www.wanted.co.kr/wd/390894"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p3e8e5667",
@@ -3759,8 +3590,9 @@
     "url": "https://www.wanted.co.kr/wd/389606"
    }
   ],
+  "rn": false,
   "maybeSame": true,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pa36437f7",
@@ -3787,8 +3619,9 @@
     "url": "https://www.wanted.co.kr/wd/389601"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb9abbaea",
@@ -3815,8 +3648,9 @@
     "url": "https://www.wanted.co.kr/wd/389983"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p54f66980",
@@ -3843,8 +3677,9 @@
     "url": "https://www.wanted.co.kr/wd/391625"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9f4a318e",
@@ -3871,8 +3706,9 @@
     "url": "https://www.wanted.co.kr/wd/391922"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p356707f2",
@@ -3899,8 +3735,9 @@
     "url": "https://www.wanted.co.kr/wd/390388"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9198d72f",
@@ -3927,14 +3764,15 @@
     "url": "https://www.wanted.co.kr/wd/391111"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb289f394",
   "companyKey": "c59dfcbd2",
-  "company": "와이즈버즈(wisebird",
-  "position": "프로덕트 모바일 앱 개발자 (Lean Developer",
+  "company": "와이즈버즈",
+  "position": "프로덕트 모바일 앱 개발자 (Lean Developer)",
   "region": "경기 성남시 수정구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -3955,8 +3793,9 @@
     "url": "https://www.wanted.co.kr/wd/393041"
    }
   ],
+  "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb1ef612e",
@@ -3983,8 +3822,9 @@
     "url": "https://www.wanted.co.kr/wd/393493"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p97dc9c41",
@@ -4011,8 +3851,9 @@
     "url": "https://www.wanted.co.kr/wd/391206"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p05c722e7",
@@ -4039,8 +3880,9 @@
     "url": "https://www.wanted.co.kr/wd/393805"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pf5d64c3f",
@@ -4067,8 +3909,9 @@
     "url": "https://www.wanted.co.kr/wd/391612"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4735a077",
@@ -4095,8 +3938,9 @@
     "url": "https://www.wanted.co.kr/wd/394662"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pc9b2026b",
@@ -4123,8 +3967,9 @@
     "url": "https://www.wanted.co.kr/wd/392768"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p98c27ccc",
@@ -4151,8 +3996,9 @@
     "url": "https://www.wanted.co.kr/wd/392931"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p9c9d881d",
@@ -4179,8 +4025,9 @@
     "url": "https://www.wanted.co.kr/wd/394872"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pcab752c4",
@@ -4207,8 +4054,9 @@
     "url": "https://www.wanted.co.kr/wd/392929"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p6980ab92",
@@ -4235,8 +4083,9 @@
     "url": "https://www.wanted.co.kr/wd/395502"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pd97612a9",
@@ -4263,8 +4112,9 @@
     "url": "https://www.wanted.co.kr/wd/393054"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p4bf7e6ce",
@@ -4291,8 +4141,9 @@
     "url": "https://www.wanted.co.kr/wd/395927"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p97542b8d",
@@ -4319,8 +4170,9 @@
     "url": "https://www.wanted.co.kr/wd/394549"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p123081b6",
@@ -4347,14 +4199,15 @@
     "url": "https://www.wanted.co.kr/wd/394804"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "p763c3751",
   "companyKey": "cbf7ff803",
   "company": "유모스원",
-  "position": "Frontend Engineer (Fleet Manag",
+  "position": "Frontend Engineer (Fleet Manag)",
   "region": "서울 서초구",
   "career": "",
   "deadline": "마감일 미표기",
@@ -4375,14 +4228,15 @@
     "url": "https://www.wanted.co.kr/wd/395053"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "paed58ad9",
   "companyKey": "c0787cb92",
   "company": "어스얼라이언스",
-  "position": "플랫폼 파트 - Frontend Developer (3",
+  "position": "플랫폼 파트 - Frontend Developer (3)",
   "region": "서울 마포구",
   "career": "",
   "deadline": "2026-12-31",
@@ -4403,8 +4257,9 @@
     "url": "https://www.wanted.co.kr/wd/396517"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pb1a6cfc4",
@@ -4431,8 +4286,9 @@
     "url": "https://www.wanted.co.kr/wd/396720"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
  },
  {
   "id": "pf2964186",
@@ -4459,7 +4315,268 @@
     "url": "https://www.wanted.co.kr/wd/395409"
    }
   ],
+  "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-05"
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "pf2b3ba3c",
+  "companyKey": "c5efbe92a",
+  "company": "엠피에이지(MPAG)",
+  "position": "플랫폼 서비스 앱 개발자 (React Native)",
+  "region": "서울 중구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/262642"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 중구 한강대로 416"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/262642"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "p46458f5b",
+  "companyKey": "cb8caec50",
+  "company": "씨제이이엔엠(CJ ENM)",
+  "position": "[Mnet Plus] 앱 개발(React Native)",
+  "region": "서울 마포구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/380140"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 마포구 상암산로66 CJ ENM센터"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/380140"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "p43fcd1f6",
+  "companyKey": "c97c1d9b2",
+  "company": "뤼튼테크놀로지스",
+  "position": "Mobile App Engineer",
+  "region": "서울 서초구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/391352"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 서초구 서초대로77길 17, 14층"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/391352"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "p365b22d8",
+  "companyKey": "c97c1d9b2",
+  "company": "뤼튼테크놀로지스",
+  "position": "Frontend Engineer",
+  "region": "서울 서초구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/392364"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 서초구 서초대로77길 17, 14층"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/392364"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "p5d33dff0",
+  "companyKey": "c4bbd98df",
+  "company": "바이브존(Vibezone)",
+  "position": "K팝 콘서트 플랫폼 앱 개발",
+  "region": "서울 서초구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/391609"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 서초구 매헌로8길 39, 서울AI허브, D동 308호"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/391609"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "pa5cf1f37",
+  "companyKey": "cea0f1183",
+  "company": "아이엠펫",
+  "position": "Frontend Developer",
+  "region": "서울 용산구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/396297"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 용산구 대사관로34길 22, 701호"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/396297"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "pda25bb5c",
+  "companyKey": "c1b77bee3",
+  "company": "비버웍스",
+  "position": "시니어 React Native 개발자",
+  "region": "서울 서초구",
+  "career": "",
+  "deadline": "마감일 미표기",
+  "role": "rn",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/396792"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT,컨텐츠",
+   "address": "서울 서초구 효령로 304, 18층"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/396792"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "p08f4ba56",
+  "companyKey": "cf68d8cda",
+  "company": "유니원아이앤씨",
+  "position": "[웹 개발자 경력 채용] React · Java(Spring Boot)",
+  "region": "서울 영등포구",
+  "career": "경력 3~5년",
+  "deadline": "~ 12/05(토)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55495171"
+   }
+  ],
+  "companyInfo": {
+   "industry": "시스템 소프트웨어 개발 및 공급업",
+   "address": "서울 영등포구 국회대로70길 19, 903호,904호,905호 (여의도동,대하빌딩)",
+   "homepage": "http://www.unioneinc.co.kr",
+   "summary": "소프트웨어개발,정보통신공사업,컴퓨터및주변기기,온라인정보제공업,근로자파견"
+  },
+  "infoSources": [
+   {
+    "label": "사람인 기업정보",
+    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=eDF3SGI3UG10U2tWNlpYVzdURy90dz09"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
+ },
+ {
+  "id": "pc03abe85",
+  "companyKey": "ca2dc6a34",
+  "company": "칼라빈카엔터테인먼트",
+  "position": "[칼라빈카] 프로덕트 엔지니어",
+  "region": "경기 성남시 분당구",
+  "career": "경력 3~10년",
+  "deadline": "~ 12/03(목)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55466789"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "사람인 기업정보",
+    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=cHVTYnBZUXF6SkY0ZVdoZWdWWnNadz09"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-06"
  }
 ]

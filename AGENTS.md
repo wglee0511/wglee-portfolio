@@ -67,7 +67,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 **결과 노출 위치: 웹 경로 `/documents`**
 
 - 검색 결과는 포트폴리오 사이트의 `/documents` 경로(예: https://wglee.getcodeforge.dev/documents)에 보여준다. (구현됨: `src/app/documents/`, 데이터 `src/data/documents.json`, 로더 `src/lib/documents.ts`. noindex + `robots.txt` Disallow.)
-- **목록 화면**은 `번호 / 회사명 / 지역명` 순서로만 보여준다. 번호는 1부터 위에서 아래로 순서대로 매기고(회사 단위), 다른 정보는 목록에 넣지 않는다. 재검색으로 목록이 바뀌면 번호도 1부터 다시 매긴다.
+- **목록 화면**은 `번호 / 회사명 / 지역명` 순서로만 보여준다. 번호는 1부터 위에서 아래로 순서대로 매기고(회사 단위), 다른 정보는 목록에 넣지 않는다. React Native 공고(`rn: true`)가 있는 회사를 위에, 그 안에서는 가나다순으로 둔다. 재검색으로 목록이 바뀌면 번호도 1부터 다시 매긴다.
 - **회사명을 클릭하면 상세 화면**으로 이동하고, 거기에 아래 두 가지를 받아와 보여준다.
   - **회사 정보**: 업종 · 규모 · 위치 · 주요 서비스 · 기술 스택 등 확인된 것
   - **지원 경로**: 공고가 올라온 사이트별 링크와 회사 자체 채용 페이지 링크
@@ -76,9 +76,11 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 **목표 건수: 중복 없이 150개**
 
+- 기본 우선순위는 **React Native**다. `rn: true`는 공고 본문·요구사항·기술 태그에서 React Native가 확인된 경우이고, RN 공고만으로 150건이 안 되면 Flutter·하이브리드 앱·프론트엔드·풀스택 공고로 채운다(사용자가 2026-11-06에 정한 방식). 순수 네이티브(Android·iOS) 공고는 넣지 않는다.
+
 - 한 번의 검색은 **중복을 제외한 고유 공고 150건**을 채우는 것을 목표로 한다. 중복을 빼고 모자라면 150건이 될 때까지 계속 찾는다.
 - 일산 통근 범위에서 150건을 못 채우면 억지로 채우지 않는다. 채운 건수와 부족한 건수를 그대로 보고하고, 범위를 넓힐지 사용자에게 묻는다.
-- 결과 데이터는 `src/data/documents.json`(배열)에 저장한다. 항목은 공고 1건당 1개이며 `id` · `companyKey`(회사 묶음 키) · `company` · `position` · `region` · `career` · `deadline` · `role` · `sources`(사이트별 링크) · `companyInfo` · `infoSources` · `maybeSame`(같은 공고일 수 있음) · `checkedAt`을 가진다. 목록 화면은 `companyKey`로 묶어 회사당 한 줄만 보여준다. (경로·필드는 기본값이며, 구현 시 바뀌면 이 규칙과 훅 스크립트를 함께 고친다.)
+- 결과 데이터는 `src/data/documents.json`(배열)에 저장한다. 항목은 공고 1건당 1개이며 `id` · `companyKey`(회사 묶음 키) · `company` · `position` · `region` · `career` · `deadline` · `role` · `sources`(사이트별 링크) · `companyInfo` · `infoSources` · `rn`(React Native 확인 여부) · `maybeSame`(같은 공고일 수 있음) · `checkedAt`을 가진다. 목록 화면은 `companyKey`로 묶어 회사당 한 줄만 보여준다. (경로·필드는 기본값이며, 구현 시 바뀌면 이 규칙과 훅 스크립트를 함께 고친다.)
 
 **마무리 검토 (Stop 훅)**
 
