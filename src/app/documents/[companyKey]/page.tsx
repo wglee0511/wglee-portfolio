@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { getCompanies, getCompany, safeUrl } from '@/lib/documents';
+import StarButton from '../StarButton';
 
 type PageProps = { params: Promise<{ companyKey: string }> };
 
@@ -55,12 +56,15 @@ export default async function CompanyPage({ params }: PageProps) {
         회사 목록
       </Link>
 
-      <h1
-        className="text-2xl font-bold sm:text-3xl"
-        style={{ color: 'var(--text-primary)' }}
-      >
-        {company.name}
-      </h1>
+      <div className="flex items-center gap-1">
+        <StarButton companyKey={company.key} name={company.name} className="-ml-2.5" />
+        <h1
+          className="text-2xl font-bold sm:text-3xl"
+          style={{ color: 'var(--text-primary)' }}
+        >
+          {company.name}
+        </h1>
+      </div>
       <p className="mt-2 text-[0.8125rem] sm:text-sm" style={MUTED}>
         {company.regions.join(' · ')}
       </p>
