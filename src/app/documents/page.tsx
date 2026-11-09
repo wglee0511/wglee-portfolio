@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import type { Metadata } from 'next';
+import CompanyList from './CompanyList';
 import { getCheckedAt, getCompanies, getPostingCount } from '@/lib/documents';
 
 export const metadata: Metadata = {
@@ -31,34 +31,7 @@ export default function DocumentsIndexPage() {
         </p>
       </header>
 
-      <ul className="space-y-2">
-        {companies.map((c, i) => (
-          <li key={c.key}>
-            <Link
-              href={`/documents/${c.key}`}
-              className="glass flex items-baseline justify-between gap-3 rounded-xl px-4 py-3 transition-colors hover:border-accent-blue/40 sm:px-5"
-            >
-              <span className="flex min-w-0 items-baseline gap-2.5">
-                <span className="w-7 shrink-0 text-right font-mono text-[0.6875rem] text-accent-blue sm:w-8 sm:text-xs">
-                  {i + 1}
-                </span>
-                <span
-                  className="min-w-0 truncate text-[0.9375rem] font-semibold sm:text-base"
-                  style={{ color: 'var(--text-primary)' }}
-                >
-                  {c.name}
-                </span>
-              </span>
-              <span
-                className="shrink-0 text-[0.8125rem] sm:text-sm"
-                style={{ color: 'var(--text-secondary)' }}
-              >
-                {c.regions.join(' · ')}
-              </span>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <CompanyList companies={companies.map(({ key, name, regions }) => ({ key, name, regions }))} />
     </div>
   );
 }
