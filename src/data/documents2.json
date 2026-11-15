@@ -1,0 +1,234 @@
+[
+  {
+    "id": "d2-kakaopay-fe",
+    "companyKey": "kakaopay",
+    "company": "카카오페이",
+    "kospiRank": 96,
+    "position": "프론트엔드 개발자 - 자산 서비스",
+    "region": "경기 성남시 분당구 판교",
+    "career": "경력 3년 이상",
+    "deadline": "상시영입(채용 완료 시 조기 마감)",
+    "role": "fe",
+    "sources": [
+      {
+        "site": "카카오페이 채용",
+        "url": "https://careers.kakaopay.com/ko/o/233787"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "카카오페이 채용 공고",
+        "url": "https://careers.kakaopay.com/ko/o/233787"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": true,
+    "note": "React · Jotai/Zustand · React Query, 모바일 웹뷰 우대. 사람인에는 같은 공고가 \"오늘마감\"으로 표시돼 있어 지원 전 확인 필요."
+  },
+  {
+    "id": "d2-skinc-nova",
+    "companyKey": "skinc",
+    "company": "SK주식회사 (AX)",
+    "kospiRank": 15,
+    "position": "AI 기반 차세대 통신 BSS/OSS(NOVA) 응용개발 분야 전문가 영입",
+    "region": "서울 을지로",
+    "career": "경력 3년 이상",
+    "deadline": "2026-12-25",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "SK Careers",
+        "url": "https://www.skcareers.com/Recruit/Detail/R262417"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "SK Careers 공고",
+        "url": "https://www.skcareers.com/Recruit/Detail/R262417"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": true,
+    "note": "직무 태그에 Frontend 개발이 있으나 본문 업무는 Java/Spring API·BSS/OSS 개발 중심(프론트 비중 낮음)."
+  },
+  {
+    "id": "d2-skinc-image",
+    "companyKey": "skinc",
+    "company": "SK주식회사 (AX)",
+    "kospiRank": 15,
+    "position": "전사 통합 Image 솔루션 제공 플랫폼 Application PL 및 ML 엔지니어 모집 (계약직)",
+    "region": "경기 분당(본문 근무지 기준 확인 필요)",
+    "career": "경력 3년 이상",
+    "deadline": "2026-11-27",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "SK Careers",
+        "url": "https://www.skcareers.com/Recruit/Detail/R262252"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "SK Careers 공고",
+        "url": "https://www.skcareers.com/Recruit/Detail/R262252"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": true,
+    "note": "Java/Spring Boot/React 기반, 백엔드 중심 · 계약직 · PL직."
+  },
+  {
+    "id": "d2-skinc-image-pl",
+    "companyKey": "skinc",
+    "company": "SK주식회사 (AX)",
+    "kospiRank": 15,
+    "position": "전사 통합 Image 솔루션 제공 플랫폼 Application 개발.운영 PL 영입",
+    "region": "경기 분당",
+    "career": "경력 5년 이상 10년 미만",
+    "deadline": "2026-11-20",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "SK Careers",
+        "url": "https://www.skcareers.com/Recruit/Detail/R261970"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "SK Careers 공고",
+        "url": "https://www.skcareers.com/Recruit/Detail/R261970"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": false,
+    "note": "경력 범위 밖(본문 기준)."
+  },
+  {
+    "id": "d2-hyundai-fe",
+    "companyKey": "hyundai",
+    "company": "현대자동차",
+    "kospiRank": 9,
+    "position": "[AVP] 모빌리티 서비스 Frontend Engineer",
+    "region": "확인 안 됨(서초 본사로 추정되나 본문 미확인)",
+    "career": "경력 8년 이상",
+    "deadline": "채용시까지",
+    "role": "fe",
+    "sources": [
+      {
+        "site": "현대자동차 인재채용",
+        "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "현대자동차 인재채용 공고",
+        "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": false,
+    "note": "경력 범위 밖(지원자격: 8년 이상 Frontend 개발)."
+  },
+  {
+    "id": "d2-hybe-fs",
+    "companyKey": "hybe",
+    "company": "하이브",
+    "kospiRank": 78,
+    "position": "[HYBE] Full-Stack 개발",
+    "region": "서울 용산",
+    "career": "경력 5년 이상",
+    "deadline": "마감일 미표기",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "하이브 채용",
+        "url": "https://careers.hybecorp.com/ko/o/235338"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "하이브 채용 공고",
+        "url": "https://careers.hybecorp.com/ko/o/235338"
+      }
+    ],
+    "rn": true,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": false,
+    "note": "경력 범위 밖. 원티드 기술 태그에 React Native 포함(원티드 공고 384052). 자체 사이트 본문은 미열람."
+  },
+  {
+    "id": "d2-krafton-fs5",
+    "companyKey": "krafton",
+    "company": "크래프톤",
+    "kospiRank": 60,
+    "position": "[AI Frontier Div.] AI Native Full Stack Engineer (5년 이상)",
+    "region": "서울(미확인)",
+    "career": "경력 5년 이상",
+    "deadline": "마감일 미표기",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "크래프톤 채용",
+        "url": "https://www.krafton.com/careers/jobs/"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "크래프톤 채용 공고",
+        "url": "https://www.krafton.com/careers/jobs/"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": false,
+    "note": "경력 범위 밖. 목록 제목만 확인, 본문 미열람."
+  },
+  {
+    "id": "d2-krafton-fs10",
+    "companyKey": "krafton",
+    "company": "크래프톤",
+    "kospiRank": 60,
+    "position": "[AI Frontier Div.] AI Native Full Stack Engineer (10년 이상)",
+    "region": "서울(미확인)",
+    "career": "경력 10년 이상",
+    "deadline": "마감일 미표기",
+    "role": "fullstack",
+    "sources": [
+      {
+        "site": "크래프톤 채용",
+        "url": "https://www.krafton.com/careers/jobs/"
+      }
+    ],
+    "companyInfo": {},
+    "infoSources": [
+      {
+        "label": "크래프톤 채용 공고",
+        "url": "https://www.krafton.com/careers/jobs/"
+      }
+    ],
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-15",
+    "fit": false,
+    "note": "경력 범위 밖. 목록 제목만 확인, 본문 미열람."
+  }
+]
