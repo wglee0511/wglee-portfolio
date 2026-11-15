@@ -13,26 +13,26 @@
 
 AI를 코드 생성기가 아니라 **설계 파트너**로 씁니다. 기능마다 설계 문서(spec) → 구현 계획(plan) → 구현 → 계측 검증 순서를 문서로 남기는 방식으로, Kotlin·Jetpack Glance·Wear OS 같은 비전공 네이티브 영역도 프로덕션 수준까지 단독 구현했습니다. 이 방식을 팀에 이식해 루티너리의 **AI 개발 환경을 구축·배포**했고, 이후 팀원들이 직접 규칙을 추가하며 함께 운영했습니다.
 
-같은 방식으로 2026년 상반기에 복약 기록 앱(**Cadence**), 위치 리마인더 앱(**스팟 스테이플러**), 주유소 추천 웹(**찍고가**)을 PRD 작성부터 배포까지 완주했습니다. Cadence는 **설계 문서 11건·구현 계획 10건**을 남기며 17화면 앱을 5일 만에 출시 준비 상태로 만들었습니다.
+2026년 하반기에는 개인 프로젝트로 일본·한국 인디 메이커 플랫폼 **쿠미쉽**과 한일 맛집 순위 서비스 **로지로지**를 만들었습니다. 프런트에 머물지 않고 **Kotlin/Spring API의 인증·동시성·운영 도구**와 **React Native 앱의 지도·배포**까지 맡았고, 전 과정을 Claude Code 에이전트와 협업했습니다.
 
 ---
 
 ## 기술 스택
 
 **프론트엔드**
-`React` `React Native` `Expo` `TypeScript` `JavaScript` `Next.js` `Zustand` `MobX` `React Query` `Redux (Saga · Toolkit)` `Reanimated` `React Native Skia` `D3.js` `Chart.js` `Canvas API` `WebView` `Electron` `react-native-svg` `Storybook`
+`React` `React Native` `Expo` `TypeScript` `JavaScript` `Next.js` `Vite` `Zustand` `MobX` `React Query (TanStack Query)` `Redux (Saga · Toolkit)` `Reanimated` `React Native Skia` `D3.js` `Chart.js` `Canvas API` `WebView` `Electron` `Storybook`
 
 **네이티브**
-`Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `HealthKit` `Health Connect` `Geofencing`
+`Kotlin` `Swift` `Jetpack Compose` `Jetpack Glance` `SwiftUI` `AppIntents` `Wear OS` `Geofencing` `MapLibre`
 
 **데이터 · 백엔드**
-`Supabase` `PostgreSQL` `Edge Functions` `SQLite` `Firestore`
+`Kotlin` `Spring Boot` `JPA` `MySQL` `Flyway` `Spring Session` `Testcontainers` `Firestore`
 
 **인프라 · 자동화**
-`GitHub Actions` `Fastlane` `EAS` `CodePush` `Docker` `GCP` `AWS (S3 · CloudFront)` `Vercel` `Firebase`
+`GitHub Actions` `Fastlane` `EAS` `CodePush` `Docker` `GHCR` `AWS (S3 · CloudFront)` `Cloudflare (Workers · Pages)` `Firebase`
 
 **테스트 · 모니터링**
-`Jest` `React Native Testing Library` `Maestro` `Sentry` `Amplitude` `PostHog` `GA4` `Crashlytics`
+`Jest` `Vitest` `React Native Testing Library` `Sentry` `Amplitude` `GA4` `Crashlytics`
 
 **AI 개발 환경**
 `Claude Code (Hooks · Subagents · MCP)` `Codex` `spec → plan → 구현 → 검증 워크플로` `Agent 기반 코드 리뷰 · 빌드 진단 자동화` `AGENTS.md 기반 팀 규칙 운영`
@@ -178,93 +178,63 @@ _예약업 온라인 스토어 웹 앱 개발_
 
 ## 프로젝트
 
-### LLM 검증형 암호화폐 선물 자동매매 시스템 (OKX)
-**개인 프로젝트** | 2026.08 ~ 2026.09
+### 쿠미쉽 (Kumiship)
+**개인 프로젝트 (동료 1명과 공동 개발)** | 2026.10 ~ 2026.11
 
-업비트 현물 자동매매에 이은 두 번째 자동매매 시스템. OKX 무기한 선물을 대상으로, **매매 신호는 코드가 만들고 LLM에게는 거부권만 주는** 8단계 에이전트 파이프라인. 돈이 걸린 판단이라 LLM이 틀리거나 응답하지 않아도 손실로 이어지지 않는 구조를 우선했습니다.
-
-- **LLM 권한 최소화**: 방향·손절가·목표가·주문 금액은 모두 코드가 결정하고 LLM은 "이 진입이 유효한가"만 판단. 지표 신호가 없으면 LLM을 호출하지 않으며, LLM이 다른 방향을 제시하거나 확신도가 기준 미만이면 진입 취소
-- **실패 방향을 정해둔 fail-safe**: 진입 판단 실패 시 **진입하지 않고**, 보유 중 청산 재평가 실패 시 **강제 청산하지 않고 유지** — 주문 시 OKX 브래킷(`attachAlgoOrds`)으로 손절·익절을 함께 걸어 거래소가 최후 방어선을 맡도록 구성
-- **리스크 관리**: 일일 실현손실 한도 도달 시 kill-switch를 SQLite에 기록해 신규 진입을 차단하고 날짜가 바뀌면 자동 해제, 명목 금액 상한·동시 보유 슬롯·중복 진입 차단·격리 마진 레버리지 설정
-- **LLM 제공자 교체 구조**: Claude · OpenAI · Ollama · 로컬 모델 4종을 공통 인터페이스 뒤에 두고 설정 하나로 전환. JSON 스키마로 출력을 강제하되, 스키마 지원이 불완전한 로컬 모델은 JSON 모드 + 프롬프트 스키마로 대체하고 앞뒤 설명이 섞인 응답은 객체 구간만 추출해 **형식 오류도 "진입 안 함"으로 처리**
-- **테스트**: 테스트 464개(30개 파일). LLM 자체 대신 가짜 응답·예외를 주입해 신호 없음 시 미호출·방향 불일치 시 취소·오류 시 미진입 같은 **주변 로직을 검증**하고, 프롬프트에 의도한 전략 문구만 들어가는지도 테스트
-
-**사용 기술**: Python 3.12, asyncio, httpx, websockets, pandas, ta, Pydantic, aiosqlite (SQLite), Anthropic SDK, OpenAI SDK, Ollama, pytest
+일본·한국 인디 메이커가 팀원을 모집하고 서비스를 등록해 랭킹에 오르는 플랫폼 (사용자 웹·서버, 운영자 웹·서버 4개 저장소)
 
 ---
 
-### Cadence — GLP-1 복약 기록 앱 (iOS)
-**개인 프로젝트** | 2026.07
+_작성 범위_
+- 커밋 기준 운영자 서버 **93/95건**, 운영자 웹 **11/11건**, 사용자 서버 **127/178건**, 사용자 웹 **20/77건** 작성
+- Claude Code와 함께 만들었고, 사용자 웹의 후속 기능은 동료가 작성
 
-위고비·오젬픽·마운자로 등 GLP-1 약물 사용자를 위한 복약 기록 앱. 주사·경구 복용 기록, 증량(titration) 일정 추적, 부작용·체중 로깅, 진료용 PDF 리포트 내보내기까지 지원하는 실서비스.
+_앱 소셜 로그인 보안_
+- 앱은 소셜 로그인 결과를 딥링크로 받는데 다른 앱이 이 링크를 가로챌 수 있어, **가로챈 코드만으로는 로그인할 수 없도록 PKCE 방식의 일회용 코드**를 사용
+- 코드는 DB에 **해시로만 저장**하고, 실패 이유는 알려 주지 않아 추측 단서를 차단
 
-- **13종 약물 카탈로그**: 약물별 표준 증량 사다리(위고비 0.25→2.4mg 등)와 투여 주기(주 1회·매일·하루 2회·경구)를 데이터로 모델링, 현재 단계와 다음 증량 시점을 자동 산출
-- **오프라인 퍼스트 아키텍처**: SQLite를 진실의 원천으로 두고 테이블별 리포지토리로 접근을 격리, Zustand는 "오늘"·활성 플랜 등 파생 상태만 보유해 상태 중복 제거
-- **클라우드 동기화**: Supabase 기반 Apple·Google·이메일 로그인 + 게스트 모드, 다기기 동기화를 last-write-wins로 병합하고 동기화 자체는 옵트인으로 설계
-- **의사용 PDF 내보내기**: 기간별 주사·체중·증상 기록을 HTML→PDF로 렌더링해 시스템 공유 시트로 전달
-- **AI 협업 워크플로**: 17화면 규모를 7개 서브프로젝트로 분해하고 각각 **설계 문서(spec) → 구현 계획(plan) → 구현 → 검증** 사이클로 진행, **설계 문서 11건·구현 계획 10건**을 저장소에 자산으로 축적. 프로젝트 규칙(`AGENTS.md`)에 SDK 버전·빌드 함정·아키텍처 원칙을 명문화해 AI가 매번 같은 기준을 참조하도록 구성
+_동시 요청 처리_
+- 여러 요청이 같은 데이터를 동시에 바꾸는 곳(모집 마감·탈퇴)에 **락을 걸고 락 순서를 규칙으로 고정**
+- 주기 작업은 한 건씩 짧게 처리하고 **락 충돌일 때만 최대 3번 다시 시도**
 
-**사용 기술**: Expo SDK 57, React Native 0.86 (New Architecture · React Compiler), TypeScript, Expo Router, SQLite, Zustand, MMKV, Supabase, RevenueCat, react-native-svg, i18next, Sentry, PostHog, Jest, Maestro, GitHub Actions
+_외부 주소 접속 · 이미지 업로드 보호_
+- 사용자가 입력한 주소를 서버가 열어 보는 기능이라, **공인 IP인지 확인한 뒤 그 IP로만 연결**해 내부망 접근을 차단
+- 업로드 이미지는 형식을 내용으로 판정하고 다시 인코딩해 **숨은 데이터를 제거**
 
----
+_운영자 기능 분리_
+- 운영자 서버는 사용자 DB를 **읽기만** 하고 변경은 사용자 서버의 내부 API로만 수행, 같은 요청을 두 번 보내도 **한 번만 처리**
+- 운영자 웹은 배포 전에 **테스트용 가짜 데이터가 섞였는지 자동 검사**
 
-### 스팟 스테이플러 (Spot Stapler) — 위치 기반 리마인더 앱 (iOS)
-**개인 프로젝트** | 2026.06 ~ 2026.07
-
-"장소에 할 일을 고정한다"는 컨셉의 위치 기반 알림 앱. 앱을 종료한 상태에서도 등록한 장소에 도착하면 OS 지오펜스가 알림을 발송하는 구조.
-
-- **앱 종료 상태 지오펜싱**: expo-task-manager 백그라운드 태스크로 OS 위치 감지 이벤트를 처리, 앱 프로세스가 없어도 로컬 알림 발송. Android 재부팅 후 지오펜스 재등록 처리 포함
-- **오프라인 큐**: 네트워크 단절 시 생성·수정·삭제 요청을 로컬에 보관했다가 온라인 복귀 시 순차 반영, 모든 작업을 **클라이언트 생성 UUID 기반 멱등**으로 설계해 중복 실행에도 안전
-- **Supabase RLS 설계**: 위치·구독·설정 3개 테이블에 Row Level Security를 적용해 사용자별 데이터 접근을 DB 레벨에서 차단, 신규 유저 설정 자동 생성 트리거 구성, pgTAP으로 정책 검증
-- **프리미엄 게이팅**: 무료 1개 / 구독 무제한 정책과 해지 시 초과분 비활성화·재구독 시 복원 흐름 구현 (RevenueCat)
-- **AI 협업 워크플로**: 28,000자 규모 PRD를 기능 단위로 분해해 **설계 문서 14건·구현 계획 13건**으로 전개, 각 기능을 독립된 spec → plan → 구현 사이클로 완료. 앱 종료 상태 지오펜싱처럼 검증이 어려운 영역은 **순수 함수로 분리해 단위 테스트로 확인**하는 경계를 먼저 설계
-
-**사용 기술**: Expo SDK 56, React Native 0.85, TypeScript, Expo Router, expo-location, expo-task-manager, expo-notifications, expo-maps, Supabase (Auth · Postgres · RLS · pgTAP), RevenueCat, i18n-js, Jest, React Native Testing Library
+**사용 기술**: Kotlin, Spring Boot 3.5, MySQL, Flyway, Testcontainers, Next.js 16, React 19, TypeScript, Vite, TanStack Query, Cloudflare, Claude Code
 
 ---
 
-### 찍고가 (zzikgoga) — 경로 위 최저가 주유소 · 휴게소 추천 웹 서비스
-**개인 프로젝트** | 2026.07 · [zzikgoga.getcodeforge.dev](https://zzikgoga.getcodeforge.dev)
+### 로지로지 (Rojiroji)
+**개인 프로젝트 (동료 1명과 공동 개발)** | 2026.10 ~ 2026.11
 
-"가는 길 그대로, 가장 싼 주유소를 찍고 가요" — 유턴·왕복 없이 경로를 벗어나지 않고 들를 수 있는 최저가 주유소와 휴게소를 추천하는 서비스. 로그인 없이 전 기능 사용 가능.
-
-- **런타임 의존성 제로**: Next.js 15 · React 19 · TypeScript 외 프로덕션 의존성 없이 구현. 지도·차트·상태관리·CSS 프레임워크를 모두 배제하고 CSS 변수 기반 디자인 토큰으로 직접 구성
-- **경로↔주유소 매칭 알고리즘 자체 구현**: 경로 폴리라인을 8지점 샘플링 → 반경 검색 → 중복 제거 → **폴리라인 최단거리 계산으로 200m 이내만 필터**(부족 시 500m 완화) → 경로 이탈 시간·절약액 산출
-- **좌표계 변환 직접 구현**: 오피넷이 사용하는 KATEC(TM128) ↔ WGS84 변환을 외부 라이브러리 없이 구현
-- **4개 외부 API 오케스트레이션**: 카카오맵 SDK · 카카오 로컬 · TMAP 경로 · 오피넷 유가를 조합, **모든 서버 키를 Next.js Route Handler 프록시 뒤에 은닉**하고 키가 없으면 데모 모드(SVG 일러스트 지도)로 폴백하는 단계적 성능 저하 설계
-- **수익화·SEO**: 카카오 애드핏 슬롯을 환경변수로 on/off 하되 **가격 정렬에는 개입하지 않도록 분리**, JSON-LD 구조화 데이터·사이트맵·OG 구성, Vercel 서울 리전 배포로 국내 API 지연 최소화
-
-**사용 기술**: Next.js 15 (App Router · Route Handlers), React 19, TypeScript, 순수 CSS(디자인 토큰), 카카오맵 JS SDK, 카카오 로컬 API, TMAP 경로 API, 오피넷 API, Vercel
+영수증으로 방문이 확인된 리뷰만으로 순위를 정하는 한국·일본 맛집 서비스 (앱·웹·서버·운영 콘솔 5개 저장소에 기여)
 
 ---
 
-### Code Slugger — 숫자야구 모바일 게임 (iOS)
-**개인 프로젝트** | 2026.02 ~ 2026.07
+_작성 범위_
+- 커밋 기준 앱 **27/105건**, 웹 **11/187건**, 서버 **7/142건**, 운영 콘솔 **3건** 작성
+- 로그인·API 기본 구조·서버 핵심 기능은 동료가 만들었고, 아래는 직접 만든 부분
 
-회원가입 없이 바로 시작할 수 있는 숫자 추리 게임 앱. 이탈 없는 온보딩, 기기 변경 시에도 데이터 유지, 결제·광고까지 자연스럽게 이어지는 수익화 구조를 갖춘 앱을 App Store에 출시해 운영했습니다.
+_지도 점 표시 (앱)_
+- 가게가 많으면 점으로 가득 차므로 일부만 보여 주되 **가게 ID로 정한 규칙**을 써서 다시 불러와도 같은 점이 표시
+- 이름이 겹치면 **순위가 낮은 가게의 이름만 숨김**
 
-- **익명 로그인 + 계정 복구**: Supabase Auth 익명 로그인으로 회원가입 없이 즉시 플레이, 8자리 Recovery ID 발급으로 기기 변경·재설치 시에도 계정 연속성 유지
-- **재화 시스템**: React Query Optimistic Update로 코인 소모·획득·힌트 구매 즉시 반영, 실패 시 자동 롤백
-- **서버사이드 검증**: Supabase Edge Function에서 실제 코인 차감 로직 처리로 클라이언트 조작 방지 및 데이터 무결성 확보
-- **AI 추리 로직**: 720개 후보군에서 이전 결과를 기반으로 불가능한 후보를 제거하는 방식으로 평균 4~5회 내 정답 도달
-- **수익화**: 인앱결제 + 광고를 게임 경제 구조와 연결한 수익화 흐름 구현
+_앱 업데이트 배포_
+- 스토어 심사 없이 업데이트할 때 **개발용 서버 주소가 섞이는 문제**를 스크립트로 차단
+- Xcode 새 버전에서 빌드가 깨지는 문제를 패치 스크립트로 해결
 
-**사용 기술**: React Native, React Query, i18n, Supabase Auth, PostgreSQL, Edge Functions
+_없는 가게 주소는 404로 (웹 + 서버)_
+- 없는 가게 주소도 정상(200)으로 응답하던 문제를 서버의 **가게 존재 확인 API**로 해결, 서버·웹 중 어느 쪽을 먼저 배포해도 안전하게 구성
 
----
+_한국어·일본어 검색 노출(SEO)_
+- 지역 이름의 일본어 표기를 **DB·API·웹·운영 콘솔까지 일관되게** 추가하고, 일본어 이름이 없는 지역의 일본어 페이지는 검색에서 제외 (검색 유입 효과는 측정하지 않음)
 
-### 암호화폐 자동매매 시스템
-**개인 프로젝트** | 2025.01 ~ 2025.02
-
-업비트 실계좌 연동, 24시간 자동 동작하는 암호화폐 자동매매 시스템. 단순 매수·매도가 아닌 시장 판단·리스크 관리·배포 자동화·운영 알림까지 포함한 실운영형 시스템.
-
-- **다중 지표 전략**: EMA, RSI, MACD, Bollinger Bands, Stochastic RSI를 조합, 시장 상태를 먼저 판별한 뒤 진입 여부를 결정하는 구조 설계
-- **추세 필터**: ATR 비율과 볼린저 밴드 폭을 결합해 횡보·추세 구간을 판별하고 유의미한 구간에서만 신호 발생
-- **동적 손절/익절**: 최근 20봉 저점과 ATR을 활용한 동적 손절가 계산, R:R 1:2 기준 익절가 자동 산출
-- **시장 전체 흐름 반영**: UBMI/UBAI 모니터링으로 급락 시 신규 진입 차단 및 보유 포지션 정리 로직 적용
-- **배포·모니터링 자동화**: GitHub Actions + Docker + GCP로 main 브랜치 반영 시 자동 배포, Slack으로 매수/매도/오류 이벤트 및 정기 리포트 전송
-
-**사용 기술**: Python 3.11, pandas, numpy, ta, Docker, GCP (Compute Engine, Artifact Registry), GitHub Actions
+**사용 기술**: Expo SDK 57, React Native 0.86, MapLibre, EAS, Next.js 16, TypeScript, Spring Boot 4.1, Java 21, MySQL, Claude Code
 
 ---
 
