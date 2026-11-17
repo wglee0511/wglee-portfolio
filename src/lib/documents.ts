@@ -1,4 +1,5 @@
 import raw from '@/data/documents.json';
+import { compareDistance, distanceFromGoyangKm } from './documentsDistance';
 import { postingScore } from './documentsRank';
 
 export type DocSource = { site: string; url: string };
@@ -35,6 +36,8 @@ export type Company = {
   rn: boolean;
   /** 소속 공고 중 최고 추천 점수 */
   score: number;
+  /** 최고 점수 공고 중 고양시(일산)에서 가장 가까운 지역까지의 거리(km) */
+  distanceKm: number;
   postings: JobPosting[];
 };
 
@@ -43,15 +46,25 @@ const postings = raw as JobPosting[];
 function buildCompanies(): Company[] {
   const map = new Map<string, Company>();
   for (const p of postings) {
-    const c = map.get(p.companyKey) ?? { key: p.companyKey, name: p.company, regions: [], rn: false, score: -Infinity, postings: [] };
+    const c = map.get(p.companyKey) ?? { key: p.companyKey, name: p.company, regions: [], rn: false, score: -Infinity, distanceKm: Infinity, postings: [] };
     c.postings.push(p);
     if (p.rn) c.rn = true;
-    c.score = Math.max(c.score, postingScore(p));
+    // 거리는 회사 점수를 낸 최고 점수 공고들 가운데 가장 가까운 지역 기준이다.
+    const score = postingScore(p);
+    const km = distanceFromGoyangKm(p.region);
+    if (score > c.score) {
+      c.score = score;
+      c.distanceKm = km;
+    } else if (score === c.score) {
+      c.distanceKm = Math.min(c.distanceKm, km);
+    }
     if (!c.regions.includes(p.region)) c.regions.push(p.region);
     map.set(p.companyKey, c);
   }
-  // 추천순(점수 높은 순). 같으면 가나다순.
-  return [...map.values()].sort((a, b) => b.score - a.score || a.name.localeCompare(b.name, 'ko'));
+  // 추천순(점수 높은 순) → 같으면 고양시(일산)에서 가까운 순 → 같으면 가나다순.
+  return [...map.values()].sort(
+    (a, b) => b.score - a.score || compareDistance(a.distanceKm, b.distanceKm) || a.name.localeCompare(b.name, 'ko'),
+  );
 }
 
 /** 공고를 회사 단위로 묶는다. 목록은 회사당 한 줄이다. 모듈 로드 시 한 번만 계산한다. */
