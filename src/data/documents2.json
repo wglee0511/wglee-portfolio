@@ -24,9 +24,67 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-17",
     "fit": true,
     "note": "React · Jotai/Zustand · React Query, 모바일 웹뷰 우대. 사람인에는 같은 공고가 \"오늘마감\"으로 표시돼 있어 지원 전 확인 필요."
+  },
+  {
+    "id": "d2-kakaopaysec-fecore",
+    "companyKey": "kakaopaysec",
+    "company": "카카오페이증권",
+    "kospiRank": 999,
+    "region": "경기 성남시 분당구 판교",
+    "career": "경력 5년 이상",
+    "deadline": "마감일 미표기",
+    "role": "fe",
+    "companyInfo": {},
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "position": "FE코어팀 프론트엔드 개발자(시니어)",
+    "sources": [
+      {
+        "site": "원티드",
+        "url": "https://www.wanted.co.kr/wd/340473"
+      }
+    ],
+    "infoSources": [
+      {
+        "label": "원티드 공고",
+        "url": "https://www.wanted.co.kr/wd/340473"
+      }
+    ],
+    "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript, 프론트엔드 5년 이상. 원티드 API로 접수 중 확인, 마감일 미표기."
+  },
+  {
+    "id": "d2-kakaopaysec-fe",
+    "companyKey": "kakaopaysec",
+    "company": "카카오페이증권",
+    "kospiRank": 999,
+    "region": "경기 성남시 분당구 판교",
+    "career": "경력 5년 이상",
+    "deadline": "마감일 미표기",
+    "role": "fe",
+    "companyInfo": {},
+    "rn": false,
+    "maybeSame": false,
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "position": "프론트엔드 개발자(시니어)",
+    "sources": [
+      {
+        "site": "원티드",
+        "url": "https://www.wanted.co.kr/wd/311372"
+      }
+    ],
+    "infoSources": [
+      {
+        "label": "원티드 공고",
+        "url": "https://www.wanted.co.kr/wd/311372"
+      }
+    ],
+    "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript·Tanstack Query. 원티드 API로 접수 중 확인, 마감일 미표기."
   },
   {
     "id": "d2-skinc-nova",
@@ -53,7 +111,7 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-17",
     "fit": true,
     "note": "직무 태그에 Frontend 개발이 있으나 본문 업무는 Java/Spring API·BSS/OSS 개발 중심(프론트 비중 낮음)."
   },
@@ -82,7 +140,7 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-17",
     "fit": true,
     "note": "Java/Spring Boot/React 기반, 백엔드 중심 · 계약직 · PL직."
   },
@@ -111,9 +169,9 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "경력 범위 밖(본문 기준)."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "경력 5년 이상 10년 미만이라 4~5년 확장 기준으로는 범위 안(본문 기준)."
   },
   {
     "id": "d2-hyundai-fe",
@@ -140,7 +198,7 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-17",
     "fit": false,
     "note": "경력 범위 밖(지원자격: 8년 이상 Frontend 개발)."
   },
@@ -169,9 +227,9 @@
     ],
     "rn": true,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "경력 범위 밖. 원티드 기술 태그에 React Native 포함(원티드 공고 384052). 자체 사이트 본문은 미열람."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 기술 태그에 React Native 포함(원티드 공고 384052). 자체 사이트 본문은 미열람."
   },
   {
     "id": "d2-krafton-fs5",
@@ -200,7 +258,7 @@
     "maybeSame": false,
     "checkedAt": "2026-11-15",
     "fit": false,
-    "note": "경력 범위 밖. 목록 제목만 확인, 본문 미열람."
+    "note": "경력 5년 이상이라 4~5년 확장 기준에는 맞지만, 목록 제목만 확인했고 접수 여부·본문은 확인 못 함."
   },
   {
     "id": "d2-krafton-fs10",
@@ -256,9 +314,9 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
   },
   {
     "id": "d2-cjolive-enterprise",
@@ -285,9 +343,9 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
   },
   {
     "id": "d2-cjolive-search",
@@ -314,9 +372,9 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
   },
   {
     "id": "d2-cjenm-mnetplus",
@@ -343,9 +401,9 @@
     ],
     "rn": true,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
+    "checkedAt": "2026-11-17",
+    "fit": true,
+    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
   },
   {
     "id": "d2-milli-fe",
@@ -372,7 +430,7 @@
     ],
     "rn": false,
     "maybeSame": false,
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-17",
     "fit": false,
     "note": "KT그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
   }

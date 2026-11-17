@@ -26,7 +26,7 @@ export type JobPosting = {
   checkedAt: string;
   /** 코스피 시가총액 순위(ETF·우선주 제외, 2026-11-15). 코스피 순위가 없는 그룹 계열사는 999 */
   kospiRank: number;
-  /** 경력 4년이 공고 범위에 드는지. false면 경력 범위 밖 */
+  /** 경력 4~5년이 공고 범위에 걸리는지. false면 경력 범위 밖 */
   fit: boolean;
   note?: string;
 };
