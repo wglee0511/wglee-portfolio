@@ -1,65 +1,5 @@
 [
  {
-  "id": "pc9e78f4f",
-  "companyKey": "c1107e0ae",
-  "company": "아이엘케이코리아",
-  "position": "React Native 모바일 앱 개발자 (경력)",
-  "region": "서울 강남구",
-  "career": "경력 3~5년",
-  "deadline": "~ 12/18(금)",
-  "role": "rn",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55326544"
-   }
-  ],
-  "companyInfo": {
-   "industry": "컴퓨터 프로그래밍 서비스업",
-   "address": "서울 강남구 언주로172길 7, 3층 (신사동,대명빌딩)",
-   "homepage": "http://www.ilkkorea.com",
-   "summary": "소프트웨어프로그램개발,컴퓨터및주변기기,단말기,무역,전자상거래업"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=TlFqbGl2MGF4VUVuS3NwaWd5L21mZz09"
-   }
-  ],
-  "rn": true,
-  "maybeSame": false,
-  "checkedAt": "2026-11-17"
- },
- {
-  "id": "p6bc0af52",
-  "companyKey": "c4d66fffd",
-  "company": "코딧(CODITCorp.)",
-  "position": "앱 개발자 (React Native,  2년 이상)",
-  "region": "서울 영등포구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "rn",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/135520"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 영등포구 국제금융로 39"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/135520"
-   }
-  ],
-  "rn": true,
-  "maybeSame": false,
-  "checkedAt": "2026-11-17"
- },
- {
   "id": "pda3309ee",
   "companyKey": "c99392f70",
   "company": "페이타랩(패스오더)",
@@ -86,7 +26,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p88e39dca",
@@ -115,7 +55,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0ccae447",
@@ -144,7 +84,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p92769887",
@@ -173,7 +113,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb8ebe1b4",
@@ -202,7 +142,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf2b3ba3c",
@@ -231,7 +171,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p46458f5b",
@@ -260,7 +200,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p43fcd1f6",
@@ -289,7 +229,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p365b22d8",
@@ -318,7 +258,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa5cf1f37",
@@ -347,7 +287,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pda25bb5c",
@@ -376,7 +316,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pe660e6b2",
@@ -410,7 +350,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pd1fc60a6",
@@ -449,7 +389,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf2964186",
@@ -478,7 +418,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pc35b2233",
@@ -507,7 +447,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa15ee07e",
@@ -536,7 +476,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pe2848038",
@@ -565,7 +505,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p41804f60",
@@ -603,7 +543,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p566e55f9",
@@ -634,7 +574,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p8cbb957a",
@@ -674,7 +614,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p775f1509",
@@ -703,7 +643,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb3eb1eac",
@@ -732,7 +672,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pab0f722f",
@@ -761,7 +701,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p59d513bb",
@@ -790,7 +730,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p93c6adf7",
@@ -819,7 +759,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pcdfb9bc5",
@@ -848,7 +788,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p5513c58e",
@@ -877,7 +817,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p2b3f18ac",
@@ -906,7 +846,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p71d7620b",
@@ -935,7 +875,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pd3e3ee93",
@@ -964,7 +904,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb9abbaea",
@@ -993,7 +933,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p54f66980",
@@ -1022,7 +962,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p356707f2",
@@ -1051,7 +991,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p9198d72f",
@@ -1080,7 +1020,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p98c27ccc",
@@ -1109,7 +1049,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf2712345",
@@ -1137,7 +1077,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p8c717fbc",
@@ -1167,7 +1107,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "peeaa474f",
@@ -1206,7 +1146,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4b638e93",
@@ -1236,7 +1176,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4907c711",
@@ -1271,7 +1211,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p55aedc59",
@@ -1302,7 +1242,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa58ea846",
@@ -1332,7 +1272,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p582f49c4",
@@ -1361,7 +1301,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb289f394",
@@ -1390,7 +1330,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb1a6cfc4",
@@ -1419,7 +1359,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4c94cd78",
@@ -1449,7 +1389,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pda612192",
@@ -1480,7 +1420,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p3b550538",
@@ -1518,7 +1458,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p07366044",
@@ -1549,7 +1489,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa01a1b1e",
@@ -1585,7 +1525,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p2db74288",
@@ -1623,7 +1563,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p8318b19f",
@@ -1653,7 +1593,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb43d7230",
@@ -1662,13 +1602,9 @@
   "position": "[유닛블랙] 풀스택 개발자",
   "region": "서울 강남구",
   "career": "경력 3~10년",
-  "deadline": "~ 11/18(수)",
+  "deadline": "상시채용",
   "role": "fullstack",
   "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55043481"
-   },
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/386910"
@@ -1691,43 +1627,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
- },
- {
-  "id": "pa8d62d74",
-  "companyKey": "c715d1198",
-  "company": "지피에이코리아",
-  "position": "풀스택 중급 개발자",
-  "region": "서울 강남구",
-  "career": "경력 3~6년",
-  "deadline": "~ 11/21(토)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55377914"
-   },
-   {
-    "site": "점핏",
-    "url": "https://jumpit.saramin.co.kr/position/55377914"
-   }
-  ],
-  "companyInfo": {
-   "address": "서울 강남구 삼성로96길 14, 10층 (삼성동,중아빌딩)"
-  },
-  "infoSources": [
-   {
-    "label": "사람인 기업정보",
-    "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=WnlxQ1JOSEZQVkZ2dng0SHhoV0FsUT09"
-   },
-   {
-    "label": "점핏 공고",
-    "url": "https://jumpit.saramin.co.kr/position/55377914"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p9f2057bb",
@@ -1742,10 +1642,6 @@
    {
     "site": "점핏",
     "url": "https://jumpit.saramin.co.kr/position/55361658"
-   },
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/391394"
    }
   ],
   "companyInfo": {
@@ -1767,7 +1663,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4879bbd1",
@@ -1796,36 +1692,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
- },
- {
-  "id": "p84aded74",
-  "companyKey": "cd9fdee46",
-  "company": "디플라이어",
-  "position": "풀스택 개발자 (트레이딩 터미널·거래소 구현 중심)",
-  "region": "서울 강남구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/335572"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 강남구 논현동 169-5"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/335572"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p7d4129cd",
@@ -1854,7 +1721,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p33cf035d",
@@ -1883,7 +1750,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p1a928916",
@@ -1912,7 +1779,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p80a6b002",
@@ -1941,7 +1808,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pc97ee5e3",
@@ -1970,7 +1837,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p258a3933",
@@ -1999,7 +1866,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0630486a",
@@ -2028,7 +1895,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0e628588",
@@ -2057,7 +1924,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb73cf5e2",
@@ -2086,7 +1953,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4b4cd3ba",
@@ -2115,7 +1982,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p65362da5",
@@ -2144,7 +2011,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0d4c13b3",
@@ -2173,7 +2040,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p5f781e5a",
@@ -2202,7 +2069,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4febc9ef",
@@ -2231,7 +2098,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p78c1532f",
@@ -2260,7 +2127,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p288f110a",
@@ -2289,7 +2156,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p3e8e5667",
@@ -2318,7 +2185,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa36437f7",
@@ -2347,7 +2214,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb1ef612e",
@@ -2376,7 +2243,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p05c722e7",
@@ -2405,7 +2272,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pd97612a9",
@@ -2434,7 +2301,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p123081b6",
@@ -2463,7 +2330,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pc03abe85",
@@ -2489,7 +2356,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p1ee4a280",
@@ -2520,7 +2387,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf0e96687",
@@ -2559,7 +2426,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p7961e752",
@@ -2589,7 +2456,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pe7879d98",
@@ -2619,7 +2486,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pba9fb485",
@@ -2650,7 +2517,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p64e2a0a3",
@@ -2681,7 +2548,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p1278f56b",
@@ -2712,7 +2579,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p16aa18e2",
@@ -2743,7 +2610,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p974af45e",
@@ -2774,7 +2641,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p966c4573",
@@ -2808,7 +2675,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p2162fbee",
@@ -2839,7 +2706,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p8a2f2e06",
@@ -2870,7 +2737,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p96bd9821",
@@ -2900,7 +2767,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p917ae2ef",
@@ -2939,7 +2806,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p53c626ec",
@@ -2970,7 +2837,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pbdb86af0",
@@ -3001,7 +2868,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p8a5bdb8f",
@@ -3032,7 +2899,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p07cb1fd5",
@@ -3061,7 +2928,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p312004a0",
@@ -3090,7 +2957,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p6aaf4429",
@@ -3119,7 +2986,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p895a675c",
@@ -3148,7 +3015,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb7f5db3b",
@@ -3177,7 +3044,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p68f7361f",
@@ -3206,7 +3073,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p252a7874",
@@ -3235,7 +3102,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p1f004993",
@@ -3264,7 +3131,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0eef64a5",
@@ -3293,7 +3160,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p29bf9377",
@@ -3322,7 +3189,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p262cfcb4",
@@ -3351,7 +3218,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pc1d16ca3",
@@ -3380,7 +3247,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pa4b362c1",
@@ -3409,7 +3276,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p3f004f32",
@@ -3438,7 +3305,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p1bb26b33",
@@ -3467,7 +3334,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0042156a",
@@ -3496,36 +3363,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
- },
- {
-  "id": "p3dbd1458",
-  "companyKey": "c771252a3",
-  "company": "마카롱팩토리(마이클)",
-  "position": "프론트엔드 엔지니어 (3년 이상)",
-  "region": "경기 성남시 분당구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/388451"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "경기 성남시 분당구 대왕판교로644번길 49"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/388451"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p7a257e1f",
@@ -3554,7 +3392,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p78c17a9b",
@@ -3583,7 +3421,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p26d47a30",
@@ -3612,7 +3450,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p7586f62a",
@@ -3641,7 +3479,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p9f4a318e",
@@ -3670,7 +3508,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p97dc9c41",
@@ -3699,7 +3537,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p10669c93",
@@ -3730,7 +3568,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p3837bc88",
@@ -3761,7 +3599,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pc9b7a0fa",
@@ -3791,7 +3629,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p4222a3a2",
@@ -3821,7 +3659,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf55738b7",
@@ -3850,7 +3688,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p98b5819b",
@@ -3879,7 +3717,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0deafa1d",
@@ -3908,7 +3746,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pcdadb07c",
@@ -3937,7 +3775,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p53538e44",
@@ -3966,7 +3804,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p156a3bf4",
@@ -3995,7 +3833,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p33f094bb",
@@ -4024,7 +3862,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p07c2a160",
@@ -4053,7 +3891,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p361f5747",
@@ -4082,7 +3920,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb3863e2a",
@@ -4111,7 +3949,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pb80603b9",
@@ -4140,7 +3978,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pcc7d1ddd",
@@ -4169,7 +4007,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pd5057370",
@@ -4208,7 +4046,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p746b348a",
@@ -4237,7 +4075,7 @@
   ],
   "rn": true,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p0eb65f7b",
@@ -4268,7 +4106,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p7ac280c4",
@@ -4299,7 +4137,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pe96c059c",
@@ -4329,7 +4167,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "peee6ab45",
@@ -4360,7 +4198,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pf850e545",
@@ -4390,7 +4228,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "pd54e54c3",
@@ -4420,7 +4258,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p35beb739",
@@ -4450,7 +4288,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p6b385695",
@@ -4480,7 +4318,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p6e3dbacd",
@@ -4511,7 +4349,7 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
  },
  {
   "id": "p11392969",
@@ -4542,6 +4380,75 @@
   ],
   "rn": false,
   "maybeSame": false,
-  "checkedAt": "2026-11-17"
+  "checkedAt": "2026-11-19"
+ },
+ {
+  "id": "p55576989",
+  "companyKey": "5207f844e",
+  "company": "폴리큐브",
+  "position": "웹/앱 프런트 및 백엔드 프로그래머",
+  "region": "서울 강남구",
+  "career": "경력무관",
+  "deadline": "~ 11/29(일)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55576989"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-19"
+ },
+ {
+  "id": "p55570101",
+  "companyKey": "692692994",
+  "company": "와탭랩스",
+  "position": "프론트엔드 개발자",
+  "region": "서울 서초구",
+  "career": "경력 3~10년",
+  "deadline": "~ 12/12(토)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55570101"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-19"
+ },
+ {
+  "id": "p55576626",
+  "companyKey": "0b413da20",
+  "company": "인티그리트",
+  "position": "[AI 클라우드 SW] 백엔드/프론트엔드 개발자",
+  "region": "서울 강남구",
+  "career": "경력 미표기",
+  "deadline": "~ 12/15(화)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55576626"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-19"
  }
 ]
