@@ -4450,5 +4450,34 @@
   "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
+ },
+ {
+  "id": "p322458",
+  "companyKey": "303c0a3b5",
+  "company": "클레이디스코리아",
+  "position": "풀스택 AI Engineer (LLM Application)",
+  "region": "서울 강남구",
+  "career": "경력 3년↑",
+  "deadline": "상시채용",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/322458"
+   }
+  ],
+  "companyInfo": {
+   "industry": "IT, 컨텐츠",
+   "address": "서울 강남구 테헤란로 302 위워크타워"
+  },
+  "infoSources": [
+   {
+    "label": "원티드 공고(업종·주소)",
+    "url": "https://www.wanted.co.kr/wd/322458"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-19"
  }
 ]

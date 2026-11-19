@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import CompanyList from './CompanyList';
+import { jobLabels } from '@/lib/documentsRole';
 import { getCheckedAt, getCompanies, getPostingCount } from '@/lib/documents';
 
 export const metadata: Metadata = {
@@ -31,7 +32,7 @@ export default function DocumentsIndexPage() {
         </p>
       </header>
 
-      <CompanyList companies={companies.map(({ key, name, regions }) => ({ key, name, regions }))} />
+      <CompanyList companies={companies.map(({ key, name, regions, postings }) => ({ key, name, regions, jobs: jobLabels(postings) }))} />
     </div>
   );
 }

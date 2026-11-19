@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import CompanyList from './CompanyList';
+import { jobLabels } from '@/lib/documentsRole';
 import { getCheckedAt, getCompanies, getPostingCount } from '@/lib/documents2';
 
 export const metadata: Metadata = {
@@ -30,7 +31,7 @@ export default function DocumentsIndexPage() {
         </p>
       </header>
 
-      <CompanyList companies={companies.map(({ key, name, regions, fit }) => ({ key, name, regions: fit ? regions : [...regions, '경력 범위 밖'] }))} />
+      <CompanyList companies={companies.map(({ key, name, regions, fit, postings }) => ({ key, name, regions: fit ? regions : [...regions, '경력 범위 밖'], jobs: jobLabels(postings) }))} />
     </div>
   );
 }
