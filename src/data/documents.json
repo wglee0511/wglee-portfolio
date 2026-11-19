@@ -239,7 +239,7 @@
   "region": "서울 서초구",
   "career": "",
   "deadline": "마감일 미표기",
-  "role": "rn",
+  "role": "mobile",
   "sources": [
    {
     "site": "원티드",
@@ -256,7 +256,7 @@
     "url": "https://www.wanted.co.kr/wd/392364"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -268,7 +268,7 @@
   "region": "서울 용산구",
   "career": "",
   "deadline": "~ 12/31(목)",
-  "role": "rn",
+  "role": "mobile",
   "sources": [
    {
     "site": "원티드",
@@ -285,7 +285,7 @@
     "url": "https://www.wanted.co.kr/wd/396297"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -348,7 +348,7 @@
     "url": "https://jumpit.saramin.co.kr/position/55425616"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -387,7 +387,7 @@
     "url": "https://www.wanted.co.kr/wd/389810"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -416,7 +416,7 @@
     "url": "https://www.wanted.co.kr/wd/395409"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -474,7 +474,7 @@
     "url": "https://www.wanted.co.kr/wd/340584"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -541,7 +541,7 @@
     "url": "https://jumpit.saramin.co.kr/position/55439025"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -572,7 +572,7 @@
     "url": "https://jumpit.saramin.co.kr/position/55427793"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -612,7 +612,7 @@
     "url": "https://jumpit.saramin.co.kr/position/55376222"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -757,7 +757,7 @@
     "url": "https://www.wanted.co.kr/wd/336499"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -786,7 +786,7 @@
     "url": "https://www.wanted.co.kr/wd/349671"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -815,7 +815,7 @@
     "url": "https://www.wanted.co.kr/wd/348913"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -844,7 +844,7 @@
     "url": "https://www.wanted.co.kr/wd/371270"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -873,7 +873,7 @@
     "url": "https://www.wanted.co.kr/wd/372316"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -931,7 +931,7 @@
     "url": "https://www.wanted.co.kr/wd/389983"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -1018,7 +1018,7 @@
     "url": "https://www.wanted.co.kr/wd/391111"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -1047,7 +1047,7 @@
     "url": "https://www.wanted.co.kr/wd/392931"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -1328,7 +1328,7 @@
     "url": "https://www.wanted.co.kr/wd/393041"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3547,7 +3547,7 @@
   "region": "서울 강서구",
   "career": "경력1년↑",
   "deadline": "~ 11/23(월)",
-  "role": "rn",
+  "role": "fullstack",
   "sources": [
    {
     "site": "사람인",
@@ -3566,7 +3566,7 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=OVYrdUl1aVc4NXYvWVFmbThyR0VNZz09"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3578,7 +3578,7 @@
   "region": "서울 영등포구",
   "career": "경력무관",
   "deadline": "채용시",
-  "role": "rn",
+  "role": "mobile",
   "sources": [
    {
     "site": "사람인",
@@ -3597,7 +3597,7 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=SmdHa1pSTGFNK1dBQ1dVRWJlQmJiUT09"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3627,7 +3627,7 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=NFQrYk5na044QzNkWDFSYXE4SWIxdz09"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3657,7 +3657,7 @@
     "url": "https://www.saramin.co.kr/zf_user/company-info/view?csn=NE5pTi9NS1UyWm5ULzBtdUZmMmFHdz09"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3686,7 +3686,7 @@
     "url": "https://www.wanted.co.kr/wd/331561"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3715,7 +3715,7 @@
     "url": "https://www.wanted.co.kr/wd/342387"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3744,7 +3744,7 @@
     "url": "https://www.wanted.co.kr/wd/372852"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3831,7 +3831,7 @@
     "url": "https://www.wanted.co.kr/wd/381221"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3860,7 +3860,7 @@
     "url": "https://www.wanted.co.kr/wd/383399"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3889,7 +3889,7 @@
     "url": "https://www.wanted.co.kr/wd/384668"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3918,7 +3918,7 @@
     "url": "https://www.wanted.co.kr/wd/377626"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -3976,7 +3976,7 @@
     "url": "https://www.wanted.co.kr/wd/395584"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -4005,7 +4005,7 @@
     "url": "https://www.wanted.co.kr/wd/396103"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -4044,7 +4044,7 @@
     "url": "https://jumpit.saramin.co.kr/position/55585363"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -4073,7 +4073,7 @@
     "url": "https://www.wanted.co.kr/wd/398371"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  },
@@ -4476,7 +4476,7 @@
     "url": "https://www.wanted.co.kr/wd/322458"
    }
   ],
-  "rn": true,
+  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-19"
  }

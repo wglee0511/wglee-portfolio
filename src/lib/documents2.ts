@@ -20,7 +20,7 @@ export type JobPosting = {
     summary?: string;
   };
   infoSources: { label: string; url: string }[];
-  /** 공고 본문·기술 태그에 React Native가 확인된 공고 */
+  /** 본문을 읽고 React Native 직무로 판단한 공고(제목·주요업무·필수 자격요건). 우대·대안 나열·기술 태그만이면 false */
   rn: boolean;
   maybeSame: boolean;
   checkedAt: string;

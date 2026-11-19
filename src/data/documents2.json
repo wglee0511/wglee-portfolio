@@ -1,437 +1,437 @@
 [
-  {
-    "id": "d2-kakaopay-fe",
-    "companyKey": "kakaopay",
-    "company": "카카오페이",
-    "kospiRank": 96,
-    "position": "프론트엔드 개발자 - 자산 서비스",
-    "region": "경기 성남시 분당구 판교",
-    "career": "경력 3년 이상",
-    "deadline": "상시영입(채용 완료 시 조기 마감)",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "카카오페이 채용",
-        "url": "https://careers.kakaopay.com/ko/o/233787"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "카카오페이 채용 공고",
-        "url": "https://careers.kakaopay.com/ko/o/233787"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "React · Jotai/Zustand · React Query, 모바일 웹뷰 우대. 사람인에는 같은 공고가 \"오늘마감\"으로 표시돼 있어 지원 전 확인 필요."
-  },
-  {
-    "id": "d2-kakaopaysec-fecore",
-    "companyKey": "kakaopaysec",
-    "company": "카카오페이증권",
-    "kospiRank": 999,
-    "region": "경기 성남시 분당구 판교",
-    "career": "경력 5년 이상",
-    "deadline": "마감일 미표기",
-    "role": "fe",
-    "companyInfo": {},
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "position": "FE코어팀 프론트엔드 개발자(시니어)",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/340473"
-      }
-    ],
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/340473"
-      }
-    ],
-    "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript, 프론트엔드 5년 이상. 원티드 API로 접수 중 확인, 마감일 미표기."
-  },
-  {
-    "id": "d2-kakaopaysec-fe",
-    "companyKey": "kakaopaysec",
-    "company": "카카오페이증권",
-    "kospiRank": 999,
-    "region": "경기 성남시 분당구 판교",
-    "career": "경력 5년 이상",
-    "deadline": "마감일 미표기",
-    "role": "fe",
-    "companyInfo": {},
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "position": "프론트엔드 개발자(시니어)",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/311372"
-      }
-    ],
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/311372"
-      }
-    ],
-    "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript·Tanstack Query. 원티드 API로 접수 중 확인, 마감일 미표기."
-  },
-  {
-    "id": "d2-skinc-nova",
-    "companyKey": "skinc",
-    "company": "SK주식회사 (AX)",
-    "kospiRank": 15,
-    "position": "AI 기반 차세대 통신 BSS/OSS(NOVA) 응용개발 분야 전문가 영입",
-    "region": "서울 을지로",
-    "career": "경력 3년 이상",
-    "deadline": "2026-12-25",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "SK Careers",
-        "url": "https://www.skcareers.com/Recruit/Detail/R262417"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "SK Careers 공고",
-        "url": "https://www.skcareers.com/Recruit/Detail/R262417"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "직무 태그에 Frontend 개발이 있으나 본문 업무는 Java/Spring API·BSS/OSS 개발 중심(프론트 비중 낮음)."
-  },
-  {
-    "id": "d2-skinc-image",
-    "companyKey": "skinc",
-    "company": "SK주식회사 (AX)",
-    "kospiRank": 15,
-    "position": "전사 통합 Image 솔루션 제공 플랫폼 Application PL 및 ML 엔지니어 모집 (계약직)",
-    "region": "경기 분당(본문 근무지 기준 확인 필요)",
-    "career": "경력 3년 이상",
-    "deadline": "2026-11-27",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "SK Careers",
-        "url": "https://www.skcareers.com/Recruit/Detail/R262252"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "SK Careers 공고",
-        "url": "https://www.skcareers.com/Recruit/Detail/R262252"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "Java/Spring Boot/React 기반, 백엔드 중심 · 계약직 · PL직."
-  },
-  {
-    "id": "d2-skinc-image-pl",
-    "companyKey": "skinc",
-    "company": "SK주식회사 (AX)",
-    "kospiRank": 15,
-    "position": "전사 통합 Image 솔루션 제공 플랫폼 Application 개발.운영 PL 영입",
-    "region": "경기 분당",
-    "career": "경력 5년 이상 10년 미만",
-    "deadline": "2026-11-20",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "SK Careers",
-        "url": "https://www.skcareers.com/Recruit/Detail/R261970"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "SK Careers 공고",
-        "url": "https://www.skcareers.com/Recruit/Detail/R261970"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "경력 5년 이상 10년 미만이라 4~5년 확장 기준으로는 범위 안(본문 기준)."
-  },
-  {
-    "id": "d2-hyundai-fe",
-    "companyKey": "hyundai",
-    "company": "현대자동차",
-    "kospiRank": 9,
-    "position": "[AVP] 모빌리티 서비스 Frontend Engineer",
-    "region": "확인 안 됨(서초 본사로 추정되나 본문 미확인)",
-    "career": "경력 8년 이상",
-    "deadline": "채용시까지",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "현대자동차 인재채용",
-        "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "현대자동차 인재채용 공고",
-        "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": false,
-    "note": "경력 범위 밖(지원자격: 8년 이상 Frontend 개발)."
-  },
-  {
-    "id": "d2-hybe-fs",
-    "companyKey": "hybe",
-    "company": "하이브",
-    "kospiRank": 78,
-    "position": "[HYBE] Full-Stack 개발",
-    "region": "서울 용산",
-    "career": "경력 5년 이상",
-    "deadline": "마감일 미표기",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "하이브 채용",
-        "url": "https://careers.hybecorp.com/ko/o/235338"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "하이브 채용 공고",
-        "url": "https://careers.hybecorp.com/ko/o/235338"
-      }
-    ],
-    "rn": true,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 기술 태그에 React Native 포함(원티드 공고 384052). 자체 사이트 본문은 미열람."
-  },
-  {
-    "id": "d2-krafton-fs5",
-    "companyKey": "krafton",
-    "company": "크래프톤",
-    "kospiRank": 60,
-    "position": "[AI Frontier Div.] AI Native Full Stack Engineer (5년 이상)",
-    "region": "서울(미확인)",
-    "career": "경력 5년 이상",
-    "deadline": "마감일 미표기",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "크래프톤 채용",
-        "url": "https://www.krafton.com/careers/jobs/"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "크래프톤 채용 공고",
-        "url": "https://www.krafton.com/careers/jobs/"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "경력 5년 이상이라 4~5년 확장 기준에는 맞지만, 목록 제목만 확인했고 접수 여부·본문은 확인 못 함."
-  },
-  {
-    "id": "d2-krafton-fs10",
-    "companyKey": "krafton",
-    "company": "크래프톤",
-    "kospiRank": 60,
-    "position": "[AI Frontier Div.] AI Native Full Stack Engineer (10년 이상)",
-    "region": "서울(미확인)",
-    "career": "경력 10년 이상",
-    "deadline": "마감일 미표기",
-    "role": "fullstack",
-    "sources": [
-      {
-        "site": "크래프톤 채용",
-        "url": "https://www.krafton.com/careers/jobs/"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "크래프톤 채용 공고",
-        "url": "https://www.krafton.com/careers/jobs/"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-15",
-    "fit": false,
-    "note": "경력 범위 밖. 목록 제목만 확인, 본문 미열람."
-  },
-  {
-    "id": "d2-cjolive-commerce",
-    "companyKey": "cjolive",
-    "company": "CJ올리브영",
-    "kospiRank": 999,
-    "position": "커머스플랫폼유닛 Front-end",
-    "region": "서울 용산구",
-    "career": "경력 5년 이상",
-    "deadline": "상시",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/337438"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/337438"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
-  },
-  {
-    "id": "d2-cjolive-enterprise",
-    "companyKey": "cjolive",
-    "company": "CJ올리브영",
-    "kospiRank": 999,
-    "position": "엔터프라이즈플랫폼유닛 Front-end",
-    "region": "서울 용산구",
-    "career": "경력 5년 이상",
-    "deadline": "상시",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/337446"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/337446"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
-  },
-  {
-    "id": "d2-cjolive-search",
-    "companyKey": "cjolive",
-    "company": "CJ올리브영",
-    "kospiRank": 999,
-    "position": "검색 플랫폼 개발자 (Front-end)",
-    "region": "서울 용산구",
-    "career": "경력 5년 이상",
-    "deadline": "상시",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/366991"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/366991"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
-  },
-  {
-    "id": "d2-cjenm-mnetplus",
-    "companyKey": "cjenm",
-    "company": "CJ ENM",
-    "kospiRank": 999,
-    "position": "[Mnet Plus] 앱 개발(React Native)",
-    "region": "서울 마포구 상암",
-    "career": "경력 5~11년",
-    "deadline": "상시",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/380140"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/380140"
-      }
-    ],
-    "rn": true,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": true,
-    "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
-  },
-  {
-    "id": "d2-milli-fe",
-    "companyKey": "milli",
-    "company": "케이티밀리의서재",
-    "kospiRank": 999,
-    "position": "프론트엔드 엔지니어",
-    "region": "서울 마포구",
-    "career": "경력 7년 이상",
-    "deadline": "상시",
-    "role": "fe",
-    "sources": [
-      {
-        "site": "원티드",
-        "url": "https://www.wanted.co.kr/wd/365238"
-      }
-    ],
-    "companyInfo": {},
-    "infoSources": [
-      {
-        "label": "원티드 공고",
-        "url": "https://www.wanted.co.kr/wd/365238"
-      }
-    ],
-    "rn": false,
-    "maybeSame": false,
-    "checkedAt": "2026-11-17",
-    "fit": false,
-    "note": "KT그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
-  }
+ {
+  "id": "d2-kakaopay-fe",
+  "companyKey": "kakaopay",
+  "company": "카카오페이",
+  "kospiRank": 96,
+  "position": "프론트엔드 개발자 - 자산 서비스",
+  "region": "경기 성남시 분당구 판교",
+  "career": "경력 3년 이상",
+  "deadline": "상시영입(채용 완료 시 조기 마감)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "카카오페이 채용",
+    "url": "https://careers.kakaopay.com/ko/o/233787"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "카카오페이 채용 공고",
+    "url": "https://careers.kakaopay.com/ko/o/233787"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "React · Jotai/Zustand · React Query, 모바일 웹뷰 우대. 사람인에는 같은 공고가 \"오늘마감\"으로 표시돼 있어 지원 전 확인 필요."
+ },
+ {
+  "id": "d2-kakaopaysec-fecore",
+  "companyKey": "kakaopaysec",
+  "company": "카카오페이증권",
+  "kospiRank": 999,
+  "region": "경기 성남시 분당구 판교",
+  "career": "경력 5년 이상",
+  "deadline": "마감일 미표기",
+  "role": "fe",
+  "companyInfo": {},
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "position": "FE코어팀 프론트엔드 개발자(시니어)",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/340473"
+   }
+  ],
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/340473"
+   }
+  ],
+  "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript, 프론트엔드 5년 이상. 원티드 API로 접수 중 확인, 마감일 미표기."
+ },
+ {
+  "id": "d2-kakaopaysec-fe",
+  "companyKey": "kakaopaysec",
+  "company": "카카오페이증권",
+  "kospiRank": 999,
+  "region": "경기 성남시 분당구 판교",
+  "career": "경력 5년 이상",
+  "deadline": "마감일 미표기",
+  "role": "fe",
+  "companyInfo": {},
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "position": "프론트엔드 개발자(시니어)",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/311372"
+   }
+  ],
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/311372"
+   }
+  ],
+  "note": "카카오 계열. 코스피 순위 없음(카카오페이 자회사). React·Next.js·TypeScript·Tanstack Query. 원티드 API로 접수 중 확인, 마감일 미표기."
+ },
+ {
+  "id": "d2-skinc-nova",
+  "companyKey": "skinc",
+  "company": "SK주식회사 (AX)",
+  "kospiRank": 15,
+  "position": "AI 기반 차세대 통신 BSS/OSS(NOVA) 응용개발 분야 전문가 영입",
+  "region": "서울 을지로",
+  "career": "경력 3년 이상",
+  "deadline": "2026-12-25",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "SK Careers",
+    "url": "https://www.skcareers.com/Recruit/Detail/R262417"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "SK Careers 공고",
+    "url": "https://www.skcareers.com/Recruit/Detail/R262417"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "직무 태그에 Frontend 개발이 있으나 본문 업무는 Java/Spring API·BSS/OSS 개발 중심(프론트 비중 낮음)."
+ },
+ {
+  "id": "d2-skinc-image",
+  "companyKey": "skinc",
+  "company": "SK주식회사 (AX)",
+  "kospiRank": 15,
+  "position": "전사 통합 Image 솔루션 제공 플랫폼 Application PL 및 ML 엔지니어 모집 (계약직)",
+  "region": "경기 분당(본문 근무지 기준 확인 필요)",
+  "career": "경력 3년 이상",
+  "deadline": "2026-11-27",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "SK Careers",
+    "url": "https://www.skcareers.com/Recruit/Detail/R262252"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "SK Careers 공고",
+    "url": "https://www.skcareers.com/Recruit/Detail/R262252"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "Java/Spring Boot/React 기반, 백엔드 중심 · 계약직 · PL직."
+ },
+ {
+  "id": "d2-skinc-image-pl",
+  "companyKey": "skinc",
+  "company": "SK주식회사 (AX)",
+  "kospiRank": 15,
+  "position": "전사 통합 Image 솔루션 제공 플랫폼 Application 개발.운영 PL 영입",
+  "region": "경기 분당",
+  "career": "경력 5년 이상 10년 미만",
+  "deadline": "2026-11-20",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "SK Careers",
+    "url": "https://www.skcareers.com/Recruit/Detail/R261970"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "SK Careers 공고",
+    "url": "https://www.skcareers.com/Recruit/Detail/R261970"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "경력 5년 이상 10년 미만이라 4~5년 확장 기준으로는 범위 안(본문 기준)."
+ },
+ {
+  "id": "d2-hyundai-fe",
+  "companyKey": "hyundai",
+  "company": "현대자동차",
+  "kospiRank": 9,
+  "position": "[AVP] 모빌리티 서비스 Frontend Engineer",
+  "region": "확인 안 됨(서초 본사로 추정되나 본문 미확인)",
+  "career": "경력 8년 이상",
+  "deadline": "채용시까지",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "현대자동차 인재채용",
+    "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "현대자동차 인재채용 공고",
+    "url": "https://talent.hyundai.com/apply/applyView.hc?recuYy=2026&recuType=N2&recuCls=104"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": false,
+  "note": "경력 범위 밖(지원자격: 8년 이상 Frontend 개발)."
+ },
+ {
+  "id": "d2-hybe-fs",
+  "companyKey": "hybe",
+  "company": "하이브",
+  "kospiRank": 78,
+  "position": "[HYBE] Full-Stack 개발",
+  "region": "서울 용산",
+  "career": "경력 5년 이상",
+  "deadline": "마감일 미표기",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "하이브 채용",
+    "url": "https://careers.hybecorp.com/ko/o/235338"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "하이브 채용 공고",
+    "url": "https://careers.hybecorp.com/ko/o/235338"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 기술 태그에 React Native 포함(원티드 공고 384052). 자체 사이트 본문은 미열람."
+ },
+ {
+  "id": "d2-krafton-fs5",
+  "companyKey": "krafton",
+  "company": "크래프톤",
+  "kospiRank": 60,
+  "position": "[AI Frontier Div.] AI Native Full Stack Engineer (5년 이상)",
+  "region": "서울(미확인)",
+  "career": "경력 5년 이상",
+  "deadline": "마감일 미표기",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "크래프톤 채용",
+    "url": "https://www.krafton.com/careers/jobs/"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "크래프톤 채용 공고",
+    "url": "https://www.krafton.com/careers/jobs/"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-15",
+  "fit": false,
+  "note": "경력 5년 이상이라 4~5년 확장 기준에는 맞지만, 목록 제목만 확인했고 접수 여부·본문은 확인 못 함."
+ },
+ {
+  "id": "d2-krafton-fs10",
+  "companyKey": "krafton",
+  "company": "크래프톤",
+  "kospiRank": 60,
+  "position": "[AI Frontier Div.] AI Native Full Stack Engineer (10년 이상)",
+  "region": "서울(미확인)",
+  "career": "경력 10년 이상",
+  "deadline": "마감일 미표기",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "크래프톤 채용",
+    "url": "https://www.krafton.com/careers/jobs/"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "크래프톤 채용 공고",
+    "url": "https://www.krafton.com/careers/jobs/"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-15",
+  "fit": false,
+  "note": "경력 범위 밖. 목록 제목만 확인, 본문 미열람."
+ },
+ {
+  "id": "d2-cjolive-commerce",
+  "companyKey": "cjolive",
+  "company": "CJ올리브영",
+  "kospiRank": 999,
+  "position": "커머스플랫폼유닛 Front-end",
+  "region": "서울 용산구",
+  "career": "경력 5년 이상",
+  "deadline": "상시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/337438"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/337438"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
+ },
+ {
+  "id": "d2-cjolive-enterprise",
+  "companyKey": "cjolive",
+  "company": "CJ올리브영",
+  "kospiRank": 999,
+  "position": "엔터프라이즈플랫폼유닛 Front-end",
+  "region": "서울 용산구",
+  "career": "경력 5년 이상",
+  "deadline": "상시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/337446"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/337446"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
+ },
+ {
+  "id": "d2-cjolive-search",
+  "companyKey": "cjolive",
+  "company": "CJ올리브영",
+  "kospiRank": 999,
+  "position": "검색 플랫폼 개발자 (Front-end)",
+  "region": "서울 용산구",
+  "career": "경력 5년 이상",
+  "deadline": "상시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/366991"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/366991"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
+ },
+ {
+  "id": "d2-cjenm-mnetplus",
+  "companyKey": "cjenm",
+  "company": "CJ ENM",
+  "kospiRank": 999,
+  "position": "[Mnet Plus] 앱 개발(React Native)",
+  "region": "서울 마포구 상암",
+  "career": "경력 5~11년",
+  "deadline": "상시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/380140"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/380140"
+   }
+  ],
+  "rn": true,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": true,
+  "note": "CJ그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 5년 이상이라 4~5년 확장 기준으로는 범위 안. 원티드 API로 접수 중·React 확인."
+ },
+ {
+  "id": "d2-milli-fe",
+  "companyKey": "milli",
+  "company": "케이티밀리의서재",
+  "kospiRank": 999,
+  "position": "프론트엔드 엔지니어",
+  "region": "서울 마포구",
+  "career": "경력 7년 이상",
+  "deadline": "상시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/365238"
+   }
+  ],
+  "companyInfo": {},
+  "infoSources": [
+   {
+    "label": "원티드 공고",
+    "url": "https://www.wanted.co.kr/wd/365238"
+   }
+  ],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-17",
+  "fit": false,
+  "note": "KT그룹 계열. 코스피 순위 없음. 공정위 20대 그룹(블로그 순위표 기준) 계열사. 경력 범위 밖. 원티드 API로 접수 중·React 확인."
+ }
 ]

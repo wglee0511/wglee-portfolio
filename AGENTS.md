@@ -89,7 +89,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 **목표 건수: 중복 없이 150개**
 
-- 기본 우선순위는 **React Native**다. `rn: true`는 공고 본문·요구사항·기술 태그에서 React Native가 확인된 경우이고, RN 공고만으로 150건이 안 되면 Flutter·하이브리드 앱·프론트엔드·풀스택 공고로 채운다(사용자가 2026-11-06에 정한 방식). 순수 네이티브(Android·iOS) 공고는 넣지 않는다.
+- 기본 우선순위는 **React Native**다. `rn: true`는 **공고 본문을 읽고 하나씩 판단해** 이 공고가 React Native 직무라고 확인된 경우만 준다 — 제목에 React Native가 있거나, 주요업무에서 React Native로 개발한다고 밝히거나, 자격요건이 React Native 경험을 단독·필수로 요구할 때다. 우대사항에만 있거나, "React Native 또는 Flutter/iOS/Android"·"React(웹 또는 RN)"처럼 대안으로 나열되거나, 기술 스택 목록·기술 태그에만 있는 것은 `false`다(본문을 못 읽는 사이트는 제목 기준). `role`이 `rn`이어도 `rn: false`면 `mobile`로 둔다. RN 공고만으로 150건이 안 되면 Flutter·하이브리드 앱·프론트엔드·풀스택 공고로 채운다(사용자가 2026-11-06에 정한 방식). 순수 네이티브(Android·iOS) 공고는 넣지 않는다.
 
 - 한 번의 검색은 **중복을 제외한 고유 공고 150건**을 채우는 것을 목표로 한다. 중복을 빼고 모자라면 150건이 될 때까지 계속 찾는다.
 - 일산 통근 범위에서 150건을 못 채우면 억지로 채우지 않는다. 채운 건수와 부족한 건수를 그대로 보고하고, 범위를 넓힐지 사용자에게 묻는다.
