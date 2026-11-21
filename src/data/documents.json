@@ -2345,6 +2345,10 @@
   "role": "fullstack",
   "sources": [
    {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/384525"
+   },
+   {
     "site": "사람인",
     "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55367316"
    }
@@ -4352,29 +4356,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p384525",
-  "companyKey": "ce46018e3",
-  "company": "휴멜로",
-  "position": "[Tikita] AI 프로덕트 엔지니어 (풀스택)",
-  "region": "서울 강남구",
-  "career": "경력 3~8년",
-  "deadline": "상시채용",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/384525"
-   }
-  ],
-  "companyInfo": {
-   "summary": "확인 안 됨"
-  },
-  "infoSources": [],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "p360964",
   "companyKey": "f7911ff1a",
   "company": "페칭",
@@ -4410,6 +4391,29 @@
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/391005"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p281136",
+  "companyKey": "24bb4beee",
+  "company": "래딩랩스",
+  "position": "프로덕트 엔지니어 (1년 이상)",
+  "region": "서울 강서구",
+  "career": "경력 1~10년",
+  "deadline": "상시채용",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/281136"
    }
   ],
   "companyInfo": {
