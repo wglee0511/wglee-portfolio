@@ -2,7 +2,7 @@
 
 import { useMemo } from 'react';
 import Link from 'next/link';
-import StarButton from './StarButton';
+import StarButton, { ReadButton } from './StarButton';
 import { STAR_LABEL, setStar, useStarred, type StarLevel } from './starred';
 
 type Company = { key: string; name: string; regions: string[]; jobs: string[] };
@@ -26,14 +26,13 @@ export default function CompanyList({ companies }: { companies: Company[] }) {
   const starred = useStarred();
 
   // 번호는 원래 순서 그대로 둔다. 표시한 회사는 위 묶음으로 옮기고 아래 목록에서는 뺀다.
-  const { planned, applied, passed, rejected, read, rest } = useMemo(() => {
+  const { planned, applied, passed, rejected, rest } = useMemo(() => {
     const rows: Row[] = companies.map((c, i) => ({ ...c, no: i + 1 }));
     return {
       planned: rows.filter((r) => starred.get(r.key) === 1),
       applied: rows.filter((r) => starred.get(r.key) === 2),
       passed: rows.filter((r) => starred.get(r.key) === 4),
       rejected: rows.filter((r) => starred.get(r.key) === 3),
-      read: rows.filter((r) => starred.get(r.key) === 5),
       rest: rows.filter((r) => !starred.has(r.key)),
     };
   }, [companies, starred]);
@@ -43,6 +42,7 @@ export default function CompanyList({ companies }: { companies: Company[] }) {
       {rows.map((c) => (
         <li key={c.key} className="glass flex flex-wrap items-center gap-1 rounded-xl pl-1 transition-colors hover:border-accent-blue/40 sm:pl-2">
           <StarButton companyKey={c.key} name={c.name} valid={valid} />
+          <ReadButton companyKey={c.key} name={c.name} valid={valid} />
           <Link
             href={`/documents2/${c.key}`}
             className="flex min-w-0 flex-1 items-baseline justify-between gap-3 py-3 pr-4 sm:pr-5"
@@ -93,10 +93,9 @@ export default function CompanyList({ companies }: { companies: Company[] }) {
     [STAR_LABEL[2], applied],
     [STAR_LABEL[4], passed],
     [STAR_LABEL[3], rejected],
-    [STAR_LABEL[5], read],
     ['전체', rest],
   ];
-  const grouped = planned.length + applied.length + passed.length + rejected.length + read.length > 0;
+  const grouped = planned.length + applied.length + passed.length + rejected.length > 0;
 
   return (
     <div className="space-y-8">

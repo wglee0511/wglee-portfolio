@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { getCompanies, getCompany, safeUrl } from '@/lib/documents';
-import StarButton from '../StarButton';
+import StarButton, { ReadButton } from '../StarButton';
 
 type PageProps = { params: Promise<{ companyKey: string }> };
 
@@ -58,6 +58,7 @@ export default async function CompanyPage({ params }: PageProps) {
 
       <div className="flex items-center gap-1">
         <StarButton companyKey={company.key} name={company.name} className="-ml-2.5" />
+        <ReadButton companyKey={company.key} name={company.name} />
         <h1
           className="text-2xl font-bold sm:text-3xl"
           style={{ color: 'var(--text-primary)' }}
