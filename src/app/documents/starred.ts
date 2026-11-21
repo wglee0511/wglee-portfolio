@@ -5,8 +5,8 @@ import { useMemo, useSyncExternalStore } from 'react';
 const STORAGE_KEY = 'documents:starred';
 const CHANGE_EVENT = 'documents:starred-change';
 
-/** 1 = 지원할 곳, 2 = 지원한 곳, 3 = 탈락, 4 = 합격. 표시가 없으면 맵에 없다. */
-export type StarLevel = 1 | 2 | 3 | 4;
+/** 1 = 지원할 곳, 2 = 지원한 곳, 3 = 탈락, 4 = 합격, 5 = 읽음. 표시가 없으면 맵에 없다. 읽음은 별 버튼의 첫 단계다. */
+export type StarLevel = 1 | 2 | 3 | 4 | 5;
 
 export const STAR_LABEL: Record<0 | StarLevel, string> = {
   0: '표시 없음',
@@ -14,6 +14,7 @@ export const STAR_LABEL: Record<0 | StarLevel, string> = {
   2: '지원한 곳',
   3: '탈락',
   4: '합격',
+  5: '읽음',
 };
 
 function subscribe(onChange: () => void) {
@@ -37,7 +38,7 @@ function readRaw(): string {
   }
 }
 
-// 저장 형식은 `{ 회사키: 1 | 2 | 3 | 4 }`. 별표가 한 단계뿐이던 옛 형식(`[회사키, ...]`)은 "지원할 곳"으로 읽는다.
+// 저장 형식은 `{ 회사키: 1 | 2 | 3 | 4 | 5 }`. 별표가 한 단계뿐이던 옛 형식(`[회사키, ...]`)은 "지원할 곳"으로 읽는다.
 function parse(raw: string): Map<string, StarLevel> {
   const map = new Map<string, StarLevel>();
   try {
@@ -45,7 +46,7 @@ function parse(raw: string): Map<string, StarLevel> {
     if (Array.isArray(v)) {
       for (const k of v) if (typeof k === 'string') map.set(k, 1);
     } else if (v && typeof v === 'object') {
-      for (const [k, level] of Object.entries(v)) if (level === 1 || level === 2 || level === 3 || level === 4) map.set(k, level);
+      for (const [k, level] of Object.entries(v)) if (level === 1 || level === 2 || level === 3 || level === 4 || level === 5) map.set(k, level);
     }
   } catch {
     // 깨진 값은 빈 값으로 본다.
@@ -73,8 +74,8 @@ export function setStar(key: string, level: 0 | StarLevel, valid?: Set<string>) 
   window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
-/** 별 버튼: 없음 → 지원할 곳 → 지원한 곳 → 없음. 합격·탈락에서 누르면 처음(없음)으로 돌아간다. */
+/** 별 버튼: 없음 → 읽음 → 지원할 곳 → 지원한 곳 → 없음. 합격·탈락에서 누르면 처음(없음)으로 돌아간다. */
 export function toggleStar(key: string, valid?: Set<string>) {
   const level = parse(readRaw()).get(key) ?? 0;
-  setStar(key, level === 0 ? 1 : level === 1 ? 2 : 0, valid);
+  setStar(key, level === 0 ? 5 : level === 5 ? 1 : level === 1 ? 2 : 0, valid);
 }
