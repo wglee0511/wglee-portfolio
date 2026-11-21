@@ -8,6 +8,8 @@ This version has breaking changes — APIs, conventions, and file structure may 
 
 커밋 또는 푸시 요청이 들어오면 **모든 변경사항**(staged + unstaged + untracked 파일 전체)을 대상으로 커밋하고 푸시한다.
 
+**`/documents`·`/documents2` 업데이트는 요청이 없어도 자동으로 커밋·푸시한다.** 두 경로의 데이터(`documents.json`·`documents2.json`)나 목록·규칙을 갱신하는 작업이 끝나면(마무리 검토·건수 보고까지 마친 뒤) 사용자의 별도 요청 없이 `main`에 위 규칙대로 커밋하고 푸시한 다음, 커밋 해시와 건수를 보고에 적는다. 검색이 실패해 이전 결과를 그대로 둔 경우처럼 바뀐 파일이 없으면 커밋하지 않는다. 이 예외는 두 경로의 업데이트에만 적용하고, 다른 작업은 계속 사용자가 요청할 때만 커밋·푸시한다.
+
 ## 이력서 컨텍스트
 
 개발자 정보·경력·프로젝트 관련 작업 시 `resume/` 디렉토리를 참조한다.
