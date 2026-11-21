@@ -232,35 +232,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p365b22d8",
-  "companyKey": "c97c1d9b2",
-  "company": "뤼튼테크놀로지스",
-  "position": "Frontend Engineer",
-  "region": "서울 서초구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "mobile",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/392364"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 서초구 서초대로77길 17, 14층"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/392364"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "pa5cf1f37",
   "companyKey": "cea0f1183",
   "company": "아이엠펫",
@@ -446,35 +417,6 @@
    }
   ],
   "rn": true,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "pa15ee07e",
-  "companyKey": "c718c1fe8",
-  "company": "와이즐리컴퍼니",
-  "position": "Full Stack Engineer (Commerce)",
-  "region": "서울 강남구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/340584"
-   }
-  ],
-  "companyInfo": {
-   "industry": "제조",
-   "address": "서울 강남구 강남대로94길 10"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/340584"
-   }
-  ],
-  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-21"
  },
@@ -733,35 +675,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p93c6adf7",
-  "companyKey": "cf418a1da",
-  "company": "디어니언",
-  "position": "Frontend Engineer",
-  "region": "서울 송파구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/336499"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 송파구 법원로11길 7"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/336499"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "pcdfb9bc5",
   "companyKey": "cd2095f5f",
   "company": "다이버즈",
@@ -784,64 +697,6 @@
    {
     "label": "원티드 공고(업종·주소)",
     "url": "https://www.wanted.co.kr/wd/349671"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "p5513c58e",
-  "companyKey": "c122b85f0",
-  "company": "애쉬코어테크놀로지스",
-  "position": "Frontend Developer",
-  "region": "서울 강남구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/348913"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 강남구 삼성동 170-3"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/348913"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "p2b3f18ac",
-  "companyKey": "ce69e85f8",
-  "company": "팀리부뜨",
-  "position": "AI-Native Engineer (Frontend) ",
-  "region": "서울 서초구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/371270"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 서초구 강남대로53길 8"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/371270"
    }
   ],
   "rn": false,
@@ -903,35 +758,6 @@
    }
   ],
   "rn": true,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "pb9abbaea",
-  "companyKey": "c18d58199",
-  "company": "타인에이아이",
-  "position": "Frontend Engineer",
-  "region": "서울 강남구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/389983"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 강남구 강남대로114길 20"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/389983"
-   }
-  ],
-  "rn": false,
   "maybeSame": false,
   "checkedAt": "2026-11-21"
  },
@@ -1016,35 +842,6 @@
    {
     "label": "원티드 공고(업종·주소)",
     "url": "https://www.wanted.co.kr/wd/391111"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "p98c27ccc",
-  "companyKey": "c70c6173a",
-  "company": "고위드",
-  "position": "Frontend Engineer (프론트엔드 엔지니어)",
-  "region": "서울 강남구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/392931"
-   }
-  ],
-  "companyInfo": {
-   "industry": "금융",
-   "address": "서울 강남구 도산대로 317"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/392931"
    }
   ],
   "rn": false,
@@ -1658,35 +1455,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p1a928916",
-  "companyKey": "cadf28ea5",
-  "company": "디스펙터",
-  "position": "풀스택 SW개발자",
-  "region": "경기 성남시 수정구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/343884"
-   }
-  ],
-  "companyInfo": {
-   "industry": "전문,과학기술",
-   "address": "경기 성남시 수정구 금토로 32"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/343884"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "p80a6b002",
   "companyKey": "c24ddc150",
   "company": "컨워스",
@@ -1890,35 +1658,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p0d4c13b3",
-  "companyKey": "c77ed59ed",
-  "company": "브레인크루",
-  "position": "DeepConnector 풀스택 엔지니어",
-  "region": "경기 성남시 분당구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/380737"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "경기 성남시 분당구 정자로 2"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/380737"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "p5f781e5a",
   "companyKey": "c951f47a0",
   "company": "래블업",
@@ -2035,64 +1774,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p3e8e5667",
-  "companyKey": "c9b6a29d5",
-  "company": "서치독",
-  "position": "Web Application 개발자 (풀스택)",
-  "region": "경기 성남시 분당구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/389606"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "경기 성남시 분당구 정자일로 239"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/389606"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "pa36437f7",
-  "companyKey": "c9b6a29d5",
-  "company": "서치독",
-  "position": "SaaS 어드민 콘솔 개발자 (풀스택)",
-  "region": "경기 성남시 분당구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/389601"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "경기 성남시 분당구 정자일로 239"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/389601"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "pb1ef612e",
   "companyKey": "c62fafc9c",
   "company": "망고부스트",
@@ -2122,35 +1803,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p05c722e7",
-  "companyKey": "c40e4cc15",
-  "company": "로앤컴퍼니(lawtalk)",
-  "position": "FDE팀 Full Stack Engineer",
-  "region": "서울 서초구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/393805"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 서초구 법원로4길 11-6"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/393805"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "pd97612a9",
   "companyKey": "cf401fb62",
   "company": "아이제라",
@@ -2173,35 +1825,6 @@
    {
     "label": "원티드 공고(업종·주소)",
     "url": "https://www.wanted.co.kr/wd/393054"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "p123081b6",
-  "companyKey": "ce4b8f428",
-  "company": "리스타",
-  "position": "광고 플랫폼 풀스택 개발자",
-  "region": "서울 서초구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/394804"
-   }
-  ],
-  "companyInfo": {
-   "industry": "기타서비스업",
-   "address": "서울 서초구 반포대로28길 20"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/394804"
    }
   ],
   "rn": false,
@@ -2687,35 +2310,6 @@
   "checkedAt": "2026-11-21"
  },
  {
-  "id": "p6aaf4429",
-  "companyKey": "c94119771",
-  "company": "제로원에이아이",
-  "position": "Front-End 엔지니어",
-  "region": "경기 성남시 분당구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/166679"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "경기 성남시 창업로 43"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/166679"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
   "id": "p895a675c",
   "companyKey": "ccf8f4ba0",
   "company": "누아",
@@ -2796,35 +2390,6 @@
    {
     "label": "원티드 공고(업종·주소)",
     "url": "https://www.wanted.co.kr/wd/335309"
-   }
-  ],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-21"
- },
- {
-  "id": "p252a7874",
-  "companyKey": "ca49e14b6",
-  "company": "백패커",
-  "position": "[텀블벅] 프론트엔드 개발자 (3~5년)",
-  "region": "서울 서초구",
-  "career": "",
-  "deadline": "마감일 미표기",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "원티드",
-    "url": "https://www.wanted.co.kr/wd/336520"
-   }
-  ],
-  "companyInfo": {
-   "industry": "IT,컨텐츠",
-   "address": "서울 서초구 서초대로 398"
-  },
-  "infoSources": [
-   {
-    "label": "원티드 공고(업종·주소)",
-    "url": "https://www.wanted.co.kr/wd/336520"
    }
   ],
   "rn": false,
@@ -4414,6 +3979,351 @@
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/281136"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55610448",
+  "companyKey": "59954cf06",
+  "company": "커스토머인사이트",
+  "position": "이커머스 플랫폼 프론트엔드 개발자 모집 (React · 경력 3~5년)",
+  "region": "서울 송파구",
+  "career": "경력 3~5년",
+  "deadline": "~ 12/18(금)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55610448"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55344308",
+  "companyKey": "3858a664e",
+  "company": "투브플러스",
+  "position": "[성수] 웹퍼블리셔·프론트엔드(React) 채용 (신입/경력)",
+  "region": "서울 성동구",
+  "career": "경력무관",
+  "deadline": "채용시",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55344308"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55622246",
+  "companyKey": "a59b49816",
+  "company": "칵테일아이오",
+  "position": "[칵테일아이오] React 프론트엔드 개발자 채용",
+  "region": "서울 강서구",
+  "career": "경력 3~15년",
+  "deadline": "~ 12/19(토)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55622246"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55442404",
+  "companyKey": "03213285a",
+  "company": "와이즈오토모티브",
+  "position": "React 프론트앤드 개발자 채용",
+  "region": "서울 서초구",
+  "career": "경력 3년 이상",
+  "deadline": "~ 11/29(일)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55442404"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55599069",
+  "companyKey": "ebefd5cc3",
+  "company": "이에스지아이",
+  "position": "[이에스지아이] 플랫폼 풀스택 개발자(프론트엔드 중심) 모집",
+  "region": "서울 금천구",
+  "career": "경력 3년 이상",
+  "deadline": "~ 01/16(토)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55599069"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55472753",
+  "companyKey": "c369ed19c",
+  "company": "솔앤드",
+  "position": "[정규직 채용] 풀스택 개발자 (Frontend / Backend / Infra)",
+  "region": "서울 서초구",
+  "career": "경력무관",
+  "deadline": "~ 12/03(목)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55472753"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55327125",
+  "companyKey": "e4aee2fba",
+  "company": "티씨엠피코리아",
+  "position": "[중/상급] React 개발자",
+  "region": "서울 종로구",
+  "career": "경력 3년 이상",
+  "deadline": "~ 11/30(월)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55327125"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55547340",
+  "companyKey": "23f31db6b",
+  "company": "체스트넛",
+  "position": "중급,초급 React,Vue 개발 경력자 찾습니다.",
+  "region": "서울 종로구",
+  "career": "경력 4~9년",
+  "deadline": "~ 12/11(금)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55547340"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55396089",
+  "companyKey": "e82bd96a9",
+  "company": "스틸리언",
+  "position": "[스틸리언] Frontend/Backend Engineer",
+  "region": "서울 용산구",
+  "career": "경력무관",
+  "deadline": "~ 11/25(수)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55396089"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55606004",
+  "companyKey": "aeef6ae58",
+  "company": "핀다",
+  "position": "[핀다] 웹프론트엔드 엔지니어",
+  "region": "서울 강남구",
+  "career": "경력 4~20년",
+  "deadline": "~ 12/17(목)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55606004"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55606889",
+  "companyKey": "670c3aea2",
+  "company": "아이알큐더스",
+  "position": "백엔드/프론트엔드 개발자 (1년 이상 ~ 5년 이하)",
+  "region": "서울 영등포구",
+  "career": "경력 1~5년",
+  "deadline": "~ 12/17(목)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55606889"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55264004",
+  "companyKey": "00cd2ad9c",
+  "company": "스쿼드엑스",
+  "position": "AI 플랫폼 프론트엔드 개발자 채용",
+  "region": "서울 마포구",
+  "career": "경력무관",
+  "deadline": "상시채용",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55264004"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55227516",
+  "companyKey": "2cc768165",
+  "company": "스페이스점프",
+  "position": "(주)스페이스점프 웹 프론트엔드 개발자 모집",
+  "region": "서울 광진구",
+  "career": "경력무관",
+  "deadline": "상시채용",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55227516"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55523425",
+  "companyKey": "77e868e9a",
+  "company": "스탯",
+  "position": "[이커머스 스타트업] Product Engineer(Frontend) 초기멤버모집",
+  "region": "서울 강남구",
+  "career": "경력 3년 이상",
+  "deadline": "~ 01/08(금)",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55523425"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-21"
+ },
+ {
+  "id": "p55453555",
+  "companyKey": "a1c5143d2",
+  "company": "아이언닉스",
+  "position": "(주)아이언닉스(서울 지역) WEB(백엔드/프론트엔드) 개발자 채용",
+  "region": "서울 구로구",
+  "career": "경력무관",
+  "deadline": "~ 01/01(금)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55453555"
    }
   ],
   "companyInfo": {
