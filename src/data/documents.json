@@ -442,6 +442,10 @@
    {
     "site": "점핏",
     "url": "https://jumpit.saramin.co.kr/position/55427793"
+   },
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55427793"
    }
   ],
   "companyInfo": {
@@ -4142,29 +4146,6 @@
   "checkedAt": "2026-11-24"
  },
  {
-  "id": "p55427793",
-  "companyKey": "d467af8fc",
-  "company": "(주)펫박스",
-  "position": "프론트엔드 개발자_1~4년",
-  "region": "서울 마포구",
-  "career": "경력 1~4년",
-  "deadline": "~ 11/27(금)",
-  "role": "fe",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55427793"
-   }
-  ],
-  "companyInfo": {
-   "summary": "확인 안 됨"
-  },
-  "infoSources": [],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-24"
- },
- {
   "id": "p55606382",
   "companyKey": "1b0d15f94",
   "company": "(주)케이에스에이솔루션",
@@ -4269,6 +4250,29 @@
    {
     "site": "사람인",
     "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55502056"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-24"
+ },
+ {
+  "id": "p55553008",
+  "companyKey": "3a4ba5e33",
+  "company": "(주)이트라이브",
+  "position": "[이트라이브] AI서비스 풀스택 개발자 정규직 채용",
+  "region": "서울 마포구",
+  "career": "경력 1년 이상",
+  "deadline": "~ 12/12(토)",
+  "role": "fullstack",
+  "sources": [
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55553008"
    }
   ],
   "companyInfo": {
