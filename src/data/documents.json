@@ -340,12 +340,16 @@
   "position": "[AI 헬스케어] 풀스택 개발자",
   "region": "서울 강서구",
   "career": "",
-  "deadline": "마감일 미표기",
+  "deadline": "~ 12/16(수)",
   "role": "fullstack",
   "sources": [
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/320768"
+   },
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55578007"
    }
   ],
   "companyInfo": {
@@ -1383,6 +1387,10 @@
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/378172"
+   },
+   {
+    "site": "사람인",
+    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55419113"
    }
   ],
   "companyInfo": {
@@ -4986,29 +4994,6 @@
   "checkedAt": "2026-11-24"
  },
  {
-  "id": "p55419113",
-  "companyKey": "c1f854f8d",
-  "company": "알엑스(주)",
-  "position": "B2B SaaS 서비스 개발자 채용(Full-Stack)",
-  "region": "서울 마포구",
-  "career": "경력 3년 이상",
-  "deadline": "채용시",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55419113"
-   }
-  ],
-  "companyInfo": {
-   "summary": "확인 안 됨"
-  },
-  "infoSources": [],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-24"
- },
- {
   "id": "p55541478",
   "companyKey": "4f2c7db89",
   "company": "주식회사맨파워써치",
@@ -5136,29 +5121,6 @@
    {
     "site": "사람인",
     "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55526059"
-   }
-  ],
-  "companyInfo": {
-   "summary": "확인 안 됨"
-  },
-  "infoSources": [],
-  "rn": false,
-  "maybeSame": false,
-  "checkedAt": "2026-11-24"
- },
- {
-  "id": "p55578007",
-  "companyKey": "cfc1d2224",
-  "company": "(주)알로스타",
-  "position": "[AI 헬스케어] 풀스택 개발자 채용",
-  "region": "서울 강서구",
-  "career": "경력 2년 이상",
-  "deadline": "~ 12/16(수)",
-  "role": "fullstack",
-  "sources": [
-   {
-    "site": "사람인",
-    "url": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=55578007"
    }
   ],
   "companyInfo": {
@@ -5435,6 +5397,52 @@
    {
     "site": "원티드",
     "url": "https://www.wanted.co.kr/wd/399876"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-24"
+ },
+ {
+  "id": "p392931",
+  "companyKey": "e0bcd7a48",
+  "company": "고위드",
+  "position": "Frontend Engineer (프론트엔드 엔지니어)",
+  "region": "서울 강남구",
+  "career": "경력 3~10년",
+  "deadline": "상시채용",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/392931"
+   }
+  ],
+  "companyInfo": {
+   "summary": "확인 안 됨"
+  },
+  "infoSources": [],
+  "rn": false,
+  "maybeSame": false,
+  "checkedAt": "2026-11-24"
+ },
+ {
+  "id": "p348913",
+  "companyKey": "119984a8f",
+  "company": "애쉬코어테크놀로지스",
+  "position": "Frontend Developer",
+  "region": "서울 강남구",
+  "career": "경력 3~8년",
+  "deadline": "상시채용",
+  "role": "fe",
+  "sources": [
+   {
+    "site": "원티드",
+    "url": "https://www.wanted.co.kr/wd/348913"
    }
   ],
   "companyInfo": {
